@@ -46,7 +46,7 @@ async def ask_model(head, choices):
 
     try:
         resp = await client.aio.models.generate_content(
-            model="gemini-1.5-flash",
+            model="gemini-2.5-flash",
             contents=prompt
         )
         text = resp.candidates[0].content.parts[0].text.strip()
@@ -119,7 +119,7 @@ async def main():
 
     # 最终统计
     acc = correct / total if total > 0 else 0
-    print(f"\n完成！总题目数: {total}, 正确数: {correct}, 准确率: {acc:.2%}")
+    print(f"\nfinished 总题目数: {total}, 正确数: {correct}, 准确率: {acc:.2%}")
 
 
 if __name__ == "__main__":
