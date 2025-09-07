@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1描述: 一名高跳运动员站在跑道末端，面向跳杆，身体略微侧转，右臂微抬，左臂自然下垂，似乎正在准备起跑。背景中可见跳杆和落地垫。",
+    "帧2描述: 运动员已开始助跑，身体前倾，左腿向前迈出，右臂向后摆动，正在向跳杆方向奔跑。跳杆仍在背景中，但距离略近。",
+    "帧3描述: 运动员继续助跑，身体进一步前倾，右腿向前迈出，左臂向后摆动，姿态显示其正在加速，靠近跳杆。"
+  ],
+  "reasoning": "题干帧展示了高跳运动员从准备姿势到开始助跑、并继续助跑的过程。这是一个连贯的动作序列，表现了助跑阶段的初期到中期。\n\n- 候选帧0 (data/frames/HighJump/v_HighJump_g01_c04/frame_00003.jpg): 这张帧显示运动员处于助跑过程中，身体侧向跳杆，双腿交替向前，手臂摆动，明显是助跑阶段的延续。这与题干帧中的助跑动作吻合，是动作序列的合理下一步。\n- 候选帧1 (data/frames/HighJump/v_HighJump_g01_c03/frame_00005.jpg): 这张帧显示运动员已经腾空并越过跳杆，处于跳跃的最高点。这远超出了题干帧所展示的助跑阶段。\n- 候选帧2 (data/frames/HighJump/v_HighJump_g01_c05/frame_00001.jpg): 这张帧显示运动员站在跑道末端，准备开始助跑，与题干帧1的姿态非常相似，甚至更早。它不是题干帧动作的延续，而更像是另一个起始点或一个重复的开始姿势。\n- 候选帧3 (data/frames/HighJump/v_HighJump_g01_c01/frame_00007.jpg): 这张帧显示运动员在空中，身体背对跳杆，正在翻越跳杆。这也远超出了题干帧所展示的助跑阶段。\n\n综合来看，候选帧0最能承接题干帧的动作序列，继续展现运动员在助跑过程中的进展。",
+  "pred": 0,
+  "qid": "HighJump_g01_8",
+  "category": "HighJump",
+  "group": "g01",
+  "choices": [
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00007.jpg"
+  ],
+  "correct_index": 3,
+  "head": [
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00003.jpg"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "frame_descriptions": [
+    "帧1描述: 一个女孩站在蛋糕前面，手里拿着点燃的蜡烛。她脸上带着笑容，准备吹蜡烛。",
+    "帧2描述: 女孩闭上眼睛，准备吹灭蜡烛。她仍然站在蛋糕前面。"
+  ],
+  "reasoning": "题干帧显示的是一个女孩吹蜡烛的连续动作。帧1显示女孩准备吹蜡烛，帧2显示女孩闭上眼睛准备吹。我们应该寻找与这个动作连续的下一帧。选项1显示女孩吹灭蜡烛后的画面，这与题干帧的连续性最好。选项0、2和3显示的是不同的场景或动作，与题干帧不连续。因此，选项1是最合适的答案。",
+  "pred": 1,
+  "qid": "BlowingCandles_g01_0",
+  "category": "BlowingCandles",
+  "group": "g01",
+  "choices": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c01/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c04/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c02/frame_00001.jpg"
+  ],
+  "correct_index": 1,
+  "head": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c01/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c01/frame_00002.jpg"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1：一个骑自行车的人在骑车，背景是道路和一些植被。",
+    "帧2：同一骑车人继续骑车，视角略有变化。",
+    "帧3：同一骑车人继续骑车，视角再次略微变化，可以更清楚地看到周围环境。"
+  ],
+  "reasoning": "题干帧显示的是同一个骑车人在同一地点连续骑车的画面。候选答案帧需要找到与题干帧视频内容一致的帧。0,1,2 号候选答案帧显示了不同的骑车人和不同的场景。只有3号候选答案帧显示了相同的骑车人，很可能是同一个视频的后续画面。因此，3号候选答案帧最符合题干帧的视频内容。",
+  "pred": 3,
+  "qid": "Biking_g01_4",
+  "category": "Biking",
+  "group": "g01",
+  "choices": [
+    "data/frames/Biking/v_Biking_g01_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00006.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00006.jpg"
+  ],
+  "correct_index": 3,
+  "head": [
+    "data/frames/Biking/v_Biking_g01_c01/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1：一个台球桌的俯视图，球杆正准备击打母球，母球位于球桌中心附近。",
+    "帧2：球杆击打母球的瞬间，母球被击中，开始运动。",
+    "帧3：母球击打其他球后，一些球散开，母球继续运动。"
+  ],
+  "reasoning": "题干帧展示的是一次台球击打的过程，从准备击打到击打后球散开的连续动作。候选答案中，只有答案3展示了同一次台球游戏中，母球击打其他球后，球继续运动，且和题干帧的视角和场景保持一致。答案0，1，2都显示了不同的击球场景或不同的视角。因此，答案3是与题干帧最一致的后续帧。",
+  "pred": 3,
+  "qid": "Billiards_g01_3",
+  "category": "Billiards",
+  "group": "g01",
+  "choices": [
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00008.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00011.jpg"
+  ],
+  "correct_index": 3,
+  "head": [
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00002.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00003.jpg"
+  ]
+}

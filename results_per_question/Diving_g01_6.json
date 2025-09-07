@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1：一名跳水运动员在跳台上准备跳水，身体略微前倾，双臂后伸。",
+    "帧2：运动员起跳，身体腾空，姿态优美。",
+    "帧3：运动员在空中完成空中动作，身体呈一定的弧度。"
+  ],
+  "reasoning": "题干帧展示的是一个跳水运动员从跳台上起跳到空中完成动作的过程。选项0显示的是一个不同的运动员在入水，选项2和3显示的是不同的跳水动作。只有选项1与题干帧属于同一个跳水运动员的连续动作，显示的是运动员在空中完成动作后的下落过程。因此，选项1是正确的。",
+  "pred": 1,
+  "qid": "Diving_g01_6",
+  "category": "Diving",
+  "group": "g01",
+  "choices": [
+    "data/frames/Diving/v_Diving_g01_c07/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00009.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00002.jpg"
+  ],
+  "correct_index": 1,
+  "head": [
+    "data/frames/Diving/v_Diving_g01_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00003.jpg"
+  ]
+}

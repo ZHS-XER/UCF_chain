@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1描述: 一名身着深色泳衣的运动员站在跳水板上，背对水面，双臂微曲，身体微微前倾，似乎在准备开始跳水。跳水板呈黄蓝色，背景是游泳池和观众席。",
+    "帧2描述: 同一名运动员已转身面向水面，双臂向上向后伸展，身体重心略微下沉，膝盖微弯，姿势更加接近跳水预备动作。背景与前一帧一致。",
+    "帧3描述: 同一名运动员已走到跳水板边缘，身体明显向前倾斜，双臂完全向上伸直，准备蹬离跳水板。这是跳水动作即将开始的瞬间。"
+  ],
+  "reasoning": "题干帧展示了一个连贯的跳水动作序列：运动员从站在跳水板上，到转身面向水面，摆出预备姿势，再到身体前倾准备蹬板。这个序列描述的是同一名运动员完成一次跳水动作的准备阶段。所有题干帧都来自 `v_Diving_g02_c01` 这个视频片段。\n\n- 候选答案0 (`data/frames/Diving/v_Diving_g02_c01/frame_00005.jpg`): 这张图片显示运动员已经在空中，身体伸展，双臂向前，呈入水前的姿态。重要的是，它与题干帧来自**同一个视频片段 (`v_Diving_g02_c01`)**，并且帧号 (00005) 紧接在题干帧 (00001, 00002, 00003) 之后。视觉上，这也是同一个运动员、同一次跳水动作的直接延续。\n- 候选答案1 (`data/frames/Diving/v_Diving_g02_c03/frame_00003.jpg`): 这张图片显示不同的运动员或不同的跳水动作，且来自**不同的视频片段 (`v_Diving_g02_c03`)**。\n- 候选答案2 (`data/frames/Diving/v_Diving_g02_c07/frame_00003.jpg`): 这张图片显示不同的运动员或不同的跳水动作，且来自**不同的视频片段 (`v_Diving_g02_c07`)**。\n- 候选答案3 (`data/frames/Diving/v_Diving_g02_c06/frame_00003.jpg`): 这张图片显示不同的运动员或不同的跳水动作，且来自**不同的视频片段 (`v_Diving_g02_c06`)**。\n\n因此，候选答案0是唯一一个与题干帧在视频源和动作连续性上都匹配的帧，它直接延续了题干帧所展现的跳水动作。",
+  "pred": 0,
+  "qid": "Diving_g02_7",
+  "category": "Diving",
+  "group": "g02",
+  "choices": [
+    "data/frames/Diving/v_Diving_g02_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c03/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c06/frame_00003.jpg"
+  ],
+  "correct_index": 0,
+  "head": [
+    "data/frames/Diving/v_Diving_g02_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00003.jpg"
+  ]
+}

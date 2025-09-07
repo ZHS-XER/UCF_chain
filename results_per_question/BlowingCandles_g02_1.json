@@ -1,0 +1,22 @@
+{
+  "frame_descriptions": [
+    "帧1：一个女孩站在生日蛋糕前，双手合十准备吹蜡烛。蛋糕上有许多点燃的蜡烛。背景是模糊的室内环境。",
+    "帧2：女孩正对着蛋糕用力吹气，蜡烛的火焰被吹得向后倾斜。"
+  ],
+  "reasoning": "题干的两帧展示了一个女孩吹蜡烛的连续动作。帧1显示女孩准备吹蜡烛，帧2显示女孩正在吹蜡烛。我们需要找到与这个动作连续性最高的选项。选项0显示另一个女孩准备吹蜡烛，选项1显示一个女孩吹完蜡烛后，选项3显示一个女孩准备吹蜡烛。只有选项2与题干帧的连续性最好，它显示的是女孩吹完蜡烛后，蜡烛熄灭的画面，与题干帧构成了一个完整的吹蜡烛的动作。",
+  "pred": 2,
+  "qid": "BlowingCandles_g02_1",
+  "category": "BlowingCandles",
+  "group": "g02",
+  "choices": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c04/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c01/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00003.jpg"
+  ],
+  "correct_index": 2,
+  "head": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c01/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c01/frame_00002.jpg"
+  ]
+}

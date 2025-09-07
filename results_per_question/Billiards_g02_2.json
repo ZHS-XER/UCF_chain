@@ -1,0 +1,24 @@
+{
+  "frame_descriptions": [
+    "帧1：一个台球桌的俯视图，桌面上有一些台球，其中一颗球被击打后正在滚动。",
+    "帧2：同一视角，击打后的球继续滚动，其他的球保持静止。",
+    "帧3：击打后的球几乎停止运动，即将撞击到其他的球。"
+  ],
+  "reasoning": "题干帧显示的是一个台球游戏连续的三个画面，展现的是一次击球后的球的运动轨迹。我们需要在选项中找到与题干帧动作一致的画面。选项0、2、3的画面都显示的是不同的台球场景，与题干帧的连续动作不一致。选项1显示的是同一组台球游戏，且球的运动状态与题干帧的后续状态一致，可以判断为同一组台球游戏中的后续画面。",
+  "pred": 1,
+  "qid": "Billiards_g02_2",
+  "category": "Billiards",
+  "group": "g02",
+  "choices": [
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00002.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00014.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00002.jpg"
+  ],
+  "correct_index": 1,
+  "head": [
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00002.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00003.jpg"
+  ]
+}

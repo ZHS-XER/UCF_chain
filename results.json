@@ -1,0 +1,82 @@
+[
+  {
+    "qid": "BlowingCandles_g01_0",
+    "category": "BlowingCandles",
+    "group": "g01",
+    "pred": 1,
+    "correct": 1,
+    "is_correct": true
+  },
+  {
+    "qid": "BlowingCandles_g02_1",
+    "category": "BlowingCandles",
+    "group": "g02",
+    "pred": 2,
+    "correct": 2,
+    "is_correct": true
+  },
+  {
+    "qid": "Billiards_g02_2",
+    "category": "Billiards",
+    "group": "g02",
+    "pred": 1,
+    "correct": 1,
+    "is_correct": true
+  },
+  {
+    "qid": "Billiards_g01_3",
+    "category": "Billiards",
+    "group": "g01",
+    "pred": 3,
+    "correct": 3,
+    "is_correct": true
+  },
+  {
+    "qid": "Biking_g01_4",
+    "category": "Biking",
+    "group": "g01",
+    "pred": 3,
+    "correct": 3,
+    "is_correct": true
+  },
+  {
+    "qid": "Biking_g02_5",
+    "category": "Biking",
+    "group": "g02",
+    "pred": 1,
+    "correct": 1,
+    "is_correct": true
+  },
+  {
+    "qid": "Diving_g01_6",
+    "category": "Diving",
+    "group": "g01",
+    "pred": 1,
+    "correct": 1,
+    "is_correct": true
+  },
+  {
+    "qid": "Diving_g02_7",
+    "category": "Diving",
+    "group": "g02",
+    "pred": 0,
+    "correct": 0,
+    "is_correct": true
+  },
+  {
+    "qid": "HighJump_g01_8",
+    "category": "HighJump",
+    "group": "g01",
+    "pred": 3,
+    "correct": 3,
+    "is_correct": true
+  },
+  {
+    "qid": "HighJump_g02_9",
+    "category": "HighJump",
+    "group": "g02",
+    "pred": 0,
+    "correct": 0,
+    "is_correct": true
+  }
+]
