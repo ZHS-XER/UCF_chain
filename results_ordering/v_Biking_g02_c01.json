@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A person's hand, seen from a slightly elevated angle, holds a small, white rectangular tile firmly between the thumb and index finger. The tile is held vertically, presenting its smooth face. The background is a soft, light blur, indicating no immediate interaction with a specific surface.",
+    "The hand continues to hold the small, white rectangular tile. Compared to the previous frame, there's a minor shift in the hand's position or the tile's angle, suggesting a slight adjustment in grip or perspective, but it remains held upright in mid-air. The background remains a soft, light blur.",
+    "The person's hand is holding the small, white rectangular tile with a slightly different grip, now gripping it more from the bottom edge rather than the sides. The tile is angled somewhat, possibly in preparation for movement. The background is still a soft, light blur, indicating the tile is not yet interacting with a specific surface.",
+    "The hand is now actively moving the small, white rectangular tile towards a larger, light grey or white textured surface, which is visible in the background. The tile is being lowered, partially obscured by the fingers, as it approaches the surface for placement.",
+    "The hand has now placed the small, white rectangular tile against the larger, light grey or white textured surface. The hand continues to hold or press the tile into place, with more of the tile's face now visible against the background, signifying the completion of the placement action."
+  ],
+  "reasoning": "The frames depict a sequence of a person handling a small tile, from holding it in mid-air to placing it on a surface. The reasoning follows a logical progression of actions:\n\n1.  **Initial Hold and Adjustment (Frames 2 then 3):** Frames 2 and 3 show the tile held steadily in mid-air against a plain, blurry background. Frame 2 appears to be the initial, clear presentation of the tile. Frame 3 shows a very subtle shift or adjustment in the hand's grip or the tile's angle compared to Frame 2, indicating a minor repositioning after the initial hold.\n2.  **Preparation for Movement (Frame 0):** Following the initial holds, Frame 0 shows a different grip on the tile, held more from the bottom edge and at a different angle. This suggests a preparatory action, possibly orienting the tile before moving it towards a target surface, while still not interacting with a distinct background surface.\n3.  **Approach to Surface (Frame 4):** Frame 4 is the first frame where a distinct, textured light grey/white surface appears in the background. The hand is actively lowering the tile towards this surface, with the tile partially obscured by the fingers, indicating the start of the placement action.\n4.  **Placement on Surface (Frame 1):** Frame 1 shows the culmination of the action. The tile is now firmly against the textured surface, and the hand is holding or pressing it into position. More of the tile's face is visible against the background, indicating it has been successfully placed.",
+  "predicted_order": [
+    2,
+    3,
+    0,
+    4,
+    1
+  ],
+  "video": "v_Biking_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    3,
+    0,
+    4,
+    1
+  ],
+  "is_correct": true
+}

@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A close-up shot of a pristine, empty circular white plate. The plate has a slightly raised rim and is positioned centrally in the frame. The background is blurred, showing warm, soft lighting typical of a kitchen or studio setting.",
+    "A close-up, low-angle shot of a chef's hand, gloved in black, holding a small white bowl filled with a glossy, dark brown sauce. The chef's thumb is visible. The background is out of focus, suggesting a warm and brightly lit kitchen.",
+    "A close-up shot of the same circular white plate, with a stream of dark, thick sauce actively being poured from a small white bowl (held by a black-gloved hand at the bottom left) onto the center of the plate. The sauce is just beginning to form a dollop.",
+    "A close-up shot of the same circular white plate, with a slightly larger amount of dark, thick sauce already forming a puddle on the plate. A black-gloved hand holds the white bowl, tilted at a steep angle, continuing to pour the sauce into the existing puddle. The background remains blurred.",
+    "A close-up shot of the same circular white plate, now perfectly centered with a neat, well-formed dollop of dark brown or black, glossy sauce. The pouring action has ceased, and the sauce maintains its thick, sculptural shape. The background is still blurred."
+  ],
+  "reasoning": "The logical progression of events for plating a sauce onto a dish begins with an empty plate, followed by the introduction of the sauce, the act of pouring, and finally, the completed plated item. \n\n1.  **Frame 2 (frame_00001.jpg):** This frame shows an empty, clean plate, which is the natural starting point before any food item is added.\n2.  **Frame 0 (frame_00005.jpg):** This frame introduces the element to be added – the sauce in a bowl, held by the chef's gloved hand. It serves as a precursor to the pouring action.\n3.  **Frame 4 (frame_00003.jpg):** Here, the pouring action begins. A stream of sauce is actively being poured onto the plate, just starting to form a dollop.\n4.  **Frame 1 (frame_00004.jpg):** This frame shows the continuation of the pouring. More sauce has accumulated on the plate, and the bowl is tilted further, indicating the building up or refining of the sauce's placement.\n5.  **Frame 3 (frame_00002.jpg):** This frame depicts the final result: a perfectly formed, complete dollop of sauce on the plate, with no active pouring occurring. This is the finished stage of adding the sauce.",
+  "predicted_order": [
+    2,
+    0,
+    4,
+    1,
+    3
+  ],
+  "video": "v_Biking_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c03/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    2,
+    3,
+    4,
+    1,
+    0
+  ],
+  "is_correct": false
+}

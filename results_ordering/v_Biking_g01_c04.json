@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A close-up shot of a hand holding a clear glass filled with a yellow-orange liquid and ice cubes. A smaller, clear bottle with a white cap is being used to pour a dark red liquid, likely grenadine, into the glass. The red liquid is visibly streaming downwards, beginning to create a layered effect with the lighter beverage.",
+    "A close-up shot of a finished layered drink in a clear glass, held by a hand. The drink displays distinct layers: a yellow-orange top layer, a slightly darker orange middle layer, and a vibrant red layer at the bottom. Several ice cubes are present. The pouring action has concluded, and the drink is ready.",
+    "A close-up shot of a hand holding a clear glass containing a few ice cubes. A larger, clear bottle of yellow-orange liquid, possibly orange juice or a similar mixer, is being tilted to pour its contents into the glass. The liquid is actively flowing into the glass.",
+    "A close-up shot of a hand holding a clear glass, now partially filled with a yellow-orange liquid and several ice cubes. The pouring from the first bottle has stopped, and the glass is about two-thirds full with the initial ingredient.",
+    "A close-up shot of a hand holding a clear glass containing a yellow-orange liquid and ice cubes. A small, clear bottle of dark red liquid is positioned above the glass, with its opening directed downwards, suggesting it is about to pour or has just started to pour a tiny drip, preparing to add the next ingredient."
+  ],
+  "reasoning": "The frames depict the process of mixing a layered drink. I determined the order by following the logical steps of beverage preparation:\n\n1.  **Initial Pour:** Frame 2 clearly shows the first ingredient, a yellow-orange liquid, being poured into a glass with ice. This must be the starting point.\n2.  **First Ingredient Settled:** Frame 3 shows the glass after the first liquid has been poured, now containing the yellow-orange liquid and ice. This logically follows the pouring action in Frame 2.\n3.  **Preparation for Second Pour:** Frame 4 shows the small bottle of red liquid being positioned over the glass, indicating the next ingredient is about to be added. This precedes the actual pouring of the red liquid.\n4.  **Second Pouring Action:** Frame 0 shows the red liquid actively being poured into the glass, creating a distinct stream and starting the layering effect. This follows the preparation in Frame 4.\n5.  **Finished Product:** Frame 1 displays the completed layered drink with all ingredients in place, and the pouring has stopped. This represents the final stage of the drink preparation.",
+  "predicted_order": [
+    2,
+    3,
+    4,
+    0,
+    1
+  ],
+  "video": "v_Biking_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00003.jpg"
+  ],
+  "correct_order": [
+    2,
+    3,
+    4,
+    0,
+    1
+  ],
+  "is_correct": true
+}

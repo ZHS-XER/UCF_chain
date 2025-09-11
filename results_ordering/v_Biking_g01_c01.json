@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A close-up shot of a person's hand holding a small, light-colored rectangular sticky note against a blurry light background. The note appears to be mostly blank or has very faint markings, suggesting it's either just been picked up or is about to be written on/placed. The hand is positioned centrally in the frame.",
+    "A person's hand is seen holding a light-colored rectangular sticky note, which now clearly features a red heart drawn on it and some text below it. The hand and note are in motion, slightly blurred, suggesting it's being moved towards a surface for placement. The background is a soft, blurry light color.",
+    "The sticky note with the red heart and text (\"I LOVE YOU\") is now visible adhering to a flat, light-colored surface. A hand is still partially in the frame, with fingers gently touching or hovering very close to the top edge of the note, indicating it has just been placed or is being pressed down.",
+    "The sticky note is firmly attached to the light-colored surface, clearly displaying the red heart and text. The hand is still visible but is slightly further away from the note than in the previous frame, in the process of retracting after placing the note. More of the note is uncovered.",
+    "The sticky note with the red heart and \"I LOVE YOU\" text is perfectly visible and fully attached to the light-colored surface. The hand is no longer visible in the frame, or is entirely out of focus/cropped, indicating the successful completion of the placement action. This is the final state of the placed note."
+  ],
+  "reasoning": "The sequence depicts the action of placing a sticky note on a surface. \n\n1.  **Frame 2 (frame_00001.jpg)** is the initial state, showing the hand holding a sticky note that appears blank or with minimal markings, suggesting it's either just been picked up or is being prepared.\n2.  **Frame 0 (frame_00002.jpg)** follows, where the hand is holding the sticky note, now clearly showing the drawn heart and text, in motion as it moves towards the placement surface. This indicates the note is ready to be put down.\n3.  **Frame 1 (frame_00003.jpg)** shows the sticky note making initial contact with the surface. The hand is still very close, with fingers possibly pressing it down or having just released it, but still making contact.\n4.  **Frame 4 (frame_00004.jpg)** comes next, as the hand begins to retract. It's slightly further away from the note than in Frame 1, but still partially visible, signifying the hand pulling away.\n5.  **Frame 3 (frame_00005.jpg)** is the final state, where the sticky note is fully placed on the surface, and the hand has completely moved out of the frame, showing the completed action.",
+  "predicted_order": [
+    2,
+    0,
+    1,
+    4,
+    3
+  ],
+  "video": "v_Biking_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    1,
+    4,
+    3
+  ],
+  "is_correct": true
+}

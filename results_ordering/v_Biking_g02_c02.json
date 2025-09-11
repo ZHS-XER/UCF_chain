@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A close-up shot shows a fair-skinned hand holding a single, small, round, vibrant green pod or fruit between the thumb and forefinger. The hand is positioned relatively high above a white plate with a black rim, on which several other green pods, some intact and some partially opened, are already resting. The background is blurred, suggesting a shallow depth of field, likely a kitchen setting.",
+    "This frame captures the moment the green pod is fully split open. The same hand's fingers are pressed firmly against the pod, revealing several small, light green peas nestled inside. The pod's outer skin is visibly torn, and the hand is still positioned over the white plate, which now contains more split pods and released peas.",
+    "Similar to Frame 0, the hand holds the intact green pod above the plate. However, the pod appears slightly lower and the fingers might be subtly adjusting their grip, preparing for the next action, but no visible deformation has occurred yet. The plate below still shows a mix of intact and split pods.",
+    "The hand is actively squeezing the green pod. The pressure from the thumb and forefinger is causing the pod to deform, and a slight crease or opening is just beginning to form, indicating the start of the splitting process. The pod is still largely intact but under clear stress, positioned over the plate.",
+    "This frame shows the conclusion of the splitting action. The small green peas from the pod have been released and are now scattered on the white plate, mixing with other peas and pod halves. The hand still holds the empty, split husk of the pod, having successfully extracted its contents and dropped them onto the plate."
+  ],
+  "reasoning": "The sequence depicts the action of shelling a green pod or fruit, likely a pea pod. I ordered the frames based on the progressive stages of this action:\n\n1.  **Initial Hold (Frame 0):** The hand first picks up and holds the intact pod high above the plate, ready to begin.\n2.  **Adjustment/Preparation (Frame 2):** The hand slightly lowers the pod and adjusts its grip, still intact, in preparation for applying pressure. This is a subtle transition from the initial hold.\n3.  **Beginning to Squeeze (Frame 3):** Pressure is applied, and the pod starts to deform and show signs of opening, but is not fully split yet.\n4.  **Pod Split Open (Frame 1):** The pod has fully split due to the continued pressure, revealing the peas inside.\n5.  **Contents Released (Frame 4):** The peas have been extracted and released onto the plate, and the hand is left holding the empty husk. This represents the completion of the action for one pod.",
+  "predicted_order": [
+    0,
+    2,
+    3,
+    1,
+    4
+  ],
+  "video": "v_Biking_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c02/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    3,
+    1,
+    4
+  ],
+  "is_correct": true
+}
