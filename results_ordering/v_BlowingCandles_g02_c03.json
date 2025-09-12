@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A young child wearing a white and red striped party hat is sitting at a table, looking down intently at a small chocolate cake with a single lit candle. His mouth is slightly open and his right hand is resting near the cake. The background shows large windows.",
+    "The same child is at the table, now looking towards the left with a slight smile. The candle on the cake is extinguished. His right hand is still near the cake, and he appears more relaxed.",
+    "The child is actively blowing out the candle. His cheeks are puffed out, his mouth is open in an 'O' shape, and the candle flame is visibly bent over to the side, indicating the force of his breath.",
+    "The child is looking at the lit candle on the cake with a gentle smile, his mouth closed. He is not yet actively blowing, appearing to be observing or preparing.",
+    "The child is looking intently at the lit candle, his mouth slightly open and cheeks beginning to puff. His right hand is raised and slightly closer to the cake, showing increased focus and preparation to blow."
+  ],
+  "reasoning": "The sequence of events follows the natural progression of blowing out a birthday candle: \n1.  **Preparation/Observation (frame_3):** The child initially observes the lit candle with a smile, not yet actively blowing.\n2.  **Increased Focus/Pre-blow Breath (frame_0):** The child's gaze intensifies, mouth slightly open, likely taking a breath in preparation to blow. \n3.  **Immediate Pre-blow Action (frame_4):** The child's cheeks are starting to puff, hand is raised, indicating an imminent blow. This is a more pronounced preparation than frame_0.\n4.  **The Act of Blowing (frame_2):** The child's cheeks are fully puffed, mouth wide open, and the candle flame is visibly bent by the force of the breath, indicating the climax of blowing.\n5.  **Post-blow/Candle Out (frame_1):** The candle is extinguished, and the child looks away with a relaxed expression, signaling the completion of the action.",
+  "predicted_order": [
+    3,
+    0,
+    4,
+    2,
+    1
+  ],
+  "video": "v_BlowingCandles_g02_c03",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    4,
+    2,
+    1
+  ],
+  "is_correct": true
+}

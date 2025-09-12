@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A billiard table is shown mid-action, with a player's cue stick positioned over the cue ball near the top of the table. The cue ball and several colored balls are blurred, indicating motion, as they scatter across the light blue felt after a powerful strike, likely a break shot. One dark ball is near the center, and several other colored balls are spreading towards the cushions and pockets.",
+    "A billiard table with light blue felt shows numerous colored billiard balls scattered and stationary across its surface. The white cue ball rests near the top cushion, slightly to the right of the center line. Other balls include a black 8-ball near the left mid-pocket, a red ball near the center, and a yellow ball near the bottom right pocket. The arrangement suggests the balls have settled after a shot.",
+    "A billiard table is depicted with colored balls settled across its light blue surface. The white cue ball is positioned near the top cushion, slightly to the left of the center. Notable balls include a black 8-ball, a green ball, a pink ball, a blue ball, a red ball, and a yellow ball near the bottom right. The arrangement of balls, while similar, shows subtle differences in position compared to Frame 1 and Frame 4, particularly with the pink and blue balls on the left and the cue ball's position.",
+    "A clear shot of a billiard table with the balls racked in a tight triangle formation at the center, indicating the start of a game or a new rack. The white cue ball is placed at the top of the table, ready for the break shot. A score overlay is visible at the bottom right, displaying 'US Open 9-Ball Championship,' 'Mika Immonen 3,' and 'Ronnie Alcano 5,' with 'Race to 11 Games.'",
+    "A billiard table with light blue felt shows numerous colored billiard balls scattered and stationary across its surface. The white cue ball rests near the top cushion, slightly to the right of the center line. Other balls include a black 8-ball near the left mid-pocket, a red ball near the center, and a yellow ball near the bottom right pocket. The arrangement is identical to Frame 1, suggesting the balls have settled after a shot."
+  ],
+  "reasoning": "The logical progression of a billiards game dictates the order of these frames.\n\n1.  **Frame 3** clearly shows the balls racked in a triangle, with the cue ball positioned for the break shot. This is the definitive starting point for a new rack or game.\n\n2.  Following the rack, a break shot is taken. **Frame 0** captures the immediate aftermath of this shot, with the cue ball and several colored balls blurred due to motion, scattering across the table. This logically comes after the racked state.\n\n3.  After the break shot, the balls settle into their new positions. **Frame 1** shows a settled state of the balls on the table. The cue ball is near the top cushion, and other balls are distributed.\n\n4.  **Frame 4** is visually identical to Frame 1. Since all 5 frames must be ordered, and Frame 4 shows the exact same settled state as Frame 1, it must represent a moment immediately after Frame 1, where no further action has changed the ball positions. This could be a very short pause in the video or simply a duplicated frame from the sequence.\n\n5.  **Frame 2** shows a configuration of balls that is similar to Frames 1/4 but with distinct, albeit subtle, differences in the positions of several balls (e.g., the cue ball, the pink and blue balls on the left, and the black ball). This indicates that a subsequent shot was made *after* the state shown in Frames 1 and 4, and the balls have settled into these new positions. Therefore, Frame 2 comes last in this sequence, representing a later stage of the game after the initial break and at least one subsequent action.",
+  "predicted_order": [
+    3,
+    0,
+    1,
+    4,
+    2
+  ],
+  "video": "v_Billiards_g01_c05",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00013.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    2,
+    1,
+    4
+  ],
+  "is_correct": false
+}

@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "The player is mid-stroke, with the cue stick fully extended, having just made contact with the cue ball, which is impacting the tightly packed group of billiard balls. The balls are slightly disturbed but still largely in their racked formation.",
+    "The billiard balls are widely scattered across the table. The player is standing upright, observing the arrangement of the balls after the break shot has occurred. Several balls are near the rails and pockets, and a few are in the center.",
+    "The billiard balls are perfectly racked in a triangular formation at the foot spot of the table. The cue ball is placed on the head spot. The player is in a low stance, lining up for the break shot, with the cue stick poised.",
+    "The billiard balls are scattered across the table, in a different configuration than frame_1. The player is standing upright, looking at the table, assessing the situation after the break. Some balls are near pockets, others are in the mid-table.",
+    "The billiard balls are tightly racked. The cue ball is placed on the head spot. The player is in a low stance, preparing to execute the break shot. An on-screen graphic with player names and game information ('US Open 9-Ball Championship', 'SHANE VAN BOENING', 'JOSE PARICA', 'Race to 11 Games') is visible on the right side of the screen."
+  ],
+  "reasoning": "The sequence is determined by the progression of a typical pool break shot:\n\n1.  **Frame_2** is the starting point: The balls are perfectly racked, and the cue ball is placed, with the player taking an initial stance. This is the setup for a new rack.\n2.  **Frame_4** follows: The balls are still racked, the cue ball is in place, and the player is in a more focused, low stance, ready to strike. The on-screen score graphic further indicates the beginning of a game or a new rack.\n3.  **Frame_0** shows the execution of the break shot: The player's cue stick is fully extended, having just made contact with the cue ball, which is visibly disrupting the rack. This is the moment of impact during the break.\n4.  **Frame_1** comes next: After the break, the balls scatter across the table. The player has stood up and is observing the immediate outcome of the break. The balls are widely dispersed, and some might still be rolling or have just settled.\n5.  **Frame_3** is the final step in this sequence: The balls are still scattered, but their specific positions are different from frame_1 (e.g., the yellow ball's position is different, and the central cluster in frame_1 is dispersed in frame_3). This suggests that frame_3 represents a slightly later moment after the break, where all balls have settled, and the player is continuing to assess the table for the next shot.",
+  "predicted_order": [
+    2,
+    4,
+    0,
+    1,
+    3
+  ],
+  "video": "v_Billiards_g02_c04",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "is_correct": false
+}

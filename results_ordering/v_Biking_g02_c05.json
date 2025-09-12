@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A cyclist in a white, red, and black racing suit and helmet is actively pedaling a black bicycle with a disc rear wheel on a paved road. Another cyclist's wheel is partially visible on the far left. In the background, two dark vertical poles are positioned to the left of the main cyclist. The overall scene is bright under a clear sky, with a desolate landscape in the distance.",
+    "A cyclist in a racing suit and helmet is riding a bicycle on a paved road with clear yellow double lines in the foreground. Another cyclist's wheel is on the far left. The background consists of a flat, distant landscape under a bright sky. The main cyclist appears to be mid-pedal stroke, with their right leg moving upwards.",
+    "A cyclist in a racing suit and helmet is on a bicycle with their left foot on the ground, suggesting they are either starting or stopping. Their right leg is slightly forward. A single dark vertical pole is visible in the background to the right. The road is clear ahead, and the distant landscape is flat under a bright sky.",
+    "A cyclist in a racing suit and helmet is pedaling a black bicycle with a disc rear wheel on a paved road. Another cyclist's wheel is partially visible on the far left. Two dark vertical poles are visible in the background, positioned to the right side behind the main cyclist. The cyclist's right leg is near the top of the pedal stroke.",
+    "A cyclist in a racing suit and helmet is riding a black bicycle with a disc rear wheel on a paved road. A green road sign with white text is visible on the far left side of the road, behind the main cyclist. Another cyclist's wheel is also on the far left. The background shows a flat, open landscape under a bright sky."
+  ],
+  "reasoning": "The frames depict a cyclist moving along a road, likely during a time trial or training session, possibly from a start. I will use the progression of background elements and the cyclist's action to determine the order.\n\n1.  **Frame 2 (Start/Stop):** This frame clearly shows the cyclist with their left foot on the ground and their right leg slightly forward, indicating a moment of being stationary or just starting/stopping. This is the most logical beginning or end point. Given the racing gear, a start is more probable.\n2.  **Frame 3 (Initial Movement, Approaching Poles):** After starting, the cyclist would begin to pedal. In this frame, the cyclist is actively pedaling (right leg high), and two distinct dark vertical poles appear in the background, to the right and slightly behind the cyclist.\n3.  **Frame 0 (Passing Poles):** The cyclist has advanced further along the road. The same two vertical poles from Frame 3 are now more centered/left in the background, indicating the cyclist has moved past them. The pedaling motion is consistent with continued forward movement.\n4.  **Frame 4 (Past Poles, Approaching Sign):** The cyclist has moved even further. The two poles are no longer prominently in view. Instead, a green road sign appears on the far left side of the road, behind the cyclist. This signifies a new landmark and continued progression.\n5.  **Frame 1 (Furthest Point, Open Road):** This frame shows the cyclist at what appears to be the furthest point along the road in this sequence. The background elements are more distant and less distinct, suggesting the cyclist is in a more open stretch of road. The yellow double lines on the road are more prominent, reinforcing the sense of covering more ground. The pedaling motion (right leg moving upwards from the back) is consistent with continuous riding.\n\nThis sequence logically follows the cyclist's transition from a static position to active riding, marked by the progressive movement of distinct background objects from the right side of the frame to the left (relative to the cyclist's forward motion or the camera's tracking).",
+  "predicted_order": [
+    2,
+    3,
+    0,
+    4,
+    1
+  ],
+  "video": "v_Biking_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c05/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    3,
+    0,
+    4
+  ],
+  "is_correct": false
+}

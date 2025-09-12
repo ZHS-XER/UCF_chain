@@ -1,33 +1,33 @@
 {
   "frame_descriptions": [
-    "A close-up shot shows a fair-skinned hand holding a single, small, round, vibrant green pod or fruit between the thumb and forefinger. The hand is positioned relatively high above a white plate with a black rim, on which several other green pods, some intact and some partially opened, are already resting. The background is blurred, suggesting a shallow depth of field, likely a kitchen setting.",
-    "This frame captures the moment the green pod is fully split open. The same hand's fingers are pressed firmly against the pod, revealing several small, light green peas nestled inside. The pod's outer skin is visibly torn, and the hand is still positioned over the white plate, which now contains more split pods and released peas.",
-    "Similar to Frame 0, the hand holds the intact green pod above the plate. However, the pod appears slightly lower and the fingers might be subtly adjusting their grip, preparing for the next action, but no visible deformation has occurred yet. The plate below still shows a mix of intact and split pods.",
-    "The hand is actively squeezing the green pod. The pressure from the thumb and forefinger is causing the pod to deform, and a slight crease or opening is just beginning to form, indicating the start of the splitting process. The pod is still largely intact but under clear stress, positioned over the plate.",
-    "This frame shows the conclusion of the splitting action. The small green peas from the pod have been released and are now scattered on the white plate, mixing with other peas and pod halves. The hand still holds the empty, split husk of the pod, having successfully extracted its contents and dropped them onto the plate."
+    "This frame shows two cyclists from a high angle, looking slightly down and to the right. The lead cyclist is on the left, wearing a white jersey and black shorts. The second cyclist is on the right, wearing a red and white jersey and black shorts. The second cyclist is riding very close behind the lead cyclist's rear wheel. A thick, dark vertical line (likely a tree trunk or pole) is visible in the background, to the right of the path, positioned somewhat to the left in the right half of the frame.",
+    "Two cyclists are on a paved path, viewed from a high angle. The lead cyclist is on the left, the second on the right. The second cyclist is riding with a noticeable gap behind the lead cyclist's rear wheel, making their relative position further back than in other frames but not the furthest. The dark vertical line seen in other frames is absent from the background on the right side; instead, there is an open view of distant trees and lighter brown ground.",
+    "This frame shows the two cyclists on the path. The second cyclist (right) has reduced the gap to the lead cyclist (left) compared to some other frames, but is not as close as in frame_4 or frame_0. The dark vertical line in the background on the right is visible, appearing somewhat thicker and slightly to the left compared to frame_3.",
+    "Two cyclists are seen from a high angle on a paved path. The lead cyclist is on the left. The second cyclist on the right is positioned furthest behind the lead cyclist, with the widest gap between their bikes compared to all other frames. A thin, dark vertical line is visible in the distant background on the right side of the path, positioned relatively far to the right in the frame.",
+    "The two cyclists are captured from a high angle. The second cyclist on the right is riding extremely close to the lead cyclist on the left, with minimal space between their bikes. The dark vertical line in the background on the right is at its thickest and furthest left position within the right half of the frame, indicating the cyclists are directly passing it or have just passed it."
   ],
-  "reasoning": "The sequence depicts the action of shelling a green pod or fruit, likely a pea pod. I ordered the frames based on the progressive stages of this action:\n\n1.  **Initial Hold (Frame 0):** The hand first picks up and holds the intact pod high above the plate, ready to begin.\n2.  **Adjustment/Preparation (Frame 2):** The hand slightly lowers the pod and adjusts its grip, still intact, in preparation for applying pressure. This is a subtle transition from the initial hold.\n3.  **Beginning to Squeeze (Frame 3):** Pressure is applied, and the pod starts to deform and show signs of opening, but is not fully split yet.\n4.  **Pod Split Open (Frame 1):** The pod has fully split due to the continued pressure, revealing the peas inside.\n5.  **Contents Released (Frame 4):** The peas have been extracted and released onto the plate, and the hand is left holding the empty husk. This represents the completion of the action for one pod.",
+  "reasoning": "The key to ordering these frames lies in two primary factors: the relative distance between the two cyclists and the movement of a distinct background feature, specifically a dark vertical line (likely a tree or pole) on the right side of the path.\n\n1.  **Background Feature Progression:** As the cyclists move forward, a stationary object on the right side of the path would appear on the far right of the frame, move left across the frame as the cyclists approach and pass it, increase in apparent thickness as it gets closer, and then eventually disappear off the left side of the frame (or the left edge of the right-hand view).\n    *   **frame_3:** The vertical line is thin and positioned furthest to the right in the frame, suggesting it's just coming into view or is still far away.\n    *   **frame_2:** The line has moved slightly to the left and appears thicker, indicating the cyclists are closer to it.\n    *   **frame_0:** The line is now more prominent, further to the left, and thicker, clearly visible next to the second cyclist.\n    *   **frame_4:** The line is at its thickest and furthest to the left within this sequence, almost parallel to the second cyclist's position, suggesting they are passing it at its closest point.\n    *   **frame_1:** The vertical line is completely gone from the frame, and the background is open, indicating the cyclists have passed this feature.\n    This gives a consistent background progression: **3 -> 2 -> 0 -> 4 -> 1**.\n\n2.  **Cyclist Relative Position:** Let's cross-reference this background progression with the relative positions of the cyclists, specifically the gap between the lead cyclist's rear wheel and the second cyclist's front wheel. This should provide a narrative of their interaction.\n    *   **frame_3:** The second cyclist is furthest back with the widest gap. This makes sense as a starting point if they are trying to close a gap.\n    *   **frame_2:** The second cyclist has moved closer to the lead cyclist, reducing the gap. This implies they are actively closing the distance.\n    *   **frame_0:** The second cyclist has moved even closer, further reducing the gap.\n    *   **frame_4:** The second cyclist is now extremely close to the lead cyclist, almost touching wheels, indicating they have successfully closed the gap.\n    *   **frame_1:** After being very close, the second cyclist has fallen back slightly, creating a noticeable gap again.\n\nThis combined analysis provides a coherent story: The second cyclist starts furthest back (frame_3), progressively closes the gap to the lead cyclist (frame_2 -> frame_0 -> frame_4), and then falls back slightly (frame_1). Simultaneously, a background feature appears, is passed, and then disappears. Both elements strongly support the temporal order **3 -> 2 -> 0 -> 4 -> 1**.",
   "predicted_order": [
-    0,
-    2,
     3,
-    1,
-    4
+    2,
+    0,
+    4,
+    1
   ],
   "video": "v_Biking_g02_c02",
   "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c02/frame_00005.jpg",
     "data/frames/Biking/v_Biking_g02_c02/frame_00001.jpg",
-    "data/frames/Biking/v_Biking_g02_c02/frame_00004.jpg",
     "data/frames/Biking/v_Biking_g02_c02/frame_00002.jpg",
-    "data/frames/Biking/v_Biking_g02_c02/frame_00003.jpg",
-    "data/frames/Biking/v_Biking_g02_c02/frame_00005.jpg"
+    "data/frames/Biking/v_Biking_g02_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00003.jpg"
   ],
   "correct_order": [
-    0,
-    2,
-    3,
     1,
-    4
+    2,
+    4,
+    3,
+    0
   ],
-  "is_correct": true
+  "is_correct": false
 }

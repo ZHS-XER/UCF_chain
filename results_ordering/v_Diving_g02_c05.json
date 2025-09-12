@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "This frame shows a wide shot of a swimming pool area. The diving board is visible on the left, but it is empty. A person is sitting on a chair next to the pool on the right. In the water, directly below the diving board, a diver is partially submerged, indicated by a slight disturbance in the water's surface, suggesting they have just entered or are about to surface.",
+    "This frame captures the diver standing upright on the diving board, with both arms extended straight up above their head. Their body is taut and aligned, indicating a preparatory stance for a dive. The person is still seated by the pool on the right.",
+    "In this frame, the diver is in the initial phase of jumping from the diving board. Their body is slightly airborne, having just left the board, with knees bent and arms positioned behind them, generating momentum. The diving board is now clear of the diver's feet. The person by the pool remains seated.",
+    "This frame shows the diver in mid-air, well above the diving board and the water. They are performing a dive, with their body in a tucked or bent position, actively rotating. The person on the chair by the pool is still visible.",
+    "This frame presents a view of the pool area, similar to frame 0 and 4. The diving board is empty, and the water surface appears calm or nearly calm, with no immediate signs of a diver or recent splash. The person is sitting on the chair by the pool on the right side."
+  ],
+  "reasoning": "The sequence depicts a diver performing a dive from a diving board. I determined the order by following the natural progression of a dive:\n\n1.  **Starting Point (frame_4):** The diving board is empty, and the water is calm. This represents the scene before the dive begins.\n2.  **Preparation (frame_1):** The diver is on the board, standing tall with arms raised, signaling they are about to begin their dive.\n3.  **Take-off (frame_2):** The diver has just pushed off the board, their body is slightly airborne but still close to the board, initiating the jump.\n4.  **Mid-air Maneuver (frame_3):** The diver is fully in the air, performing the acrobatic part of the dive, clearly above the board and water.\n5.  **Water Entry/After Entry (frame_0):** The diver has entered the water, and is partially submerged, creating ripples. This is the final stage among the provided frames.\n\nThe progression from an empty board to preparation, take-off, mid-air action, and then water entry forms a logical and chronological sequence.",
+  "predicted_order": [
+    4,
+    1,
+    2,
+    3,
+    0
+  ],
+  "video": "v_Diving_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c05/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00005.jpg"
+  ],
+  "correct_order": [
+    2,
+    1,
+    3,
+    0,
+    4
+  ],
+  "is_correct": false
+}

@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A male athlete, dressed in a black and white track uniform, is in motion on a reddish-brown track. He is running with his left leg forward and right leg back, arms bent at the elbows, appearing to be in the approach phase of a high jump. The text 'Boys High Jump' is overlaid in the bottom right corner. In the background, there's an indoor sports facility with yellow walls and white pillars.",
+    "A blurry shot shows the athlete landing on a blue high jump mat. His body is mostly horizontal, with his head near the mat and his legs elevated, appearing to cross over the red high jump bar which is still visible above him. The motion blur suggests an active landing or fall.",
+    "The athlete is captured mid-air, attempting to clear the high jump bar. He is positioned over the red bar, with his back facing the blue landing mat, and his body is arched, indicating the peak or descent phase of his jump. The metal uprights of the high jump stand are visible on either side of the bar.",
+    "A male athlete, wearing a black and white track uniform, is running on a reddish-brown track towards the left side of the frame. He is further away from the high jump apparatus than in frame 0, appearing to be in the earlier stages of his approach. The text 'Boys High Jump' is overlaid in the bottom right corner. The background shows an indoor facility with orange and white walls.",
+    "The athlete is lying on his back on a blue high jump mat. The red high jump bar has fallen and is resting on the mat near his right arm and torso. His legs are bent, and he appears to have fully landed after the jump, with the bar having been knocked down."
+  ],
+  "reasoning": "I analyzed the progression of a high jump event: approach, takeoff, clearance, landing, and aftermath. \n\n1.  **Approach (frames 3 and 0):** Frame 3 shows the athlete further away and earlier in the running approach. Frame 0 shows him closer to the takeoff point, still running but in a more advanced stage of the approach. Thus, 3 comes before 0.\n2.  **Clearance (frame 2):** After the approach, the athlete jumps over the bar. Frame 2 clearly depicts him mid-air, going over the bar.\n3.  **Landing (frame 1):** Following the clearance, the athlete lands on the mat. Frame 1 shows him in the process of landing, with his body mostly horizontal and legs elevated, indicating the immediate moment after clearing the bar and before fully settling.\n4.  **Aftermath (frame 4):** Frame 4 shows the athlete fully landed on the mat, with the high jump bar having fallen and resting beside him. This is the final state after the jump and landing are complete.\n\nTherefore, the logical temporal sequence is 3 (early approach), 0 (late approach), 2 (clearing the bar), 1 (in the process of landing), and 4 (fully landed with bar down).",
+  "predicted_order": [
+    3,
+    0,
+    2,
+    1,
+    4
+  ],
+  "video": "v_HighJump_g02_c04",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c04/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c04/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c04/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c04/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c04/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    3,
+    2,
+    1,
+    4
+  ],
+  "is_correct": false
+}

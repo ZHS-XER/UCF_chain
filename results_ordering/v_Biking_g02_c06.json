@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "Frame_0 shows two cyclists in motion on a clear day, with bare trees in the background. The cyclist in the foreground, wearing a red and white jersey, is on the left, slightly ahead or drawing even with the second cyclist, whose blue helmet and part of a dark jersey are visible on the right. Both are on racing bicycles, and the lead bike features a solid disc rear wheel.",
+    "Frame_1 depicts two cyclists side-by-side, also against a backdrop of bare trees. The cyclist in the foreground, wearing a white and black jersey, is on the right and appears to be slightly ahead. The second cyclist, wearing a red and white jersey, is on the left, positioned behind the first cyclist's rear wheel. Both are actively pedaling.",
+    "Frame_2 focuses on a single cyclist in a red and white jersey, seen from the side as they pedal. The right foot is near the top of the pedal stroke. The background is a sparse forest of bare trees under a bright sky.",
+    "Frame_3 shows the same cyclist in the red and white jersey from a side profile, mid-pedal stroke. The right foot is slightly lower than in frame_2. A subtle reflection is visible on the light ground beneath the bike, suggesting a smooth or damp surface. The background remains consistent with bare trees.",
+    "Frame_4 captures the cyclist in the red and white jersey from the side, continuing their pedal stroke. The right foot is further down, nearing the bottom of the stroke. The setting with bare trees in the background is consistent with the other frames focusing on this cyclist."
+  ],
+  "reasoning": "The core narrative across these frames involves two cyclists, with a clear change in their relative positions. Frames 2, 3, and 4 exclusively show the cyclist in the red and white jersey, progressing through a single pedal stroke. Frame 2 shows the right foot at the top of the stroke, frame 3 shows it moving down, and frame 4 shows it nearing the bottom. Therefore, the internal order for these three frames is 2 -> 3 -> 4.\n\nFrames 0 and 1 show both cyclists. In frame 1, the cyclist in the white and black jersey is clearly ahead, with the red and white cyclist trailing behind. In frame 0, the red and white cyclist is on the left, appearing to be alongside or slightly ahead of the other cyclist, who is now less prominent on the right. This indicates an overtaking maneuver or a shift in leading position. Thus, frame 1 must temporally precede frame 0.\n\nCombining these observations, the most logical sequence tells a story of the red and white cyclist catching up and overtaking the other rider. The frames showing the red and white cyclist in action (2, 3, 4) would naturally occur during the effort of closing the gap or maintaining speed to complete the overtake. Therefore, the sequence begins with the red and white cyclist behind (frame 1), then shows their pedaling effort (frames 2, 3, 4), and concludes with them alongside or ahead (frame 0).",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "video": "v_Biking_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c06/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    0,
+    3,
+    4,
+    2
+  ],
+  "is_correct": false
+}

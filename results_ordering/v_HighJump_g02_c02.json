@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A female athlete, dressed in black athletic wear, stands on a red track with her body angled slightly forward. Her left leg is bent and forward, while her right leg is extended backward, suggesting she's pushing off or in an early stride. A white line is visible on the track. Behind her, a male figure in a white shirt and tan pants stands. Yellow barriers are in the background.",
+    "The athlete is in mid-run on the track, moving from right to left across the frame. She is further away from the camera, with her body leaning forward, indicating she is gaining speed in her approach to the high jump. The high jump bar is visible in the upper middle of the frame, but the blue landing mat is not yet in view.",
+    "A female athlete in a black outfit stands on a red track, seemingly adjusting her stance. Her left foot is forward, and her right foot is slightly behind, with her body turned slightly to the right. A male figure in a white shirt is behind her. Yellow barriers are in the background. This appears to be a very early stage of her preparation or initial setup.",
+    "The athlete is in a full sprint on the track, much closer to the camera than in frame_1. She is in mid-stride, with both feet off the ground, demonstrating powerful acceleration. Her body is in a dynamic running pose, moving from right to left. The background shows yellow barriers and other people, consistent with the earlier frames, but the high jump bar is not yet visible, suggesting she is still on her approach run.",
+    "The athlete is airborne, actively clearing the high jump bar using the Fosbury Flop technique. Her back is arched over the horizontal bar, and her legs are bent upwards. The blue landing mat is clearly visible beneath her. This frame captures the peak moment of her jump."
+  ],
+  "reasoning": "The sequence of a high jump involves initial preparation, a run-up to gain momentum, and then the jump itself. \n\n1.  **Frame 2** shows the athlete in a relatively static or early adjustment stance at the starting point, before significant motion begins.\n2.  **Frame 0** follows as the athlete starts her approach, taking an initial stride from the starting line, showing more dynamic posture than frame_2 but still at the very beginning of the run.\n3.  **Frame 1** depicts the athlete in the early phase of her run-up, further away from the camera, where she is beginning to accelerate.\n4.  **Frame 3** shows the athlete in a full, powerful sprint, closer to the camera, indicating she is in the mid-to-late phase of her run-up, having built significant momentum.\n5.  **Frame 4** is the final action, where the athlete is captured clearing the high jump bar, at the peak of her jump over the mat. This is the conclusion of the high jump action.",
+  "predicted_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "video": "v_HighJump_g02_c02",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    1,
+    4
+  ],
+  "is_correct": false
+}

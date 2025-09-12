@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A person is standing on a diving platform with their back mostly to the camera, slightly turned towards the left side of the pool. Their arms are down by their sides. The pool surface shows a slight ripple.",
+    "The diving platform is empty. A distinct splash is visible in the water directly below where the diver would have been, indicating a person has just entered the water. The water around the splash is disturbed.",
+    "A person is standing on the diving platform with their back entirely to the camera. Their arms are slightly raised and held out from their body, suggesting a preparatory stance for a dive or a slight bounce. They are positioned closer to the edge than in frame 3 but further back than frame 0.",
+    "A person is standing on the diving platform with their back completely to the camera. Their arms are down by their sides. They appear to be in a relaxed, initial standing position, possibly slightly further back from the edge.",
+    "A person is captured in mid-air above the diving platform. Their body is arched, and their arms are raised and extended upwards, indicating they are in the process of a dive, having just sprung from the board."
+  ],
+  "reasoning": "The sequence of events describes a dive from a diving board into a pool. \n\n1.  **Initial Stance:** Frame 3 shows the diver standing on the platform with arms down, in an initial, relaxed position with their back fully to the camera. This is the earliest stage.\n2.  **Adjustment/Preparation (Arms Down):** Frame 0 shows the diver still with arms down, but slightly turned and perhaps a step closer to the edge, indicating a subtle adjustment from the initial stance.\n3.  **Active Preparation (Arms Up):** Frame 2 shows the diver with arms slightly raised, which is a common posture right before pushing off the board or during a preliminary bounce. This stage logically follows the standing positions with arms down.\n4.  **Mid-Air Jump:** Frame 4 captures the diver in the air, having clearly left the diving board. This is the peak action of the dive, occurring after all preparation on the board.\n5.  **Water Entry:** Frame 1 shows a splash in the water and the absence of the diver on the board, indicating the diver has entered the pool. This is the final stage depicted.",
+  "predicted_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "video": "v_Diving_g02_c04",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c04/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00004.jpg"
+  ],
+  "correct_order": [
+    0,
+    3,
+    2,
+    4,
+    1
+  ],
+  "is_correct": false
+}

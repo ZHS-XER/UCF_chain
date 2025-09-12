@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "The athlete, dressed in dark athletic wear, is lying on their back on a large blue high jump landing mat. Their head is oriented towards the left side of the frame, and their legs are slightly bent. The high jump bar is visible in the background, still resting on the standards, indicating a successful clear and landing.",
+    "The athlete, wearing a dark outfit, is suspended horizontally in mid-air, positioned directly over the high jump bar with their back facing the bar. They are executing the Fosbury Flop technique to clear the bar. The blue landing mat is clearly visible beneath them, ready for the landing.",
+    "The athlete, dressed in dark clothing and yellow athletic shoes, is captured in motion on a red track. They are running with a forward lean and their arms are actively pumping, suggesting they are in the acceleration phase of their run-up towards the high jump. Spectators are visible in the background.",
+    "The athlete, in dark attire and yellow shoes, is walking or jogging on a red track, looking towards the right side of the frame. Their posture is relatively upright and their movement appears to be at a slower pace, indicative of the initial phase of their approach or run-up for the high jump. Other people are seated in the background.",
+    "The athlete is captured in an upward motion, having just initiated their take-off for the high jump, positioned close to the high jump standard on the right. Their body is slightly blurred due to motion, and they are ascending with bent legs and raised arms, preparing to go over the bar, which is partially obscured by the standard."
+  ],
+  "reasoning": "The sequence of a high jump typically involves an approach, a run-up with acceleration, take-off, clearing the bar, and finally, landing. \n\n1.  **Frame 3** shows the athlete in an initial, slower approach or walk-through phase on the track, with an upright posture.\n2.  **Frame 2** follows as the athlete accelerates their run-up, leaning forward and actively running towards the jump point.\n3.  **Frame 4** depicts the athlete in the act of taking off, having launched upwards from the ground near the high jump standard, beginning their ascent over the bar.\n4.  **Frame 1** shows the athlete at the peak of their jump, clearing the bar using the Fosbury Flop technique, suspended over the bar.\n5.  **Frame 0** is the final stage, where the athlete has successfully landed on their back on the blue landing mat, with the bar still in place.",
+  "predicted_order": [
+    3,
+    2,
+    4,
+    1,
+    0
+  ],
+  "video": "v_HighJump_g02_c03",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    3,
+    2,
+    4,
+    1,
+    0
+  ],
+  "is_correct": true
+}

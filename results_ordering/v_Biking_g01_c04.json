@@ -1,33 +1,33 @@
 {
   "frame_descriptions": [
-    "A close-up shot of a hand holding a clear glass filled with a yellow-orange liquid and ice cubes. A smaller, clear bottle with a white cap is being used to pour a dark red liquid, likely grenadine, into the glass. The red liquid is visibly streaming downwards, beginning to create a layered effect with the lighter beverage.",
-    "A close-up shot of a finished layered drink in a clear glass, held by a hand. The drink displays distinct layers: a yellow-orange top layer, a slightly darker orange middle layer, and a vibrant red layer at the bottom. Several ice cubes are present. The pouring action has concluded, and the drink is ready.",
-    "A close-up shot of a hand holding a clear glass containing a few ice cubes. A larger, clear bottle of yellow-orange liquid, possibly orange juice or a similar mixer, is being tilted to pour its contents into the glass. The liquid is actively flowing into the glass.",
-    "A close-up shot of a hand holding a clear glass, now partially filled with a yellow-orange liquid and several ice cubes. The pouring from the first bottle has stopped, and the glass is about two-thirds full with the initial ingredient.",
-    "A close-up shot of a hand holding a clear glass containing a yellow-orange liquid and ice cubes. A small, clear bottle of dark red liquid is positioned above the glass, with its opening directed downwards, suggesting it is about to pour or has just started to pour a tiny drip, preparing to add the next ingredient."
+    "A child wearing a white helmet, white t-shirt, blue shorts, and elbow pads is riding a small red and white bicycle with training wheels on an asphalt surface. The child is facing slightly to the right, with their left leg extended as if pushing off or mid-pedal stroke. White lines mark the pavement, and the child's shadow is cast behind the bicycle.",
+    "A wide shot shows the child on the bicycle, now further away from the camera, riding directly into the distance on the asphalt. The houses in the background are more prominent. The child and bike appear smaller, and the shadow is longer and thinner behind the bike.",
+    "A close-up shot of the child on the bicycle, similar to frame_0. The child is angled slightly more towards the right side of the frame, and the white support of the training wheel is very prominent on the right rear wheel. The child's posture suggests an initial push or adjustment, with white lines on the pavement visible close to the bottom of the frame.",
+    "The child on the bicycle is at a mid-distance from the camera, riding away. The scene is wider than frames 0 and 2, but closer than frames 1 and 4. The child is moving away from the camera, and the houses in the background are clearly visible. The shadow is behind and slightly to the left of the bicycle.",
+    "The child on the bicycle is the furthest away from the camera, appearing very small at the far end of the paved area. The houses in the background are very distinct. The child is riding directly away from the camera, almost reaching the boundary of the visible asphalt. The shadow is long and thin behind the bicycle."
   ],
-  "reasoning": "The frames depict the process of mixing a layered drink. I determined the order by following the logical steps of beverage preparation:\n\n1.  **Initial Pour:** Frame 2 clearly shows the first ingredient, a yellow-orange liquid, being poured into a glass with ice. This must be the starting point.\n2.  **First Ingredient Settled:** Frame 3 shows the glass after the first liquid has been poured, now containing the yellow-orange liquid and ice. This logically follows the pouring action in Frame 2.\n3.  **Preparation for Second Pour:** Frame 4 shows the small bottle of red liquid being positioned over the glass, indicating the next ingredient is about to be added. This precedes the actual pouring of the red liquid.\n4.  **Second Pouring Action:** Frame 0 shows the red liquid actively being poured into the glass, creating a distinct stream and starting the layering effect. This follows the preparation in Frame 4.\n5.  **Finished Product:** Frame 1 displays the completed layered drink with all ingredients in place, and the pouring has stopped. This represents the final stage of the drink preparation.",
+  "reasoning": "The sequence of frames depicts a child riding a bicycle with training wheels, moving progressively further away from the camera. \n\n1.  **Frame 2 (Start - Closest, Initial Adjustment):** This frame shows the child closest to the camera, angled slightly, with the training wheel support very prominent. The child's posture suggests an initial stance or a very slow, starting movement. The white lines on the pavement are very near the bottom of the frame.\n2.  **Frame 0 (Moving Forward - Still Close):** From frame 2, the child has straightened out a bit and is clearly in motion, with the left leg extended in a pedal stroke or push-off. The bike and child are still relatively close to the camera, but the perspective has shifted, and the white lines on the pavement have moved further up in the frame, indicating forward movement from frame 2.\n3.  **Frame 3 (Mid-Distance):** The child has moved significantly further away from the camera compared to frames 0 and 2. The entire scene is wider, and the background houses are more discernible. The child is steadily riding away.\n4.  **Frame 1 (Further Away):** The child has moved even further into the distance than in frame 3. The child and bike appear smaller, and the background houses become more dominant in the scene.\n5.  **Frame 4 (Farthest Away - End Point):** This frame shows the child at the greatest distance from the camera, almost reaching the far end of the paved area. The child is very small in the frame, indicating the completion of the ride across the visible space.",
   "predicted_order": [
     2,
-    3,
-    4,
     0,
-    1
+    3,
+    1,
+    4
   ],
   "video": "v_Biking_g01_c04",
   "shuffled_frames": [
-    "data/frames/Biking/v_Biking_g01_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00002.jpg",
     "data/frames/Biking/v_Biking_g01_c04/frame_00005.jpg",
     "data/frames/Biking/v_Biking_g01_c04/frame_00001.jpg",
-    "data/frames/Biking/v_Biking_g01_c04/frame_00002.jpg",
-    "data/frames/Biking/v_Biking_g01_c04/frame_00003.jpg"
+    "data/frames/Biking/v_Biking_g01_c04/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00004.jpg"
   ],
   "correct_order": [
     2,
+    0,
     3,
     4,
-    0,
     1
   ],
-  "is_correct": true
+  "is_correct": false
 }

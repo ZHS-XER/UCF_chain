@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A person in dark athletic attire with a white headband is positioned near the high jump bar, appearing to be in the final phase of their approach or just at the point of take-off. They are upright, slightly bent, with their left leg potentially lifted, and the bar is visible on the uprights to their left. Another person is further in the background.",
+    "A person in dark athletic attire with a white headband is running on a red track, moving from left to right. They are in mid-stride, with their right leg forward, indicating a run-up. A blue barrier and a yellow wall are in the background.",
+    "A person in dark athletic attire with a white headband is shown jogging or walking on the track. They are looking towards the right, with their left leg forward and arms bent. This appears to be an earlier stage of movement, possibly a warm-up or the initial approach to the starting point for the run. Other people are in the background behind a blue barrier.",
+    "A person in dark athletic attire with a white headband is running on the track, moving from left to right, similar to frame 1 but with a more dynamic, faster running posture. Their right leg is forward, and their body is leaning into the stride. A small orange cone and a folding chair are visible to the left, indicating a path or boundary.",
+    "The person in dark athletic attire with a white headband is in the process of clearing the high jump bar. They are airborne, upside down, with their back arched over the bar, which remains in place on the uprights. A blue landing mat is visible below, indicating the successful act of jumping."
+  ],
+  "reasoning": "The sequence of a high jump typically involves an initial approach/warm-up, a run-up to gain momentum, a take-off, and then clearing the bar, followed by landing. \n\n1.  **Frame 2 (Initial Movement):** The athlete is jogging or walking, looking around. This suggests an initial phase, possibly a warm-up or the very beginning of the approach before the main run-up.\n2.  **Frame 1 (Beginning of Run-up):** The athlete is running, but the stride appears less aggressive than in Frame 3, suggesting an earlier stage of the run-up where speed is being built.\n3.  **Frame 3 (Accelerated Run-up):** The athlete is in a more powerful and faster running stride compared to Frame 1, indicating they are accelerating towards the take-off point with full momentum.\n4.  **Frame 0 (Take-off/Pre-jump):** The athlete is now very close to the high jump bar, positioned as if they are about to initiate the vertical leap or have just begun the upward trajectory. Their body is angled and focused on the bar.\n5.  **Frame 4 (Clearing the Bar):** This frame clearly shows the athlete in the air, inverted, and successfully clearing the high jump bar. This is the peak action of the jump, which occurs after the take-off.",
+  "predicted_order": [
+    2,
+    1,
+    3,
+    0,
+    4
+  ],
+  "video": "v_HighJump_g02_c06",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00005.jpg"
+  ],
+  "correct_order": [
+    2,
+    3,
+    1,
+    0,
+    4
+  ],
+  "is_correct": false
+}

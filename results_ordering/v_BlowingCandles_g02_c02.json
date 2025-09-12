@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A medium shot shows a bride in a white strapless wedding gown and long white gloves, leaning over a three-tier white wedding cake decorated with yellow roses. Her mouth is open and very close to the top of the cake, where the candles appear to be either just extinguished or flickering out, showing a faint light. A person holding a video camera is visible on the far left, and male guests in suits are in the background.",
+    "A medium shot shows the bride in her wedding gown, leaning over the wedding cake. Her lips are pursed, actively blowing at the lit candles on the top tier of the cake. The candles are clearly burning. A person with a video camera is on the left, and guests are in the background.",
+    "A medium shot shows the bride in her wedding gown, her face pulled back slightly from the cake, with a slight smile or expression of completion. Smoke is clearly rising from the top of the cake where the candles were. The candles are completely extinguished. A video camera operator is on the left, and guests are in the background.",
+    "A medium shot shows the bride in her wedding gown, leaning in significantly towards the wedding cake. Her lips are pursed, deeply engaged in blowing at the brightly lit candles on the cake's top tier. Her body is more bent forward compared to frame 1. A video camera operator and guests are visible.",
+    "A medium shot shows the bride in her wedding gown, leaning in very close to the wedding cake, with her lips pursed in the act of blowing. The candles on the top tier are brightly lit. Her posture appears to be at the peak of her leaning/blowing effort, very similar to frame 3, but potentially slightly further forward. A video camera operator and guests are visible."
+  ],
+  "reasoning": "The sequence of events depicted is the act of blowing out candles on a wedding cake. I will order the frames based on the state of the candles (lit, extinguishing, extinguished) and the bride's action (preparing to blow, actively blowing, reacting after blowing).\n\n1.  **Initial Blowing (Frame 1):** The bride is leaning in, her lips are pursed, and the candles are clearly lit. Her posture suggests she is initiating the blow, but not yet at the most intense part of the action.\n2.  **Active Blowing (Frame 3):** The bride is leaning in further than in frame 1, and her lips are pursed more intensely, indicating a more committed blowing action. The candles are still brightly lit.\n3.  **Peak Blowing (Frame 4):** The bride is leaning in the most, very close to the cake, with her lips pursed. This appears to be the most intense moment of blowing, just before the candles are extinguished. The candles are still lit.\n4.  **Candles Extinguishing (Frame 0):** The bride's mouth is open and very close to the cake. The candles show a very faint light or are just out, and there's no clear plume of smoke yet. This captures the immediate moment after the candles have been blown out, with her mouth still open from the exhale.\n5.  **Candles Extinguished & Aftermath (Frame 2):** The candles are completely out, and a distinct wisp of smoke is rising from them. The bride has pulled back slightly, and her facial expression suggests completion or a reaction (like a smile or relief). This is clearly the final stage of the action in these frames.",
+  "predicted_order": [
+    1,
+    3,
+    4,
+    0,
+    2
+  ],
+  "video": "v_BlowingCandles_g02_c02",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    3,
+    0,
+    2
+  ],
+  "is_correct": false
+}

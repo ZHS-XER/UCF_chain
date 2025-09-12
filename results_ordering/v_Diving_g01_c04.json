@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A diver is captured mid-air, just having pushed off the springboard. Her body is angled slightly upwards and away from the board, with her legs extended behind her as if propelling her upwards. A small ripple is visible in the water below.",
+    "The diver is in mid-air, inverted and descending towards the water. Her body is in a streamlined position, with arms extended above her head and legs together, indicating the final phase of a flip or rotation before entry. The springboard is visible below, and the water shows minimal disturbance.",
+    "The diver is in mid-air, higher above the springboard than in frame_0, in a tucked or piked position with her back partially towards the water. This suggests she is in the process of rotating after the initial take-off. Ripples are visible in the water, similar to frame_0.",
+    "The diver is captured at the moment of entry into the water, head-first and vertically aligned. A significant splash is created around her entry point, and ripples are radiating outwards across the pool surface.",
+    "The diver is standing on the springboard, facing away from the water, with her body poised as if preparing for the initial jump or bounce. Her arms are slightly bent and raised. The 'INDIANS' text is visible on the edge of the springboard platform."
+  ],
+  "reasoning": "I analyzed the progression of a dive, starting from the preparation on the board, through the take-off, mid-air maneuvers, and finally the entry into the water. \n\n1.  **frame_4** shows the diver standing on the springboard, preparing to dive. This is clearly the initial step.\n2.  **frame_0** captures the diver immediately after pushing off the springboard, gaining initial height and momentum. Her body is still relatively upright and extending upwards.\n3.  **frame_2** shows the diver higher in the air, having executed a tuck or pike, indicating further progression in the dive's rotation and elevation after the initial push-off in frame_0.\n4.  **frame_1** depicts the diver completing her aerial rotation, now inverted and descending towards the water in a streamlined position, just before entry.\n5.  **frame_3** illustrates the final stage, with the diver entering the water, creating a splash. This is the culmination of the dive's aerial phase.",
+  "predicted_order": [
+    4,
+    0,
+    2,
+    1,
+    3
+  ],
+  "video": "v_Diving_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c04/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    3,
+    1,
+    2
+  ],
+  "is_correct": false
+}

@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A person in a blue swimsuit is captured mid-air, positioned just above the surface of a blue swimming pool. Their body is slightly bent, arms extended forward, and legs are together, indicating they are in the final phase of entering the water. There is a minimal disturbance on the water surface directly below them, suggesting imminent or initial contact. The diving board is visible to the left, and a grassy area with trees and distant structures is in the background.",
+    "The diving board is completely empty, and the surface of the pool water shows distinct ripples and movement, particularly around the area where a diver would have entered. No diver is visible either on the board or in the air. The background remains consistent with a pool setting.",
+    "A person in a blue swimsuit is standing on the edge of the white diving board, with their arms raised high above their head, palms together. Their knees are slightly bent, indicating a preparatory stance for a jump or dive. The water in the pool below is calm. The background shows the pool area.",
+    "A person in a blue swimsuit is high in the air, above the diving board and the pool. They are in an inverted position, performing a handstand or a highly contorted aerial maneuver, with their legs extended upwards towards the sky and their body nearly vertical. The water surface below is calm, and the diving board is empty.",
+    "The diving board is empty, and the surface of the pool water is relatively calm and undisturbed. There are no people visible in the immediate vicinity of the diving board or pool edge. This frame shows a tranquil state of the pool area, possibly before any action or long after it has concluded and the water has settled."
+  ],
+  "reasoning": "The frames depict a person performing a dive into a swimming pool. The correct temporal order can be determined by following the natural progression of a diving action: from an initial calm state, to preparation on the board, the aerial maneuver, water entry, and finally the aftermath.\n\n1.  **Frame 4 (Initial Calm State):** The diving board is empty, and the water is perfectly calm, suggesting no activity has started yet.\n2.  **Frame 2 (Preparation):** The diver is on the board, in a ready position with arms raised, about to jump. This logically follows the calm state.\n3.  **Frame 3 (Mid-Air Maneuver):** The diver is high in the air, having just left the board, performing an inverted aerial stunt. This is the peak of the jump/dive.\n4.  **Frame 0 (Water Entry):** The diver is now much closer to the water, orienting for entry. This occurs after the aerial maneuver and just before full submersion.\n5.  **Frame 1 (Aftermath):** The diver is no longer visible, and the water surface shows significant ripples, indicating the diver has just entered and submerged. This is the final visible stage of the dive's immediate aftermath.",
+  "predicted_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "video": "v_Diving_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c07/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00005.jpg"
+  ],
+  "correct_order": [
+    3,
+    2,
+    0,
+    1,
+    4
+  ],
+  "is_correct": false
+}

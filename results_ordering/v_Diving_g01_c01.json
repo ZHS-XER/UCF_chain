@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A diver is standing on a diving board, slightly bent at the waist with head down. The diving board is slightly depressed, and there are ripples visible in the pool water near the board. The diver's arms are slightly forward.",
+    "A diver is significantly bent at the knees and waist, with arms out to the sides and slightly back. The head is down, looking towards the water. The diving board is heavily depressed, indicating a strong downward force, and there are prominent ripples in the water.",
+    "A diver is standing on the diving board, with a slight bend in the knees and waist, and head looking down. The diving board is minimally depressed, and there are light ripples in the water near the board. The diver's arms are hanging down by their sides.",
+    "A diver is deeply bent over, almost in a squat position, with the head very low, close to the water surface. The arms are extended forward. The diving board is at its maximum depression, and significant water disturbance is visible.",
+    "A diver is standing upright on the diving board, with a minimal bend in the knees and head slightly down. The diving board appears almost flat, and the water in the pool is relatively calm with very few ripples."
+  ],
+  "reasoning": "The frames depict stages of a diver preparing for a dive, loading the springboard, and beginning to launch. I ordered the frames by observing the diver's posture, the degree of depression of the diving board, and the amount of water disturbance.\n\n1.  **Frame 4 (Initial Stance):** The diver is standing most upright, the board is nearly flat, and the water is calm. This represents the beginning of the sequence.\n2.  **Frame 2 (Initial Bend/Pre-Load):** The diver has a slight bend, the board is slightly depressed, and initial ripples appear. This is the first movement after the initial stance.\n3.  **Frame 0 (Further Bend/Loading):** The diver is more bent than in frame 2, the board is slightly more depressed, and the water ripples are more pronounced. This indicates a progression in loading the board.\n4.  **Frame 3 (Maximum Compression):** The diver is in the deepest squat, with the head lowest and arms forward. The board is maximally depressed, storing the most potential energy. This is the peak of the downward motion.\n5.  **Frame 1 (Beginning of Launch):** The diver's body is starting to uncoil; the torso is slightly more upright than in frame 3, and the arms are starting to move outwards/backwards. The board is still heavily depressed but is beginning to spring upwards, indicating the start of the launch phase.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_Diving_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    2,
+    3,
+    1
+  ],
+  "is_correct": false
+}

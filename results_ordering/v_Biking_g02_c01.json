@@ -1,33 +1,33 @@
 {
   "frame_descriptions": [
-    "A person's hand, seen from a slightly elevated angle, holds a small, white rectangular tile firmly between the thumb and index finger. The tile is held vertically, presenting its smooth face. The background is a soft, light blur, indicating no immediate interaction with a specific surface.",
-    "The hand continues to hold the small, white rectangular tile. Compared to the previous frame, there's a minor shift in the hand's position or the tile's angle, suggesting a slight adjustment in grip or perspective, but it remains held upright in mid-air. The background remains a soft, light blur.",
-    "The person's hand is holding the small, white rectangular tile with a slightly different grip, now gripping it more from the bottom edge rather than the sides. The tile is angled somewhat, possibly in preparation for movement. The background is still a soft, light blur, indicating the tile is not yet interacting with a specific surface.",
-    "The hand is now actively moving the small, white rectangular tile towards a larger, light grey or white textured surface, which is visible in the background. The tile is being lowered, partially obscured by the fingers, as it approaches the surface for placement.",
-    "The hand has now placed the small, white rectangular tile against the larger, light grey or white textured surface. The hand continues to hold or press the tile into place, with more of the tile's face now visible against the background, signifying the completion of the placement action."
+    "A side-on view of a cyclist on a road, pedaling a bicycle with a distinctive black rear disc wheel featuring white curved markings. The cyclist's left leg is at the top of the pedal stroke. The background is a blurry brown and green, suggesting foliage, and the road surface is light-colored and textured.",
+    "A rear-side view of a cyclist wearing a blue helmet and light top, hunched over a time trial bike. Their left leg is at the bottom of the pedal stroke. A second, smaller cyclist is visible behind and slightly to the right, appearing somewhat blurred and further back. The road and background are similar to other frames.",
+    "A rear-side view of a cyclist on a time trial bike, similar to frame_1. Their left leg is in an ascending position, past the bottom of the stroke. A second cyclist is visible behind, appearing relatively closer and clearer than in frame_1, almost drafting the main cyclist. The background and road are consistent.",
+    "A rear-side view of a cyclist, similar to frame_1 and frame_2. Their left leg is at the top of the pedal stroke. The second cyclist is significantly further back, very small, and almost out of the frame, indicating the main cyclist has pulled far ahead. The background and road are consistent.",
+    "A front-side view of a cyclist, appearing closer to the camera. The cyclist's right leg is near the top of the pedal stroke, which means the left leg would be at the bottom. No second cyclist is visible. The background is a blurry patch of brown/green, and the road is light-colored."
   ],
-  "reasoning": "The frames depict a sequence of a person handling a small tile, from holding it in mid-air to placing it on a surface. The reasoning follows a logical progression of actions:\n\n1.  **Initial Hold and Adjustment (Frames 2 then 3):** Frames 2 and 3 show the tile held steadily in mid-air against a plain, blurry background. Frame 2 appears to be the initial, clear presentation of the tile. Frame 3 shows a very subtle shift or adjustment in the hand's grip or the tile's angle compared to Frame 2, indicating a minor repositioning after the initial hold.\n2.  **Preparation for Movement (Frame 0):** Following the initial holds, Frame 0 shows a different grip on the tile, held more from the bottom edge and at a different angle. This suggests a preparatory action, possibly orienting the tile before moving it towards a target surface, while still not interacting with a distinct background surface.\n3.  **Approach to Surface (Frame 4):** Frame 4 is the first frame where a distinct, textured light grey/white surface appears in the background. The hand is actively lowering the tile towards this surface, with the tile partially obscured by the fingers, indicating the start of the placement action.\n4.  **Placement on Surface (Frame 1):** Frame 1 shows the culmination of the action. The tile is now firmly against the textured surface, and the hand is holding or pressing it into position. More of the tile's face is visible against the background, indicating it has been successfully placed.",
+  "reasoning": "The primary cues for ordering these frames are the relative position of the second cyclist and the main cyclist's pedal stroke. However, a strict pedal stroke progression suggests the frames are not taken in rapid succession, allowing for more than one pedal revolution between some frames. Therefore, the overall narrative, particularly the second cyclist's movement, takes precedence.\n\n1.  **Second Cyclist's Position:** Frames 1, 2, and 3 clearly show a second cyclist. In `frame_2`, the second cyclist appears closest and most distinct, suggesting they are drafting the main cyclist. In `frame_1`, they are slightly further back and more blurred. In `frame_3`, they are much further back and very small, almost out of view. This indicates a progression where the main cyclist is pulling away from the second cyclist: **2 (closest) -> 1 (mid-distance) -> 3 (farthest)**.\n\n2.  **Placing Frames 0 and 4:** Frames 0 and 4 do not show the second cyclist. This suggests they occur either before the second cyclist is prominently in view, or after they have completely dropped out of sight. It's common for videos to start with an establishing shot of the main subject alone and end with them alone.\n    *   `frame_4` is a front-side view, with the left leg at the bottom of the stroke (right leg is at the top). This could be an initial leading shot of the main cyclist.\n    *   `frame_0` is a side-on view, with the left leg at the top of the stroke. This could be a concluding shot after the second cyclist is completely out of frame.\n\n3.  **Integrating Pedal Stroke with Narrative:**\n    *   **Starting with `frame_4`**: Left leg at bottom. No second cyclist. Camera is front-side.\n    *   **Transition to `frame_2`**: The camera moves to a rear-side tracking shot, and the second cyclist is now visible, closest to the main cyclist. The main cyclist's left leg is ascending. (This implies time has passed for the leg to move from bottom to ascending, potentially more than one stroke).\n    *   **Continuing to `frame_1`**: The main cyclist pulls away slightly, the second cyclist is now further back. The main cyclist's left leg is at the bottom of the stroke. (Between `frame_2` and `frame_1`, the leg goes from ascending, through the top, and back to the bottom, indicating roughly one full revolution and a bit). \n    *   **Moving to `frame_3`**: The main cyclist has pulled significantly further away, the second cyclist is very far back. The main cyclist's left leg is at the top of the stroke. (Between `frame_1` and `frame_3`, the leg goes from bottom to top, which is half a revolution).\n    *   **Ending with `frame_0`**: The camera shifts to a side-on view, and the main cyclist is alone, the second cyclist completely gone. The main cyclist's left leg is at the top of the stroke. (This could be a slightly later capture from `frame_3` or a different angle with the leg still at the top).\n\nThis sequence `4 -> 2 -> 1 -> 3 -> 0` provides a coherent narrative for the second cyclist's movement (appearing, then being dropped) and allows for the observed pedal stroke changes over a slightly longer period than a single, high-frame-rate revolution.",
   "predicted_order": [
-    2,
-    3,
-    0,
     4,
-    1
+    2,
+    1,
+    3,
+    0
   ],
   "video": "v_Biking_g02_c01",
   "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c01/frame_00001.jpg",
     "data/frames/Biking/v_Biking_g02_c01/frame_00003.jpg",
     "data/frames/Biking/v_Biking_g02_c01/frame_00005.jpg",
-    "data/frames/Biking/v_Biking_g02_c01/frame_00001.jpg",
-    "data/frames/Biking/v_Biking_g02_c01/frame_00002.jpg",
-    "data/frames/Biking/v_Biking_g02_c01/frame_00004.jpg"
+    "data/frames/Biking/v_Biking_g02_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00002.jpg"
   ],
   "correct_order": [
-    2,
-    3,
     0,
     4,
-    1
+    1,
+    3,
+    2
   ],
-  "is_correct": true
+  "is_correct": false
 }

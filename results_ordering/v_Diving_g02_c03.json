@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A person is mid-air over a swimming pool, having just jumped off a diving board. They are mostly horizontal with their arms slightly spread, descending towards the water. A person is sitting on a platform to the right, and another person is partially visible in the water on the left.",
+    "A person is in the process of entering the swimming pool feet-first, with their legs and lower body submerged, creating a splash. Their upper body is still visible above the water. A person is sitting on a platform to the right, and another person is partially visible in the water on the left.",
+    "The water in the swimming pool shows ripples and bubbles, indicating a recent entry. The diver is fully submerged and not visible. A person is sitting on a platform to the right, and another person is partially visible in the water on the left, swimming.",
+    "A person is mid-air above a swimming pool, having just launched off a diving board. They are in an upright, vertical position with arms raised, at the peak or initial phase of their jump. A person is sitting on a platform to the right, and another person is partially visible in the water on the left.",
+    "A person stands on the edge of a diving board, facing away from the camera, preparing to jump into the swimming pool. Their body is straight. A person is sitting on a platform to the right, and another person is partially visible in the water on the left."
+  ],
+  "reasoning": "The sequence of events depicts a person performing a dive into a swimming pool. \n1. **Preparation (frame_4):** The diver is standing on the diving board, ready to jump. This is the initial state.\n2. **Take-off/Ascent (frame_3):** The diver has just left the board and is in the air, in an upright position, indicating the beginning of the jump or the highest point.\n3. **Mid-air Descent/Rotation (frame_0):** The diver is lower than in frame_3 and more horizontal, indicating they are descending and rotating before entering the water.\n4. **Water Entry (frame_1):** The diver's legs and lower body are entering the water, creating a splash. This is the moment of impact.\n5. **Submerged/Aftermath (frame_2):** The diver is fully submerged, and the water shows ripples and bubbles from the entry, indicating the action has just concluded.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "video": "v_Diving_g02_c03",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c03/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c03/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c03/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c03/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c03/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "is_correct": true
+}

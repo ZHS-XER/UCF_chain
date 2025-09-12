@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A pool player stands, leaning slightly over a blue-felt pool table with both hands on the rail. There are numerous colored balls scattered across the table, with the cue ball visible near the top left pocket. The background shows spectators and promotional banners, with a 'BCn' logo at the top and 'BilliardClub.net' at the bottom.",
+    "A pool player is bent over the blue-felt table, aiming a cue stick at a cluster of 3-4 colored balls in the mid-right area. The cue ball is positioned to strike one of these balls. Fewer balls are on the table compared to frame_0 and frame_3. Text overlays at the bottom read 'THE 2008 U.S. OPEN 9-BALL CHAMPIONSHIP', 'Chalk-Off Arena - Chesapeake, Virginia', and 'BilliardClub.net'. A 'BCn' logo is at the top.",
+    "A pool player is bent over the blue-felt table, precisely aiming a cue stick at the same cluster of colored balls as in frame_1 and frame_4. The cue stick is at its most forward position, almost touching the cue ball, indicating the moment just before impact. The player's head is low and focused. Text overlays are identical to frame_1 and frame_4.",
+    "A pool player stands upright, further back from the table, observing the numerous scattered colored balls. The cue ball is in the middle-left of the table. The ball arrangement is different from frame_0, but there are still many balls. The background shows spectators and promotional banners. A 'BCn' logo is at the top and 'BilliardClub.net' at the bottom.",
+    "A pool player is bent over the blue-felt table, cue stick drawn back, in a preparatory stance for a shot on a cluster of colored balls. The balls are in the same configuration as frame_1 and frame_2. The player's left hand is on the table, forming a bridge. Text overlays are identical to frame_1 and frame_2."
+  ],
+  "reasoning": "The primary indicator for the temporal order is the change in the number of balls on the table and the player's action (standing vs. aiming). Additionally, the presence of specific event text at the bottom of the screen (frames 1, 2, 4) suggests a distinct segment of the video compared to frames 0 and 3 (which lack this text).\n\n1.  **Grouping by context:** Frames 0 and 3 show the player standing and observing a table with many scattered balls, and they lack the detailed event text. Frames 1, 2, and 4 show the player bent over, aiming at a cluster of fewer balls, and prominently display the event text 'THE 2008 U.S. OPEN 9-BALL CHAMPIONSHIP'. This strongly suggests that frames 0 and 3 occur earlier in the video, representing an earlier stage of the game (more balls, observation), while frames 1, 2, 4 represent a later stage (fewer balls, specific shot execution).\n\n2.  **Ordering frames 1, 2, 4 (the shot sequence):** These three frames clearly depict a single shot being prepared and executed. We can infer the sequence by the player's cue stick position and posture:\n    *   **Frame 4:** The player is bent over, and the cue stick is drawn back, in a preparatory 'backswing' position before the stroke.\n    *   **Frame 1:** The cue stick has moved forward from frame_4, closer to the cue ball, as the player adjusts aim or starts the forward stroke.\n    *   **Frame 2:** The cue stick is at its most forward position, likely at the point of impact or just before striking the cue ball. The player's head is lowest and most focused.\n    Therefore, the sequence for the shot is **4 -> 1 -> 2**.\n\n3.  **Ordering frames 0 and 3 (the observation phase):** Both frames show many balls and the player standing. Without an obvious ball movement between them, we need to infer based on player posture. \n    *   **Frame 3:** The player is standing more upright and further back from the table, suggesting a general observation of the table's layout.\n    *   **Frame 0:** The player is leaning slightly over the table with hands on the rail, suggesting a more focused observation or contemplation of a specific shot after some play has occurred.\n    It's logical that a more general observation (3) precedes a more focused one (0).\n\n4.  **Combining all groups:** The overall progression is from general observation (many balls) to focused observation, and then to a specific shot execution (fewer balls). Thus, the combined order is **3 -> 0 -> 4 -> 1 -> 2**.",
+  "predicted_order": [
+    3,
+    0,
+    4,
+    1,
+    2
+  ],
+  "video": "v_Billiards_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    2,
+    3,
+    0
+  ],
+  "is_correct": false
+}

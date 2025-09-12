@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "This frame shows the player's cue stick making contact with the cue ball, which in turn is about to hit or has just made initial contact with the tightly racked balls. The rack is slightly disturbed, indicating the moment of impact during a break shot.",
+    "In this frame, the balls are actively scattering from the initial racked position, showing significant motion blur. The cue ball has clearly dispersed the rack, and the balls are moving across the table but are still relatively close to the original rack area.",
+    "This frame depicts the initial setup before the shot. The balls are perfectly racked in a triangle, and the cue ball is positioned behind the head string. The player is aiming, with the cue stick further back, preparing for the break. A score overlay with player names 'SHANE VAN BOENING' and 'JOSE PARICA' and 'Race to 11 Games' is visible.",
+    "This frame is very similar to frame_2 in terms of the racked balls and cue ball position. However, the player's cue stick is positioned closer to the cue ball, poised for the shot. This is just before the actual stroke and impact.",
+    "This frame shows the balls widely scattered across the pool table, having traveled a considerable distance from the initial break. Some balls are nearing the pockets, and the overall spread is much larger than in frame_1, indicating a later stage of the ball scattering after the break."
+  ],
+  "reasoning": "The sequence represents a pool break shot. I determined the order by observing the state of the racked balls, the position of the cue ball, the player's action, and the subsequent scattering of the balls.\n\n1.  **frame_2:** This is the earliest point, showing the complete setup. The balls are perfectly racked, the cue ball is placed, and the player is in the initial aiming phase with the cue stick further back.\n2.  **frame_3:** Following frame_2, the player has adjusted their position, and the cue stick is now poised closer to the cue ball, ready for the stroke. The balls are still perfectly racked.\n3.  **frame_0:** This frame captures the moment of impact. The cue stick is making contact with the cue ball, and the cue ball is simultaneously striking the racked balls, beginning to break them apart.\n4.  **frame_1:** Immediately after impact, the balls are shown actively scattering. They are moving away from the initial rack position, but are still relatively clustered and exhibiting motion blur.\n5.  **frame_4:** This is the latest frame, where the balls have spread out significantly across the entire table, having traveled further than in frame_1. This represents the final stage of the break shot before the balls come to rest or enter pockets.",
+  "predicted_order": [
+    2,
+    3,
+    0,
+    1,
+    4
+  ],
+  "video": "v_Billiards_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00013.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    1,
+    4
+  ],
+  "is_correct": false
+}

@@ -1,0 +1,33 @@
+{
+  "frame_descriptions": [
+    "A male athlete is captured mid-air, with his knees bent and arms raised, as if landing or executing a jump. He is wearing a light blue and white athletic uniform. The background shows an indoor track and field facility with a scoreboard displaying '0 90' to the left.",
+    "A male athlete is running at speed on a red indoor track. He is leaning forward with his left leg extended behind him and his right arm forward, indicating a powerful stride. He is moving from right to left in the frame.",
+    "A male athlete is running towards or past a high jump bar, which is suspended horizontally across the frame. He is in a running posture with his left leg forward. He is moving from right to left, and the bar is to his left.",
+    "A male athlete is standing still on a red track, facing slightly towards the right of the frame. His arms are by his sides, and he appears to be in a preparatory or resting stance. The same '0 90' scoreboard seen in frame 0 is visible in the background to his left.",
+    "A male athlete is in an early stage of running on a red track, leaning forward and driving with his legs. He is moving from right to left, and the background is an indoor track facility, similar to other frames."
+  ],
+  "reasoning": "The sequence represents the progression of a high jump or a similar athletic event involving a run-up and a jump. \n\n1.  **Frame 3** shows the athlete standing still, likely at the start of the event or in a preparatory phase. The background, including the '0 90' scoreboard, is consistent with frame 0, suggesting a starting/ending position.\n2.  **Frame 4** depicts the athlete beginning his run-up. He is leaning forward and accelerating, positioned further back in the approach compared to the other running frames.\n3.  **Frame 1** shows the athlete further into his run-up, in a more upright and faster stride, indicating a continuation and acceleration from frame 4.\n4.  **Frame 2** shows the athlete in the final strides of his run-up, very close to a high jump bar. This is the critical moment before the take-off for a jump.\n5.  **Frame 0** captures the athlete in mid-air. This would be the actual jump phase, following the run-up and take-off over the bar seen in frame 2. His body position is consistent with being in flight or at the peak of a jump. The background matches frame 3, suggesting he is now in the area where the jump concludes.",
+  "predicted_order": [
+    3,
+    4,
+    1,
+    2,
+    0
+  ],
+  "video": "v_HighJump_g02_c05",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    4,
+    1,
+    2
+  ],
+  "is_correct": false
+}
