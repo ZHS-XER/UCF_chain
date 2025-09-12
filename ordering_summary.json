@@ -305,5 +305,32 @@
     "total": 50,
     "correct": 8,
     "accuracy": 0.16
+  },
+  "category_statistics": {
+    "Biking": {
+      "total": 11,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "Billiards": {
+      "total": 12,
+      "correct": 1,
+      "accuracy": 0.08333333333333333
+    },
+    "BlowingCandles": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Diving": {
+      "total": 14,
+      "correct": 4,
+      "accuracy": 0.2857142857142857
+    },
+    "HighJump": {
+      "total": 11,
+      "correct": 2,
+      "accuracy": 0.18181818181818182
+    }
   }
 }
