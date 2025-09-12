@@ -1,33 +1,33 @@
 {
   "frame_descriptions": [
-    "A close-up shot of a person's hand holding a small, light-colored rectangular sticky note against a blurry light background. The note appears to be mostly blank or has very faint markings, suggesting it's either just been picked up or is about to be written on/placed. The hand is positioned centrally in the frame.",
-    "A person's hand is seen holding a light-colored rectangular sticky note, which now clearly features a red heart drawn on it and some text below it. The hand and note are in motion, slightly blurred, suggesting it's being moved towards a surface for placement. The background is a soft, blurry light color.",
-    "The sticky note with the red heart and text (\"I LOVE YOU\") is now visible adhering to a flat, light-colored surface. A hand is still partially in the frame, with fingers gently touching or hovering very close to the top edge of the note, indicating it has just been placed or is being pressed down.",
-    "The sticky note is firmly attached to the light-colored surface, clearly displaying the red heart and text. The hand is still visible but is slightly further away from the note than in the previous frame, in the process of retracting after placing the note. More of the note is uncovered.",
-    "The sticky note with the red heart and \"I LOVE YOU\" text is perfectly visible and fully attached to the light-colored surface. The hand is no longer visible in the frame, or is entirely out of focus/cropped, indicating the successful completion of the placement action. This is the final state of the placed note."
+    "A child on a bicycle is performing a maneuver, with their upper body twisted sharply to the left, while the bike's front wheel is turned to the right. The child is wearing a helmet and elbow pads. The scene is an asphalt surface with white lines, and a distant fence line is visible under a clear sky. A long, stretched shadow of the child and bike is cast to the left.",
+    "A child on a bicycle is riding forward, positioned slightly to the right of the frame's center. The child wears a helmet and elbow pads. The bike is moving past a white line on the asphalt, which is now to the left of the bike. The child's posture is upright and stable, hands on the handlebars, looking mostly forward (to the right).",
+    "A child on a bicycle is riding forward, positioned towards the right side of the frame. The child wears a helmet and elbow pads. A white line on the asphalt is visible far to the left. The child's body is upright, and they appear to be actively pedaling, with both feet on the pedals. The background shows more white lines on the pavement.",
+    "A child on a bicycle is riding forward, with the bike positioned slightly past a prominent white line on the asphalt, which is now to the left of the bike. The child wears a helmet and elbow pads. A metal pole or post is visible in the background to the left. The child's posture is stable, looking forward (to the right), with hands on the handlebars.",
+    "A child on a bicycle is standing or just beginning to move on an asphalt surface. The child is wearing a helmet and elbow pads, and is positioned near the center of the frame, largely over a thick white line on the ground. The bike is upright and appears stable, with the child looking mostly straight ahead. A clear shadow is cast to the left of the bike and child."
   ],
-  "reasoning": "The sequence depicts the action of placing a sticky note on a surface. \n\n1.  **Frame 2 (frame_00001.jpg)** is the initial state, showing the hand holding a sticky note that appears blank or with minimal markings, suggesting it's either just been picked up or is being prepared.\n2.  **Frame 0 (frame_00002.jpg)** follows, where the hand is holding the sticky note, now clearly showing the drawn heart and text, in motion as it moves towards the placement surface. This indicates the note is ready to be put down.\n3.  **Frame 1 (frame_00003.jpg)** shows the sticky note making initial contact with the surface. The hand is still very close, with fingers possibly pressing it down or having just released it, but still making contact.\n4.  **Frame 4 (frame_00004.jpg)** comes next, as the hand begins to retract. It's slightly further away from the note than in Frame 1, but still partially visible, signifying the hand pulling away.\n5.  **Frame 3 (frame_00005.jpg)** is the final state, where the sticky note is fully placed on the surface, and the hand has completely moved out of the frame, showing the completed action.",
+  "reasoning": "The temporal order is determined by observing the child's movement, the bike's position relative to the white lines on the pavement, and the progression of background elements, as well as the nature of the action.\n\n1.  **frame_4 (Start):** This frame shows the child relatively stationary or just beginning to move, positioned directly over or just ahead of a prominent white line. The child is looking mostly straight, and the bike is stable.\n2.  **frame_3 (Moving Forward - Early Stage):** The child has moved forward, and the prominent white line is now clearly to the left of the bike. A metal pole in the background is visible, to the left and slightly behind the child, acting as a clear reference point. The child is still in a stable riding posture.\n3.  **frame_1 (Moving Forward - Mid Stage):** The child continues to move forward. The white line is now further to the left, and the metal pole from frame 3 is no longer clearly visible, indicating the child has passed it. The bike's front wheel is subtly angled, suggesting a slight turn or adjustment while moving.\n4.  **frame_2 (Moving Forward - Later Stage):** The child has advanced significantly further across the pavement. The white line is now far to the left of the frame, and the child's body is positioned more towards the right side of the image, indicating continued forward motion. The child appears to be actively pedaling.\n5.  **frame_0 (Action/Maneuver):** This frame depicts a dynamic action or trick. The child's body is twisted sharply to the left while the bike's front wheel is turned to the right, suggesting a specific maneuver during the ride. This is the most active and complex movement captured, logically placing it after a period of stable forward riding.",
   "predicted_order": [
-    2,
-    0,
-    1,
     4,
-    3
+    3,
+    1,
+    2,
+    0
   ],
   "video": "v_Biking_g01_c01",
   "shuffled_frames": [
-    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg",
-    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg",
     "data/frames/Biking/v_Biking_g01_c01/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg",
     "data/frames/Biking/v_Biking_g01_c01/frame_00005.jpg",
-    "data/frames/Biking/v_Biking_g01_c01/frame_00004.jpg"
+    "data/frames/Biking/v_Biking_g01_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg"
   ],
   "correct_order": [
-    2,
     0,
-    1,
     4,
-    3
+    1,
+    3,
+    2
   ],
-  "is_correct": true
+  "is_correct": false
 }
