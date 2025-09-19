@@ -9,7 +9,7 @@ from PIL import Image
 import base64
 import io
 
-API_KEY = "AIzaSyBArpfiWV5eKCPRGU9rVKeMdtcfQYyHV6U"
+API_KEY = "My_api"
 client = genai.Client(api_key=API_KEY)
 
 ORDERING_FILE = "data/ordering.json"
