@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A low-resolution image of a cyclist in a red and white jersey on the right side of the frame, riding a racing bike with a solid black rear wheel. They are cycling on a paved surface with bare trees in the background.",
+    "A low-resolution image showing two cyclists. The cyclist from the other frames (red/white jersey) is in the background on the left. In the foreground on the right, a second cyclist in a white jersey, black shorts, and blue helmet is riding a similar racing bike and appears to be overtaking the first cyclist.",
+    "A low-resolution image of the cyclist in the red and white jersey, positioned in the center of the frame. They are riding from left to right on a paved surface with bare trees behind them.",
+    "A low-resolution image showing the cyclist in the red and white jersey on the left side of the frame. The front wheel of a second cyclist's bike is entering the frame from the far right.",
+    "A low-resolution image of the cyclist in the red and white jersey on the left side of the frame. They are riding from left to right against a background of bare trees."
+  ],
+  "reasoning": "The correct order is determined by following the action of one cyclist being overtaken by another. \n1.  **Frame 4:** The sequence begins with the first cyclist (in the red and white jersey) on the left side of the frame.\n2.  **Frame 2:** This cyclist continues to move across the screen and is now in the center.\n3.  **Frame 0:** The cyclist has moved further across and is now on the right side of the frame. These first three frames establish the initial action of the first cyclist riding alone.\n4.  **Frame 3:** A second cyclist begins to enter the frame from the right, initiating an overtake. The first cyclist is now positioned on the left side of the frame to accommodate the new subject.\n5.  **Frame 1:** The overtake is in progress or complete, with the second cyclist now prominently in the foreground and alongside the first cyclist. This logical progression of one cyclist riding and then being passed by another determines the temporal order.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_Biking_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c06/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 1,
+    "discordant_pairs": 9,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.1,
+    "kendall_tau": -0.8
+  }
+}

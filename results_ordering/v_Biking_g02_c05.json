@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A cyclist in full racing gear is shown from the side, riding on a paved road. The cyclist is passing a single, thin, dark pole on the right side of the road. The background is a flat, arid landscape under a clear sky.",
+    "A cyclist on a time trial bike is riding on a road next to a flat landscape. On the far left, a green road sign on a post is visible, indicating the cyclist has just passed it.",
+    "A cyclist is riding on a road, and dashed yellow lines are visible on the pavement in the bottom left corner. The front wheel of another bicycle can be seen on the far left edge of the frame, suggesting an overtake.",
+    "A cyclist is riding on a road, with two utility poles visible in the distance ahead and to the right. The cyclist appears to be approaching them.",
+    "The cyclist is now riding alongside the two utility poles that were previously in the distance. The front wheel of another bicycle is also visible on the far left of the frame."
+  ],
+  "reasoning": "The correct temporal order is determined by tracking the cyclist's movement past a series of distinct background objects. The camera is moving alongside the cyclist, so objects in the background will appear in the distance and then move past and off-screen to the left.\n\n1.  **frame_1**: This frame is the earliest in the sequence. A green road sign is visible on the far left, indicating the cyclist has just passed this landmark.\n2.  **frame_2**: Following the sign, the cyclist rides onto a section of road marked with dashed yellow lines, which are visible at the bottom of the frame. The wheel of another cyclist also appears, indicating an overtake is in progress.\n3.  **frame_0**: The cyclist has passed the section with yellow lines. A new landmark, a single thin dark pole, is now being passed by the cyclist.\n4.  **frame_3**: Further down the road, two utility poles come into view in the distance. The cyclist is approaching them.\n5.  **frame_4**: This is the final frame in the sequence, as the cyclist has now caught up to the two utility poles and is riding alongside them. The wheel of the other cyclist is also still visible.",
+  "predicted_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "video": "v_Biking_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c05/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver in a dark swimsuit is in a crouched position in the middle of a lower springboard, preparing for a dive. The board is slightly depressed under their weight.",
+    "The diver has moved to the very end of the springboard and is in the process of launching into the air. Their body is leaning forward, and the board is bent significantly downwards from the force of their jump.",
+    "The diver is now fully airborne, just above the end of the springboard, and has curled their body into a compact tuck position as they begin their forward rotation.",
+    "The diver is descending towards the water, well clear of the diving board. They are in a nearly vertical, head-first position, straightening their body for entry into the pool.",
+    "The diver is at the apex of their flight. Their body is in an arched or layout position with arms extended over their head, having opened up from the initial tuck."
+  ],
+  "reasoning": "The logical sequence of a springboard dive is used to determine the order. The action begins with the diver preparing on the board (frame 0). Next, they launch from the end of the board, which is seen flexing under the force (frame 1). Immediately after leaving the board, the diver enters an aerial maneuver, in this case, a tuck (frame 2). They then reach the highest point of their dive, opening their body into a more extended position (frame 4). Finally, they straighten their body as they descend towards the water to prepare for entry (frame 3).",
+  "predicted_order": [
+    0,
+    1,
+    2,
+    4,
+    3
+  ],
+  "video": "v_Diving_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c04/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00004.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    3,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

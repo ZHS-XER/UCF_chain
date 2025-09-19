@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male diver in swim trunks is at the lowest point of his bounce on the end of a diving board. The board is significantly bent downwards towards the water.",
+    "The diver is no longer visible as they have entered the pool. A large splash of white, churned-up water is seen where the diver entered. The diving board has recoiled and is relatively straight.",
+    "A male diver in swim trunks is standing on the end of a diving board, which is bent slightly downwards as he performs a bounce.",
+    "The male diver is in mid-air, having just launched from the end of the diving board. His body is bent forward, and he is positioned just above the tip of the board, which is still bent from the jump.",
+    "A male diver in swim trunks is standing on the end of a diving board in a preparatory stance. The board is almost straight with a minimal bend."
+  ],
+  "reasoning": "The correct order is determined by following the physical progression of a person performing a dive from a diving board. \n1. **Frame 4:** This is the starting position. The diver is standing on the board, which is relatively straight.\n2. **Frame 2:** The diver begins their bounce to gain height, causing the board to bend slightly downwards.\n3. **Frame 0:** This is the point of maximum depression. The diver has put their full weight into the bounce, and the board is bent downwards to its lowest point before recoiling.\n4. **Frame 3:** The board has recoiled, launching the diver into the air. The diver is captured mid-air, just after leaving the board.\n5. **Frame 1:** This is the final frame, showing the splash in the water after the diver has entered. The diver is no longer visible.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_Diving_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c02/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00009.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00007.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    4,
+    3,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

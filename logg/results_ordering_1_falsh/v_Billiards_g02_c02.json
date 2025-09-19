@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame shows a wide shot of a pool table with a light blue felt. Numerous colored pool balls are scattered across the table. A player, dressed in black, is standing upright behind the table, with their right hand resting on the rail, observing the layout of the balls. Spectators are visible in the blurred background. A 'BCn' logo is at the top of the frame. There is no event-specific text overlay at the bottom.",
+    "Similar to frame_0, this frame captures a wide shot of a pool table with a light blue felt. Many colored pool balls are still on the table, but their positions are distinctly different from frame_0, indicating a shot has occurred. The player is standing upright, in a slightly different posture than frame_0, observing the table. Spectators are in the background, and the 'BCn' logo is at the top. There is no event-specific text overlay at the bottom.",
+    "This frame presents a medium shot of the pool table. Compared to frames 0 and 1, significantly fewer balls are on the table; specifically, there is a cluster of three object balls (red, yellow, and a solid color) near the center, and the cue ball is in the foreground. The player is bent over the table, poised to strike the cue ball with their cue stick. Event details are overlaid at the bottom: 'THE 2008 U.S. OPEN 9-BALL CHAMPIONSHIP Chalk-Off Arena - Chesapeake, Virginia'. The 'BCn' logo is at the top.",
+    "Similar to frame_2, the player is bent over the table, executing a shot. The same small cluster of three object balls is near the center, and the cue ball is in the foreground. The cue stick appears to be mid-stroke or just at the point of impact, with the cue ball appearing slightly closer to the object balls than in frame_2. The event details overlay and 'BCn' logo are present.",
+    "This frame shows the immediate aftermath of the shot. The player is still bent over, but the cue stick's tip has recoiled slightly from the cue ball, indicating follow-through. The cue ball is now visibly in motion, travelling towards the cluster of object balls. The event details overlay and 'BCn' logo are present."
+  ],
+  "reasoning": "The primary indicator for temporal order is the number and position of the pool balls, as well as the player's action and the presence of a text overlay.\n\n1.  **Number of Balls and Text Overlay:** Frames 0 and 1 show many balls scattered across the table and lack the event-specific text overlay at the bottom. Frames 2, 3, and 4 show only a few balls (three object balls and the cue ball) and include the event details overlay. This strongly suggests that frames 0 and 1 depict an earlier stage of the game (more balls, before the specific segment highlighted by the text overlay) compared to frames 2, 3, and 4, which show a later, critical shot towards the end of a game.\n\n2.  **Ordering Frames 0 and 1:** Comparing frame 0 and frame 1, the positions of the balls are different. For instance, a pink ball on the right side of the table moves from a more rightward position (frame 0) to a more central, leftward position (frame 1). A cluster of balls in the mid-left area appears slightly more compact in frame 0 and more dispersed in frame 1. This indicates that a shot occurred between frame 0 and frame 1, changing the ball configuration. Given that frame 0's cluster appears slightly more 'initial' or compact, it's reasonable to place frame 0 before frame 1.\n\n3.  **Ordering Frames 2, 3, and 4 (The Shot Sequence):** These three frames clearly capture a player executing a single shot.\n    *   **Frame 2:** The player is bent over, aiming and setting up the shot. The cue ball is stationary, and the cue tip is close to it, ready for the strike.\n    *   **Frame 3:** The player is mid-stroke. The cue ball appears slightly advanced or closer to the object balls compared to frame 2, indicating the moment of or just before impact.\n    *   **Frame 4:** The cue stick has completed the stroke and is slightly recoiled from the cue ball, which is now clearly in motion towards the object balls. This represents the follow-through immediately after impact.\n    Thus, the sequence for the shot is 2 -> 3 -> 4.\n\nCombining these observations, the most logical temporal order is 0, followed by 1 (an earlier phase of the game), then a significant time jump (many shots and balls potted) leading to the specific shot sequence 2, 3, and finally 4.",
+  "predicted_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "video": "v_Billiards_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c02/frame_00003.jpg"
+  ],
+  "correct_order": [
+    3,
+    4,
+    2,
+    0,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 2,
+    "discordant_pairs": 8,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.2,
+    "kendall_tau": -0.6
+  }
+}

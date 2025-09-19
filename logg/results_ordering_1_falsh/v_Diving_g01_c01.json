@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male diver stands on a diving board, slightly leaning forward with his head tilted down. The diving board is noticeably bent downwards into the blue water, and there are some ripples on the water surface.",
+    "A male diver is in the process of a downward motion on the diving board. He is leaning forward significantly, with bent knees and his arms slightly raised and back. The board is clearly flexed downwards, and there are ripples in the pool water.",
+    "A male diver stands upright on a diving board, looking straight down. The diving board appears to be in a relatively neutral or slightly bent position, and the water surface has minimal disturbance.",
+    "A male diver stands upright on a diving board, with his head slightly tilted down. The diving board appears mostly flat or in its initial static position, with no significant downward flex. The water is relatively calm.",
+    "A male diver is at the lowest point of his downward press on the diving board. He is leaning very far forward, almost horizontal, with his knees deeply bent. The diving board is maximally flexed downwards into the water, indicating peak compression."
+  ],
+  "reasoning": "The sequence of images depicts a diver in the initial phase of a dive, specifically the downward compression of the diving board. I ordered the frames by observing the diver's posture and the degree of flex in the diving board.\n\n1.  **Initial Stance (frame_3):** The diver is standing upright, and the board appears to be in its most neutral or least bent position. This is the starting point before significant action.\n2.  **Slight Downward Movement (frame_2):** The diver remains mostly upright, but a very subtle downward flex of the board might be observed, or it's a very slight progression from the initial stance.\n3.  **Increased Downward Flex (frame_0):** The diver is still relatively upright but has tilted his head more. Crucially, the diving board shows a more pronounced downward bend compared to frame_3 and frame_2, indicating he's begun to exert force.\n4.  **Active Compression (frame_1):** The diver is actively pressing down. His body is leaning forward, knees are bent, and the board is significantly flexed downwards. This shows a clear progression from the initial push.\n5.  **Maximum Compression (frame_4):** This is the deepest point of the dive's downward phase. The diver's body is most bent and leaning furthest forward, and the diving board exhibits its maximum downward flex. This frame captures the moment just before the board springs back up to launch the diver.",
+  "predicted_order": [
+    3,
+    2,
+    0,
+    1,
+    4
+  ],
+  "video": "v_Diving_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

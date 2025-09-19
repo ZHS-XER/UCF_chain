@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is captured mid-air, just above the water's surface, in a compact, possibly pike or tuck position. Their arms are down and legs are bent. There's a slight disturbance on the water where the diver is about to enter. The springboard is visible but empty.",
+    "Two individuals are standing on a multi-tiered diving platform. One person, presumably the diver, is walking towards the edge of the platform and the springboards below. Another person stands further back on the platform. The springboards are empty and the water is calm.",
+    "A diver is crouched low on the end of a springboard, with arms extended forward, actively pressing down or having just pressed down to initiate a jump. The springboard is visibly bent downwards under the diver's weight and momentum. The water below is relatively calm.",
+    "The diver is high in the air, above and slightly in front of the springboard, performing a tuck or somersault. The diver's body is tightly coiled. The springboard is empty and appears to be in its recoil state or resting position after being used.",
+    "The diver is in the process of entering the water head-first, with hands together and body largely vertical and streamlined. A significant splash is erupting around the entry point, indicating the impact with the water. The springboard is empty and visible to the right."
+  ],
+  "reasoning": "The sequence depicts a single dive, which naturally follows a progression from preparation to water entry. \n\n1.  **Frame 1 (Preparation):** This is the logical starting point, showing the diver approaching the springboard from the platform, indicating the beginning of the dive sequence.\n2.  **Frame 2 (Push-off):** The diver is on the springboard, actively using it to propel themselves upwards. The bent springboard clearly indicates this phase of the dive.\n3.  **Frame 3 (Peak Airtime):** After pushing off, the diver ascends to the highest point of their jump, performing aerial maneuvers. This frame shows the diver high above the board in a tucked position.\n4.  **Frame 0 (Descent/Pre-entry):** Following the peak, the diver begins their descent towards the water, having completed rotations or form. This frame shows the diver closer to the water surface, just before actual entry.\n5.  **Frame 4 (Water Entry):** This is the final stage, where the diver makes contact with the water, as evidenced by the head-first entry and the splash.",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    0,
+    4
+  ],
+  "video": "v_Diving_g01_c05",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c05/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    0,
+    4,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

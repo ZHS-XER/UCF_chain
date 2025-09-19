@@ -1,0 +1,45 @@
+{
+  "frame_descriptions": [
+    "detailed description for first picture (frame_0)",
+    "A child wearing a helmet and a white shirt is riding a red bicycle away from the camera in a paved parking lot. They are relatively close to the camera, riding along a white painted line.",
+    "detailed description for second picture (frame_1)",
+    "The child on the bicycle is now further away from the camera, continuing to ride across the parking lot. The child and their shadow are centered in the frame.",
+    "detailed description for third picture (frame_2)",
+    "The child on the bicycle is even further away, appearing smaller in the frame. Houses are visible in the background beyond the parking lot.",
+    "detailed description for fourth picture (frame_3)",
+    "This frame shows the child at the furthest distance from the camera, appearing quite small as they ride towards the edge of the parking lot. More of the background houses are visible.",
+    "detailed description for fifth picture (frame_4)",
+    "A close-up shot of the child on the red bicycle, seemingly at the start of the ride. The child is looking slightly to the left, and the rear wheel of the bike is right next to a thick white line. This is the closest view of the child."
+  ],
+  "reasoning": "The correct order is determined by observing the child's movement away from the camera. The sequence shows a continuous action of the child riding their bicycle across a parking lot. Frame 4 is the starting point, as it's the closest shot of the child, who appears to be stationary or just beginning to move. In Frame 0, the child is slightly further away and is actively riding. Frames 1, 2, and 3 show the child progressively increasing their distance from the camera, appearing smaller in each subsequent frame. Therefore, the logical temporal order is based on the child's increasing distance from the viewer.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "video": "v_Biking_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c04/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

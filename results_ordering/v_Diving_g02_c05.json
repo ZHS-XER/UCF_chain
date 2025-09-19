@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A view of a swimming pool with an empty diving board. A person in a black and white outfit sits in a chair on the pool deck. The water is relatively calm, with the ripples from a previous splash having mostly subsided.",
+    "A female diver in a green and black swimsuit stands at the end of the diving board, her arms raised straight up, preparing to dive. A person sits in a chair on the deck, watching.",
+    "The female diver is in mid-air, just after leaving the diving board. She is in an upward trajectory and a pike position. The diving board is recoiling upwards from her jump.",
+    "The diving board is empty. There are distinct, fresh ripples in the water, indicating that the diver has just entered the pool.",
+    "The female diver is at the apex of her jump, high above the diving board. She is in a compact tuck position, rotating forward."
+  ],
+  "reasoning": "The logical sequence of a dive is preparation, execution, and aftermath. \n1. **Frame 1** is the clear starting point, showing the diver on the board in a ready stance before the dive begins.\n2. **Frame 2** follows, capturing the moment just after the diver has sprung from the board, beginning her ascent.\n3. **Frame 4** shows the next phase of the dive, where the diver is at her highest point in the air, performing a tuck.\n4. **Frame 3** shows the immediate aftermath. The diver is no longer visible, and there are prominent ripples in the water where she entered.\n5. **Frame 0** is the final frame, showing a later moment when the ripples have largely dissipated, and the water is becoming calm again.",
+  "predicted_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "video": "v_Diving_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c05/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    2,
+    1,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

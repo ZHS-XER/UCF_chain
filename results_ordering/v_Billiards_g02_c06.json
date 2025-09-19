@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of a pool table immediately after a break shot. The balls are scattered and in motion across the blue felt. The player, in a black shirt, is standing up straight near the head of the table, observing the result.",
+    "A player is leaning over the pool table to take a break shot. The balls are racked in a triangle at the far end. He is aiming the cue stick at the cue ball, with the tip close to the ball. A scoreboard is visible on the right.",
+    "The player is in the same position as the other aiming frames, but has pulled the cue stick to the furthest point of his backswing, preparing to strike the cue ball with maximum power for the break.",
+    "The player is shown in the follow-through motion of the break shot. The cue stick is extended forward with motion blur, and the cue ball is no longer at the head of the table. The triangular rack of balls is still intact, indicating this is the instant just before impact.",
+    "The player is still aiming for the break shot. The cue stick is pulled back from the cue ball, further than in the initial aiming frame but not as far as the final backswing, likely as part of a preliminary stroke."
+  ],
+  "reasoning": "The logical sequence of events for a break shot in pool is aiming, stroking the cue ball, and the subsequent scattering of the balls. \n1. Frames 1, 4, and 2 all show the player in the aiming phase. The progression is determined by the position of the cue stick. Frame 1 shows the initial aiming with the cue tip close to the ball. Frame 4 shows the stick pulled back slightly in a 'feathering' motion. Frame 2 shows the cue stick at the peak of the backswing, just before the forward strike. Thus, their order is 1, 4, 2.\n2. Frame 3 captures the follow-through motion of the strike itself. The cue stick is blurred and extended forward, and the cue ball is gone from its starting spot but has not yet hit the rack. This must happen immediately after the backswing.\n3. Frame 0 shows the aftermath of the shot. The balls are scattered across the table, and the player has stood up from his shooting stance to assess the new layout. This is clearly the final frame in the sequence.\nTherefore, the complete temporal order is the aiming sequence (1, 4, 2), followed by the strike (3), and finally the result (0).",
+  "predicted_order": [
+    1,
+    4,
+    2,
+    3,
+    0
+  ],
+  "video": "v_Billiards_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

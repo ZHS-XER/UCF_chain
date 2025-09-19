@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male diver is standing on the diving board, facing away from the camera. The board is visibly bent downwards, indicating a moment of compression. The diver's body is relatively straight, looking towards the water. There's a small ripple or splash in the water directly beneath the board.",
+    "The water is disturbed by a significant splash, showing ripples spreading outwards. No diver is visible on the board or immediately above the water, indicating they have already entered the pool.",
+    "A male diver is standing upright on the diving board, facing away from the camera. The board appears relatively flat or only slightly bent. The diver's arms are slightly extended forward. A small ripple is visible in the water directly below the board.",
+    "A male diver is airborne, just above the diving board. His body is slightly tucked with arms raised, in the midst of a jump. The diving board is significantly bent downwards and appears to be rebounding from the diver's push-off.",
+    "A male diver is standing upright on the diving board, facing away from the camera. The board appears flat. The diver's arms are held close to their sides. A small ripple is visible in the water directly below the board."
+  ],
+  "reasoning": "The frames depict a sequence of a diver performing a dive from a springboard. I will order them based on the natural progression of a dive: initial stance, preparation/bounce, push-off/take-off, and entry into the water.\n\n1.  **Initial Stance:** Frame_4 shows the diver standing upright on a flat board with arms at their sides, representing the starting position.\n2.  **Preparation/Pre-bounce:** Frame_2 shows the diver still upright on the board, but with arms slightly forward, suggesting a subtle shift or the beginning of a preliminary bounce. The board is still relatively flat.\n3.  **Board Compression/Push Down:** Frame_0 shows the diver on the board, which is now clearly bent downwards. This represents the point of maximum compression where the diver has landed from a bounce and is preparing to spring upwards. The diver is still in contact with the board.\n4.  **Take-off/Airborne:** Frame_3 shows the diver airborne, just above the board. The board is still heavily bent downwards (rebounding), indicating the strong push-off that just occurred. The diver's body posture suggests they are initiating the dive or flip.\n5.  **Water Entry/Splash:** Frame_1 shows a significant splash in the water with no diver visible, indicating that the diver has already entered the pool.\n\nThis sequence logically follows the physics and common execution of a springboard dive.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_Diving_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c02/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00009.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00007.jpg",
+    "data/frames/Diving/v_Diving_g01_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    4,
+    3,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

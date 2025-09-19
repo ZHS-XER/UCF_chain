@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of a professional pool game. A player in a black shirt stands upright, looking down at the table after a shot. The balls are scattered across the blue felt. A white ball is near the bottom right corner, and another is near the middle of the right rail. Several other colored and striped balls are distributed around the table.",
+    "The scene is nearly identical to frame_0, with the same scattered ball layout. The player is in a slightly different posture, leaning forward a bit more, as if watching the balls come to a stop. The background shows spectators and 'Chalk-Off!' advertisements.",
+    "The player is captured in the middle of a powerful break shot. He is leaning far over the table, his body extended, and the cue stick is following through. The object balls, previously in a rack, are exploding outwards across the table, indicating high velocity.",
+    "A player, Ronnie Alcano, is shown leaning low over the pool table, taking aim for a break shot. The balls are arranged in a tight diamond rack at the far end. The cue ball is positioned at the near end. A scoreboard overlay is visible on the right, showing the match is the U.S. Open 9-Ball Championship.",
+    "Very similar to frame_3, showing the player aiming for the break shot with the balls racked. His posture is slightly more upright than in frame_3, suggesting he is in the process of setting up his shot. The same scoreboard overlay is present."
+  ],
+  "reasoning": "The sequence of events depicts a break shot in a game of 9-ball. The logical order begins with the setup, followed by the shot itself, and then the aftermath.\n\n1.  **Frame 4:** The player is standing and beginning to line up his break shot. The balls are in the rack, and a scoreboard is visible. This is the initial setup.\n2.  **Frame 3:** The player is now bent low over the table, in the final aiming position just before striking the cue ball. This is the next step in the setup process, immediately preceding the stroke.\n3.  **Frame 2:** This frame captures the action of the break. The player is following through with his cue, and the balls are shown in motion, scattering across the table. This is the dynamic result of the actions in the previous frames.\n4.  **Frame 1:** The balls have stopped moving and are now scattered on the table. The player is standing up from his shot, watching the balls settle into their final positions.\n5.  **Frame 0:** The balls are in the same final positions as in frame 1, but the player has now fully straightened up and is assessing the layout to plan his next shot. This is the final moment in the sequence.",
+  "predicted_order": [
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "video": "v_Billiards_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

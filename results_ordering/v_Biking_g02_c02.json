@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A rear-view shot of two cyclists on a road. The cyclist on the left, wearing a light-colored top and a blue helmet, is slightly ahead. The cyclist on the right, wearing a red, white, and black jersey, has moved out to the side, preparing to overtake.",
+    "A rear-view shot of two cyclists. The cyclist on the right is positioned directly behind the cyclist on the left, likely drafting. The background shows blurry trees and what appears to be a wall.",
+    "A rear-view shot of two cyclists. The cyclist on the right has started to move slightly out from behind the lead cyclist on the left. The wheels of both bikes show significant motion blur.",
+    "A rear-view shot of two cyclists mid-overtake. The cyclist on the right has pulled up, and their front wheel is now overlapping with the rear wheel of the cyclist on the left.",
+    "A rear-view shot of two cyclists in the final stages of an overtake. The cyclist on the right is now nearly parallel with the cyclist on the left and is riding close to a white line marking the edge of the road."
+  ],
+  "reasoning": "The correct temporal order is determined by tracking the progressive action of one cyclist overtaking another. The video clip shows a continuous maneuver. \n1. **Frame 1:** This is the starting point. The cyclist on the right (in the red, white, and black jersey) is directly behind the lead cyclist (in the blue helmet), in a classic drafting position. \n2. **Frame 2:** The cyclist on the right begins to move out from behind the lead cyclist, initiating the overtaking maneuver.\n3. **Frame 0:** The cyclist on the right is now fully to the side of the lead cyclist, no longer in their slipstream, and is preparing to accelerate past.\n4. **Frame 3:** The cyclist on the right has gained ground and their front wheel is now overlapping with the rear wheel of the lead cyclist. They are actively in the process of passing.\n5. **Frame 4:** This is the final frame of the sequence, showing the cyclist on the right having pulled almost completely alongside the lead cyclist. They are now close to the white line on the edge of the road, completing the pass. \nThis sequence (1, 2, 0, 3, 4) shows a logical and smooth progression of the overtaking action.",
+  "predicted_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "video": "v_Biking_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c02/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 4,
+    "discordant_pairs": 6,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.4,
+    "kendall_tau": -0.2
+  }
+}

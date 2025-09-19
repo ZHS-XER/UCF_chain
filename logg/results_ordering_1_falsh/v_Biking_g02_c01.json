@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A low-angle, close-up shot of the front cyclist's legs and the tandem bicycle's wheels. The right leg is in the down position of the pedal stroke, and the left leg is bent high. The camera is very close to the ground, showing the road directly beneath the wheels, with prominent shadows.",
+    "A wider, side-rear view of two cyclists on a tandem bike. The front cyclist wears a light blue helmet and a light-colored top, with the left leg clearly in the down position of the pedal stroke. The bike is positioned towards the left-center of the frame, appearing relatively close among the wider shots. The background is a blurry brown/green.",
+    "A wider, side-rear view of the two cyclists. The front cyclist's right leg is in the down position. The bike appears furthest from the camera among the wider shots, positioned towards the right-center of the frame. The background is a blurry brown/green.",
+    "A wider, side-rear view of the two cyclists. The front cyclist's left leg is in the down position. The bike appears at a mid-distance from the camera among the wider shots, positioned towards the center of the frame, further than frame_1 but closer than frame_2. The background is a blurry brown/green.",
+    "A low-angle, close-up shot similar to frame_0, but the left leg is in the mid-descent position of the pedal stroke, and the right leg is ascending. The bike appears slightly further away from the camera than in frame_0. Shadows are distinct, and the road texture is still very close."
+  ],
+  "reasoning": "The primary cue for determining the temporal order is the alternating position of the cyclists' legs during pedaling, which represents half-strokes. We have 2 frames where the right leg is down (RLD) and 3 frames where the left leg is down (LLD), with frame_4 being a specific mid-descent point within the LLD phase.\n\nThe most consistent way to arrange 2 RLDs and 3 LLDs in a continuous pedaling motion is LLD -> RLD -> LLD -> RLD -> LLD.\n\nLet's apply this pattern while also considering the bike's distance from the camera and its position in the frame:\n\n1.  **Start with an LLD frame:** Frame_1 is a wider shot where the bike is relatively close and the left leg is fully down. This provides a good initial context.\n\n2.  **Next, an RLD frame:** From Frame_1 (LLD), the next logical pedal stroke is RLD. Frame_0 shows the right leg down and is an extreme close-up. This indicates a cut to a very close perspective, with the pedal stroke advancing.\n    *   Sequence: **1 (LLD) -> 0 (RLD)**. (Pedal: LLD -> RLD. Distance: Closer via cut).\n\n3.  **Next, an LLD frame:** From Frame_0 (RLD), the next logical pedal stroke is LLD. Frame_4 shows the left leg in mid-descent, and it's a close-up that's slightly further from the camera than Frame_0. This shows a progression in both pedal stroke and distance.\n    *   Sequence: **1 -> 0 -> 4 (LLD)**. (Pedal: RLD -> LLD. Distance: Further from 0).\n\n4.  **Next, an RLD frame:** From Frame_4 (LLD), the next logical pedal stroke is RLD. Frame_2 shows the right leg down and is the furthest wide shot. This indicates another cut, to a much wider and further perspective.\n    *   Sequence: **1 -> 0 -> 4 -> 2 (RLD)**. (Pedal: LLD -> RLD. Distance: Much further).\n\n5.  **Finally, an LLD frame:** From Frame_2 (RLD), the next logical pedal stroke is LLD. Frame_3 shows the left leg down and is a mid-distance wide shot. This implies a cut to a closer (than frame_2) but still wide perspective.\n    *   Sequence: **1 -> 0 -> 4 -> 2 -> 3 (LLD)**. (Pedal: RLD -> LLD. Distance: Closer than 2).\n\nThis order ensures strict alternation of pedal strokes (LLD -> RLD -> LLD -> RLD -> LLD) and allows for camera cuts or dynamic movement (changing distance) often seen in video sequences.",
+  "predicted_order": [
+    1,
+    0,
+    4,
+    2,
+    3
+  ],
+  "video": "v_Biking_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    3,
+    1,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

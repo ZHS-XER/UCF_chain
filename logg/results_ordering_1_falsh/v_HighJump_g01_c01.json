@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame shows a wide view of an indoor track and field area. In the foreground, there's a grey mat leading to a lighter grey track with white lines. In the mid-ground, a high jump bar is set up. A red crash mat is visible to the left of the bar. A few people are visible in the background, including one person near the high jump mat on the left side, and others further back near a wall with windows.",
+    "This frame is a closer shot, focusing on the high jump action. An athlete is captured mid-air, having just cleared the high jump bar. The red crash mat is very prominent on the left, and a person is standing to the far left, observing the jump.",
+    "This frame presents a wide view, similar to frame_0. A high jump bar is set up with a red crash mat to its left. On the far left side of the grey mat, a person (likely the high jumper) is visible, appearing to be at the beginning of their approach run for the high jump. Other people are in the distant background.",
+    "This frame is a close-up, following frame_1. The athlete who just cleared the bar is now landing on the red crash mat. The high jump bar is still in place, suggesting a successful clearance. The observer from frame_1 is still visible on the far left.",
+    "This frame offers a wide view, similar to frame_0 and frame_2. The high jump bar is set up, and the red crash mat is visible. The area directly around the bar and mat appears clear of the athlete, suggesting the jump has been completed. More spectators or participants are visible in the background, and the overall scene appears to be in a post-jump state or awaiting the next attempt."
+  ],
+  "reasoning": "The sequence depicts a high jump attempt from preparation to landing. I've identified key stages based on the athlete's position and the camera's perspective.\n\n1.  **frame_2 (Start of Approach):** This wide shot shows the athlete positioned on the far left of the mat, indicating the beginning of their run-up towards the high jump bar. The setup is ready, and the action is about to commence.\n2.  **frame_0 (During Approach / Pre-Jump):** The camera has likely panned slightly to the right, or the athlete has moved further into the run-up, placing them out of the visible frame on the left. The high jump area is clear, setting the stage for the imminent jump, but the athlete is not yet at the bar. The general setup is ready for the action.\n3.  **frame_1 (Clearing the Bar):** This is the peak action of the jump. The athlete is clearly visible mid-air, having just cleared the high jump bar. This naturally follows the approach run.\n4.  **frame_3 (Landing):** Immediately after clearing the bar, the athlete is shown landing on the red crash mat. The bar is still up, confirming the success of the jump.\n5.  **frame_4 (Aftermath/Clearance):** This wider shot shows the high jump area after the jump. The mat is clear, and the athlete has moved off it. People are observing, and the scene is in a post-event state or preparing for the next sequence.",
+  "predicted_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "video": "v_HighJump_g01_c01",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

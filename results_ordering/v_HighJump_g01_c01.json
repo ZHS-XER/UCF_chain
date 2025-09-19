@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of an indoor track facility. An athlete in light-colored clothing is in the middle of their run-up for a high jump, moving from right to left, and getting close to the jump point.",
+    "The athlete is at the apex of their high jump, positioned horizontally with their back arched as they clear the bar. A person in a grey hoodie watches from the left foreground.",
+    "A wide shot of the indoor track facility, showing the athlete in an earlier stage of their run-up, further from the high jump apparatus than in the previous wide shot.",
+    "The athlete is in the take-off phase of the high jump. Their body is angled upwards as they propel themselves over the bar. The person in the grey hoodie is visible on the left.",
+    "A wide shot showing the athlete at the very beginning of their run-up for the high jump. They are a small figure in the distance, on the right side of the frame, starting to run towards the left."
+  ],
+  "reasoning": "The sequence of events for a high jump is the approach run, the take-off, clearing the bar, and landing. The frames can be ordered by following the athlete's progression through these stages.\n\n1.  **frame_4**: This is the earliest frame, showing the athlete at the start of their run-up, farthest from the high jump bar.\n2.  **frame_2**: The athlete has moved further along their run-up, closer to the jump area than in frame_4.\n3.  **frame_0**: The athlete is now at the end of their approach run, just before the take-off. This is the last of the wide-angle shots showing the run-up.\n4.  **frame_3**: The camera has panned to follow the athlete, who is now in the take-off phase, pushing off the ground and beginning their ascent over the bar.\n5.  **frame_1**: This is the peak of the action. The athlete is horizontal, arching their back over the bar to clear it. This logically follows the take-off in frame_3.\n\nTherefore, the correct temporal order is based on the athlete's movement from the start of the run to the peak of the jump.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_HighJump_g01_c01",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

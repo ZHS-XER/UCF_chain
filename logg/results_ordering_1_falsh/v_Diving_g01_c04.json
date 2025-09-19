@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver, wearing a dark swimsuit, is standing on a diving board. Their arms are extended out to the sides, slightly bent at the elbows, in a preparatory stance. The diving board is slightly bent downwards from the diver's weight or a recent bounce. The pool water is blue with some ripples.",
+    "The diver is airborne, having just left the diving board. Their body is in an upward trajectory, with legs extended and arms slightly bent. The diving board beneath them is still noticeably bent downwards, indicating the immediate aftermath of a push-off. There are small splashes in the water to the left.",
+    "The diver is very close to the water's surface, in a compressed or slightly tucked position with knees bent, arms reaching forward. Their body is nearly horizontal to the water, poised for entry. The diving board appears mostly flat or slightly rebounding.",
+    "The diver is in mid-air, at a higher point than frame 2 and 4, in a clear pike position with their body bent at the waist, head pointing downwards, and legs extended upwards. The diving board is flat. There are small ripples on the water surface.",
+    "The diver is descending towards the water, still in a pike position, with arms extended forward and head down. They are closer to the water than in frame 3, but not yet at the entry point. The diving board is flat or slightly rebounding."
+  ],
+  "reasoning": "I analyzed the progression of the diver's movement and position relative to the diving board and water surface to determine the temporal order. \n\n1.  **frame_0** shows the diver on the board, poised to begin the dive or in the midst of a preparatory bounce. This is clearly the earliest stage.\n2.  **frame_1** shows the diver immediately after leaving the board, ascending. The diving board is still depressed, confirming this is the initial jump.\n3.  **frame_3** depicts the diver higher in the air, having gained altitude and performing the main maneuver (a pike position). This comes after the initial ascent.\n4.  **frame_4** illustrates the diver descending, still in the pike position, but closer to the water surface than in frame 3. This is the preparation for entry.\n5.  **frame_2** shows the diver at the very last moment before impact with the water. They are extremely low to the water, with knees slightly bent, indicating an imminent entry. This is the final stage among the provided images.",
+  "predicted_order": [
+    0,
+    1,
+    3,
+    4,
+    2
+  ],
+  "video": "v_Diving_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c04/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c04/frame_00004.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    3,
+    4,
+    2
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

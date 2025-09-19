@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is in mid-air, descending into the water head-first. Their body is angled almost vertically, with their head submerged or just about to be submerged, and their legs still above the water, bent slightly. A small splash is visible on the water's surface around the entry point.",
+    "A diver is mostly submerged in the pool water. Only their lower legs and feet are visible above the surface, pointing upwards. A significant and energetic splash is visible on the water's surface, indicating the active displacement of water as the diver goes deeper.",
+    "The diver is completely submerged and no longer visible above the water. The splash on the water's surface is dissipating, with ripples spreading outwards, indicating the end of the immediate entry action.",
+    "A diver is airborne, very close to the water's surface, in a horizontal or slightly angled position. Their arms are extended forward, appearing to be just moments away from making contact with the water. No significant splash is yet visible.",
+    "A diver is standing on a diving board, facing the water. Their arms are raised, and their body is in a poised position, suggesting they are either preparing to take off or have just pushed off from the board, initiating the dive."
+  ],
+  "reasoning": "The frames depict a sequence of a diver performing a dive. I ordered them by tracking the diver's movement from the diving board, through the air, into the water, and finally the dissipation of the splash.\n\n1.  **Frame 4:** The diver is on the diving board, initiating the dive. This is clearly the earliest point.\n2.  **Frame 3:** The diver is in the air, very close to the water, about to make contact. This follows the push-off from the board.\n3.  **Frame 0:** The diver has just entered the water head-first, with most of their body submerged or in the process of entering. An initial splash is forming.\n4.  **Frame 1:** The diver has gone deeper into the water, with only their legs and feet still visible above the surface. The splash is more pronounced and active, indicating more water displacement.\n5.  **Frame 2:** The diver is fully submerged, and the splash on the surface is beginning to settle and dissipate. This is the final stage of the visible action on the surface.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "video": "v_Diving_g01_c07",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c07/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

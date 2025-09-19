@@ -9,7 +9,7 @@ from PIL import Image
 import base64
 import io
 
-API_KEY = "AIzaSyDajUbcHFWd--NuDXJ9ka5msNLlqjKhdeM"
+API_KEY = "AIzaSyBArpfiWV5eKCPRGU9rVKeMdtcfQYyHV6U"
 client = genai.Client(api_key=API_KEY)
 
 ORDERING_FILE = "data/ordering.json"
@@ -90,7 +90,7 @@ The predicted_order should be a list of indices (0-4) indicating the temporal se
 
         # 调用模型
         resp = await client.aio.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-2.5-pro",
             contents=contents
         )
         text = resp.candidates[0].content.parts[0].text.strip()

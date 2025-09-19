@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is captured in mid-air, perfectly vertical with their head pointing down towards the swimming pool. They are very close to the water's surface, in the final moments before entry.",
+    "A diver is in mid-air, having traveled away from the diving board. Their body is mostly horizontal but angled downwards, preparing for the entry into the water below.",
+    "The diver is no longer visible, having completely entered the water. A splash and ripples on the surface of the blue pool indicate the point of entry.",
+    "A diver is in a tight tuck position, just after leaving the high diving platform. They are still very close to the board and at the beginning of their descent.",
+    "A diver is crouched on the edge of a high diving platform, which has \"INDIANA\" written on it. They are in the preparatory stance, about to begin their dive."
+  ],
+  "reasoning": "The logical sequence of a dive is to start on the diving board, jump off, travel through the air, enter the water, and then be submerged.\n1. Frame 4 shows the diver in the starting position, crouched on the board, making it the first frame.\n2. Frame 3 shows the diver just after leaving the board in a tuck position, which is the immediate next step.\n3. Frame 1 shows the diver further down and away from the board, in the middle of the dive's aerial phase.\n4. Frame 0 shows the diver in a straight, vertical position, just moments before hitting the water, which is the pre-entry phase.\n5. Frame 2 shows only the splash after the diver has entered the water, marking the end of the sequence.\nTherefore, the correct temporal order is 4, 3, 1, 0, 2.",
+  "predicted_order": [
+    4,
+    3,
+    1,
+    0,
+    2
+  ],
+  "video": "v_Diving_g01_c07",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c07/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c07/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

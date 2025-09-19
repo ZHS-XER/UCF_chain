@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "detailed description for first picture (frame_0)",
+    "detailed description for second picture (frame_1)",
+    "detailed description for third picture (frame_2)",
+    "detailed description for fourth picture (frame_3)",
+    "detailed description for fifth picture (frame_4)"
+  ],
+  "reasoning": "The sequence of images depicts a high jump attempt in an indoor gymnasium. The correct order follows the logical progression of the athlete's actions. Frame 1 shows the athlete standing at the start of the run-up area, furthest from the bar. Frame 2 shows the athlete in the middle of their run towards the bar. Frame 3 shows the athlete much closer, in the final phase of their approach, preparing to launch. Frame 4 captures the moment just after take-off, as the athlete is ascending towards the bar. Finally, frame 0 shows the athlete at the apex of the jump, arched over the bar in the process of clearing it. This sequence tracks the athlete's movement from preparation to clearing the bar.",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "video": "v_HighJump_g01_c02",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

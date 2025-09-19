@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male high jumper, dressed in a light blue and white singlet and light blue shorts, is captured mid-air, seemingly at the peak of his jump. He is positioned horizontally over a red high jump bar, which is supported by two poles. His arms are bent, and his legs are tucked. The background shows an indoor track and field facility with a blue mat and other people in the distance.",
+    "A male high jumper, wearing a light blue and white singlet and light blue shorts, is shown in mid-stride during an approach run. He is running from left to right, with his left leg extended forward and right leg bent back. His arms are swinging, indicating motion. The background is an indoor facility with yellow and orange walls and blue barriers.",
+    "A male high jumper, dressed in a light blue and white singlet and light blue shorts, is standing upright on an indoor track. He is facing slightly away from the camera, looking towards what would be his run-up area. His arms are down by his sides, suggesting a preparatory or resting stance. A digital timer showing '0 90' is visible in the background, along with chairs and other equipment.",
+    "A male high jumper, in a light blue and white singlet and light blue shorts, is momentarily airborne, with both feet off the ground and close together. His knees are bent, and his arms are bent and slightly raised, as if pushing off or in the initial phase of a jump or exercise. He is in the same general location as frame 2, with the '0 90' timer in the background.",
+    "A male high jumper, wearing a light blue and white singlet and light blue shorts, is in motion, running from left to right across an indoor track. He appears to be further along in his approach run than in frame 1, with a more dynamic posture, leaning slightly forward and swinging his arms vigorously. The background shows the indoor facility with orange walls and some equipment."
+  ],
+  "reasoning": "The sequence depicts a high jump attempt. I will order the frames based on the typical progression of a high jump: preparation, approach run, takeoff, clearing the bar, and (implied) landing. \n\n1.  **Frame 2:** This frame shows the athlete standing still, looking towards his run-up area. This is the most logical starting point, representing the preparation or initial stance before the approach.\n2.  **Frame 1:** The athlete begins his approach run, moving from left to right. He is in motion but appears to be in the earlier stages of the run-up.\n3.  **Frame 4:** The athlete continues his approach run, now moving faster and closer to the takeoff point. This naturally follows frame 1 as he gains speed and approaches the jump area.\n4.  **Frame 3:** The athlete is airborne, with both feet off the ground, in a bent-knee position. This represents the takeoff phase, where he has just propelled himself upwards but is not yet over the bar. This action occurs after the run-up and before clearing the bar.\n5.  **Frame 0:** The athlete is at the peak of his jump, clearing the high jump bar. This is the climax of the high jump and must occur after the takeoff (frame 3) and after he has gone through the approach run.",
+  "predicted_order": [
+    2,
+    1,
+    4,
+    3,
+    0
+  ],
+  "video": "v_HighJump_g02_c05",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    2,
+    3,
+    4,
+    1,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

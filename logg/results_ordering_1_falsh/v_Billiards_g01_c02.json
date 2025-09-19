@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A high-angle shot of a pool table during a game. Seven object balls are scattered across the blue felt: the 8-ball (black), 1-ball (yellow), 3-ball (red), 4-ball (pink/purple), 7-ball (brown), 2-ball (blue), and another red solid ball. The white cue ball is positioned near the bottom rail, slightly to the right of the center. A player in a black shirt is standing slightly behind the cue ball, observing the table. Spectators are visible in the background, and 'Chalk-Off!' advertisements are prominently displayed. No score overlay is present.",
+    "Almost identical to frame_0. Seven object balls are scattered across the blue felt, in the exact same positions as frame_0. The white cue ball, however, has shifted very slightly to the left compared to its position in frame_0. The player is standing in a similar position, observing the table. Spectators and advertisements are visible. No score overlay is present.",
+    "A high-angle shot of a pool table. All nine object balls (1 through 9, including solids and stripes) are scattered across the table after a break shot, with none appearing to have been pocketed yet. The player, wearing a black shirt, is bent over the table, extending a cue stick to hit the white cue ball, which is positioned near the bottom rail. Balls are widely spread. Spectators and 'Chalk-Off!' advertisements are visible. No score overlay is present.",
+    "A high-angle shot of a pool table, showing the beginning of a new game. The nine object balls are meticulously racked in a triangle formation near the top end of the table. The white cue ball is placed near the bottom rail, ready for the break shot. A player in a black shirt is bent over the table, poised to strike the cue ball. A score overlay is present in the bottom right, displaying 'U.S. Open 9-Ball Championship', 'Mika Immonen 6', 'Ronnie Alcano 9', and 'Race to 11 Games'.",
+    "Almost identical to frame_3, showing the start of a new game. The nine object balls are racked in a triangle formation. The white cue ball is placed near the bottom rail. The player is bent over the table, appearing to be in the process of executing the break shot, with the cue stick slightly drawn back or just making contact with the cue ball. The score overlay is identical to frame_3."
+  ],
+  "reasoning": "The temporal order is determined by tracking the state of the pool game, primarily by the arrangement and number of balls on the table, as well as the player's actions and the presence of on-screen graphics.\n\n1.  **Start of a New Game (Frames 3 & 4):** Frames 3 and 4 clearly show the balls racked in a triangle formation, along with a score overlay indicating 'U.S. Open 9-Ball Championship' and player scores. This signifies the very beginning of a game, before the break shot.\n    *   Frame 3 shows the player poised, setting up for the break shot.\n    *   Frame 4 shows the player in the middle of executing the break shot, which follows directly from setting up.\n    Therefore, frame 3 comes before frame 4.\n\n2.  **After the Break Shot (Frame 2):** Following the break shot (from frame 4), the balls would be scattered across the table. Frame 2 shows all nine object balls scattered widely, with the player actively bent over the table taking a shot. This state follows the break and represents the early stage of the game.\n\n3.  **Mid-Game Progression (Frames 0 & 1):** Frames 0 and 1 show fewer object balls on the table (7 visible object balls plus the cue ball, compared to 9 object balls plus cue ball in frame 2). This indicates that some balls have been pocketed, meaning these frames occur later in the game than frame 2. The player is standing and observing, likely planning the next shot or waiting for a turn.\n    *   Frame 0 and Frame 1 are extremely similar, with the only noticeable difference being a very slight shift in the cue ball's position. This minor change suggests a very short temporal progression, perhaps the player making a slight adjustment to the cue ball or observing the table for a brief moment longer. It's plausible that frame 0 precedes frame 1 as the player makes a subtle adjustment or continues observation.\n\nCombining these observations, the most logical chronological sequence is: game setup (3), break shot execution (4), initial play with all balls scattered (2), and then mid-game play with fewer balls (0, followed by 1 for the minor adjustment).",
+  "predicted_order": [
+    3,
+    4,
+    2,
+    0,
+    1
+  ],
+  "video": "v_Billiards_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

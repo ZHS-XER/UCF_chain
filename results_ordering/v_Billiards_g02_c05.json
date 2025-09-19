@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male pool player in a light blue shirt stands upright, observing the pool table after the balls have scattered and come to a rest from a break shot.",
+    "A male pool player wearing what appears to be a striped shirt is bent over the pool table, beginning to line up a break shot on the tightly racked balls.",
+    "The moment of impact during a break shot. The player, wearing a light blue shirt, is in his follow-through motion as the cue ball strikes the rack, sending the balls exploding across the table.",
+    "The pool player, in a striped shirt, is crouched low over the table, taking final aim before executing the break shot on the racked balls.",
+    "Immediately after the break shot, the player in the light blue shirt has straightened up and is watching as the balls are still in motion, scattering across the blue felt of the pool table."
+  ],
+  "reasoning": "The correct order is determined by following the logical sequence of a break shot in a game of pool. The sequence begins with the player preparing for the shot, followed by the shot itself, and concludes with the aftermath. \n\n1.  **Frame 1:** The player is standing and beginning to aim at the racked balls. This is the initial setup phase.\n2.  **Frame 3:** The player is now crouched lower, in the final aiming position just before striking the cue ball. This is a progression from the initial aiming stance in frame 1.\n3.  **Frame 2:** This frame captures the peak action – the moment of impact. The balls are seen exploding from the rack, which can only happen after the player has aimed and taken the shot.\n4.  **Frame 4:** This shows the immediate aftermath. The balls are spread out and still in motion, and the player has stood up from his shooting stance to watch the result. This follows the impact.\n5.  **Frame 0:** This is the final state of the sequence. The balls have come to a complete stop, and the player is standing and assessing the new layout of the table. \n\nThis order follows the clear physical progression from setup to action to resolution.",
+  "predicted_order": [
+    1,
+    3,
+    2,
+    4,
+    0
+  ],
+  "video": "v_Billiards_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c05/frame_00013.jpg"
+  ],
+  "correct_order": [
+    3,
+    1,
+    2,
+    0,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

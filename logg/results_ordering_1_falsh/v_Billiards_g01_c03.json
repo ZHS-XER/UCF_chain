@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A high-angle shot of a pool table during a professional match. A player, wearing an orange and white striped shirt, is leaning over the table, holding a cue stick, poised to strike the cue ball. The cue ball is positioned near the head spot. Nine object balls are racked tightly in a diamond shape at the foot spot. A scoreboard overlay in the bottom right indicates 'U.S. Open 9-Ball Championship Semi-Final Match', with scores 'Mika Immonen 6' and 'Ronnie Alcano 10', and 'Race to 11 Games'. The background shows 'Chalk-Off!' banners.",
+    "This frame is identical to frame_0. A player is leaning over a pool table, cue stick in hand, preparing to hit the cue ball. The nine object balls are racked at the foot spot. The scoreboard overlay shows 'Mika Immonen 6' and 'Ronnie Alcano 10'.",
+    "A high-angle shot of a pool table where the object balls are scattered across the blue felt. The player is standing upright, hands not on the cue stick, indicating the balls are either settling after a shot or it's a moment between shots. All nine object balls and the cue ball are visible on the table. The scoreboard overlay from the previous frames is no longer present.",
+    "A high-angle shot of a pool table with the object balls scattered across it, similar to frame_2 but with slightly different ball positions. The player is standing upright, not in a shooting posture. All nine object balls and the cue ball are visible on the table. The scoreboard overlay is absent.",
+    "This frame is identical to frame_0 and frame_1. A player is leaning over a pool table, cue stick in hand, preparing to hit the cue ball. The nine object balls are racked at the foot spot. The scoreboard overlay shows 'Mika Immonen 6' and 'Ronnie Alcano 10'."
+  ],
+  "reasoning": "The core of the ordering relies on the state of the pool balls and the player's action. \n\n1.  **Initial State (Break Shot Setup):** Frames 0, 1, and 4 are pixel-for-pixel identical. They all show the player positioned to take the initial break shot, with the nine object balls racked at the foot spot and the cue ball in position. The scoreboard overlay is also present in these frames. These frames represent the very beginning of a new game or a new rack.\n\n2.  **Post-Break State:** Frames 2 and 3 show the object balls scattered across the table, indicating that the break shot (or a subsequent shot) has already occurred. The player is standing upright, not in a shooting posture. The scoreboard overlay is no longer visible in these frames, suggesting a progression in the match or a different camera focus.\n\n3.  **Distinguishing Scattered Ball States:** Comparing frame 2 and frame 3, while both show scattered balls, their positions are slightly different. In frame 2, the balls appear to be in a configuration immediately after the break or an early shot. In frame 3, the ball positions have shifted slightly from frame 2, implying a further passage of time, perhaps the balls settling completely, or a subsequent shot having moved them slightly. Therefore, frame 2 precedes frame 3.\n\nCombining these observations, the sequence begins with the break shot setup. Since frames 0, 1, and 4 are identical, their relative order among themselves doesn't convey chronological information, but they all represent the same starting moment. They must come before frames 2 and 3. I will order them by their numerical index at the beginning. Then, the balls scatter, moving from the configuration in frame 2 to the slightly altered configuration in frame 3.",
+  "predicted_order": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "video": "v_Billiards_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00007.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    4,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A young child wearing a white helmet, white t-shirt, and elbow pads is riding a small red bicycle with training wheels on an asphalt surface. The child is facing away from the camera, angled slightly to the right, and appears to be in motion. White lines are visible on the asphalt, and a prominent shadow from the child and bike is cast to the left.",
+    "A young child is riding the same bicycle on the asphalt. They are further away from the camera than in frame_0, appearing smaller and more centered in the frame. White lines are visible on the ground, and some buildings are faintly discernible in the distant background.",
+    "The child on the bicycle is now even further away from the camera, making them appear quite small in the frame. They are still riding away on the asphalt, with the white lines of the pavement visible. The residential buildings in the background are more clearly defined.",
+    "The child on the bicycle is at the furthest point from the camera among all the frames, appearing as a very small figure in the distance. The wide expanse of the asphalt parking lot with its white lines stretches towards the background, where a row of houses is distinctly visible under a bright sky.",
+    "A young child wearing a white helmet, white t-shirt, and elbow pads is on a small red bicycle with training wheels. They are relatively close to the camera, positioned slightly to the right. A tall, white, rectangular object (possibly a sign or post) is partially visible on the far right of the frame, near the bicycle's rear wheel. The child's posture suggests they might be stationary, just starting, or about to stop."
+  ],
+  "reasoning": "The primary cue for temporal ordering in these frames is the child's distance from the camera. The video sequence shows the child riding away from the camera, progressively getting smaller and further in the frame.\n\n1.  **Frame 4:** The child is closest to the camera. There's a distinct white object on the right, and the child's posture suggests a potential starting or stopping point, as they are not fully committed to moving away yet.\n2.  **Frame 0:** The child has started moving away. They are further than in frame 4, and the white object is no longer in view. The child is actively riding, angled away from the camera.\n3.  **Frame 1:** The child is now noticeably further away from the camera than in frame 0, appearing smaller and more centered in the frame. The background buildings start to become more apparent.\n4.  **Frame 2:** The child continues to move further away, becoming even smaller. The background buildings are clearer.\n5.  **Frame 3:** The child is at the maximum distance from the camera in this sequence, almost reaching the horizon line of the parking lot, and appears as a tiny figure. The background houses are most prominent here, indicating the conclusion of this segment of the ride away from the camera.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "video": "v_Biking_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c04/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

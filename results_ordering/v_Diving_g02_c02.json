@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person is in mid-air above a swimming pool, having just jumped off the diving board. They are beginning to rotate forward, with their body relatively straight.",
+    "A person is standing at the end of a diving board, crouched with their arms pulled back, in preparation to jump into the swimming pool below.",
+    "The person diving is further along in their mid-air rotation, tucked into a compact ball shape and positioned closer to the water's surface.",
+    "A large splash is erupting from the surface of the pool directly below the diving board, indicating the diver has just entered the water. An edited-in fiery explosion effect is visible in the background.",
+    "A person is in the process of leaving the diving board, having just pushed off with their feet. They are beginning their ascent into the air."
+  ],
+  "reasoning": "The frames show the sequence of a person diving into a pool. The logical order follows the physical progression of a dive. \n1. **Frame_1**: The person is on the diving board, preparing to jump. This is the starting position.\n2. **Frame_4**: The person is pushing off the board, launching themselves into the air. This is the take-off, immediately following the preparation.\n3. **Frame_0**: The person is airborne, just after leaving the board, beginning their forward motion. This is the early stage of the dive in the air.\n4. **Frame_2**: The person is further into their dive, tucked in a ball and closer to the water. This is a later stage of the mid-air portion of the dive.\n5. **Frame_3**: A large splash is visible in the water, signifying the end of the dive as the person enters the pool. The edited-in explosion also marks this moment of impact. This is the final frame of the action.",
+  "predicted_order": [
+    1,
+    4,
+    0,
+    2,
+    3
+  ],
+  "video": "v_Diving_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c02/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

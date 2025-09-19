@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A static shot of a pool table after the balls have been scattered by the break. The cue ball is in the bottom right corner, and the other balls are spread across the table, seemingly at rest.",
+    "A shot of a pool table at the beginning of a game. The balls are arranged in a tight diamond rack, and a player is lining up the cue ball for the break shot. A scoreboard is visible at the bottom right.",
+    "A dynamic action shot capturing the moment of the break. The balls are exploding outwards from the rack position with significant motion blur, indicating high speed. The player's arm and cue stick are visible in a follow-through motion.",
+    "A shot of the pool table moments after the break in frame_2. The balls are widely scattered and still appear to be rolling, but are more spread out than in the initial impact. The cue ball is in the upper central part of the table.",
+    "A shot taken a fraction of a second after frame_3. The balls have moved very slightly from their previous positions as they continue to roll and settle across the table. The cue ball has moved slightly lower on the table."
+  ],
+  "reasoning": "The sequence of events in a game of pool provides a clear chronological order. \n1. **Frame 1** is the undeniable start, as it shows the balls in the rack before the game begins, with a player preparing to break. The on-screen scoreboard also indicates the start of a game.\n2. **Frame 2** logically follows, capturing the high-energy moment of the break itself. The motion blur on the balls clearly indicates they have just been struck and are scattering at high speed.\n3. **Frame 3** shows the immediate aftermath of the break. The balls are now spread across the table but are still in motion, having traveled from the central break point.\n4. **Frame 4** is a continuation of frame 3. The positions of the balls are nearly identical, but close inspection reveals they have moved slightly, indicating they are still rolling and settling into their final positions.\n5. **Frame 0** shows the final state after the break. The balls have traveled further across the table and appear to have come to a complete stop. For instance, the cue ball has traveled from the upper-center of the table (seen in frames 3 and 4) all the way to the bottom right corner.",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "video": "v_Billiards_g01_c05",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00013.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

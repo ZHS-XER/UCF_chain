@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a helmet is riding a pink and white bicycle, starting a wide left turn in a paved lot. A sign with an arrow and a trash can are visible in the background on the right.",
+    "The child on the bicycle is further to the left and has almost completed their path across the paved lot. They are near a fence with a soccer goal visible behind it.",
+    "The child on the bicycle is in the middle of making a sharp left turn, leaning into the curve. They are following a curved white line painted on the pavement.",
+    "The child on the bicycle is coming out of the turn and beginning to ride in a straighter line towards the left. A soccer goal is now visible in the background behind a fence.",
+    "The child continues to ride in a straight line towards the left, having moved past several painted parking space lines. The soccer goal is clearly visible in the background."
+  ],
+  "reasoning": "The sequence of events follows a child riding a bicycle in a continuous motion. The child starts on the right side of the paved area and makes a wide left turn, then straightens out and rides towards the left side of the lot. \n1. **Frame_0:** This is the starting point. The child is on the far right, just beginning the turn. Background elements like the arrow sign and trash can are prominent.\n2. **Frame_2:** The child has progressed further into the turn. The bicycle is angled more sharply as they navigate the curve, and they are more centrally located in the turning area.\n3. **Frame_3:** The child is now exiting the turn and starting to ride in a straighter path. The background has shifted, and a soccer goal is now visible, indicating movement across the lot.\n4. **Frame_4:** The child continues on this straighter path, having moved further to the left and crossed more of the painted parking lines.\n5. **Frame_1:** This is the final frame in the sequence, showing the child at the furthest point to the left, having traveled across the lot after completing the turn.",
+  "predicted_order": [
+    0,
+    2,
+    3,
+    4,
+    1
+  ],
+  "video": "v_Biking_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c03/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00004.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    3,
+    4,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

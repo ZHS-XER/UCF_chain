@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A low-resolution image showing a diver's legs and lower body entering a swimming pool, creating a splash. The rest of the body is submerged. The diving board is visible to the right.",
+    "A diver in a swimsuit stands on the platform behind a diving board, facing away from the pool. They appear to be in a starting position, preparing for a reverse jump.",
+    "The diver is in mid-air, high above the water, in a tucked position. They are well past the end of the diving board, in the middle of their dive.",
+    "The diver is at the very end of the diving board, launching into the air. Their body is extended upwards, and the board is bent down from the force of their jump.",
+    "The diver is in the air, jumping backwards from the platform onto the diving board. Their knees are bent, and they are positioned just above the board, about to land on it."
+  ],
+  "reasoning": "The logical sequence of a reverse dive from a springboard is as follows:\n1.  **Frame 1**: The diver starts by standing on the platform behind the board, preparing for the dive. This is the initial position.\n2.  **Frame 4**: The diver performs a backward jump from the platform onto the springboard to build momentum. This frame captures them in mid-air, about to land on the board.\n3.  **Frame 3**: After landing on the board, the diver uses the stored energy to spring upwards. This frame shows the moment of takeoff from the end of the bent board.\n4.  **Frame 2**: Following the takeoff, the diver is in the flight phase of the dive. This frame shows them high in the air, in a tucked position.\n5.  **Frame 0**: The final stage is the entry into the water. This frame shows the diver almost completely submerged, with only their legs visible, creating a splash.\nThis order, [1, 4, 3, 2, 0], follows the entire physical progression of the dive from start to finish.",
+  "predicted_order": [
+    1,
+    4,
+    3,
+    2,
+    0
+  ],
+  "video": "v_Diving_g01_c06",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c06/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00002.jpg"
+  ],
+  "correct_order": [
+    1,
+    4,
+    3,
+    2,
+    0
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

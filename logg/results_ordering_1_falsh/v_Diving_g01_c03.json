@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person is captured mid-air, having just propelled themselves off the lower diving board. Their body is bent, angled horizontally above the water. The lower diving board is visibly depressed downwards, indicating the force of their take-off. A small ripple or splash is seen in the water to the left.",
+    "A person stands on the lower diving board, facing the pool. Their arms are extended outward to the sides, suggesting they are in the process of initiating a jump or a bounce on the board. The board appears relatively flat, not significantly depressed. There's a minor disturbance on the water's surface to the left.",
+    "A person is seen mostly submerged in the blue pool water, with their back and the top of their head just visible above the surface. They appear to be deep into the water entry phase or about to re-surface. Significant water splashes and disturbances are evident around their entry point. The diving board is empty and flat.",
+    "A person is partially submerged in the pool water, having just entered. Their head and upper torso are visible above the water, with their back facing the diving board. A substantial splash is erupting from the water around them, indicating a recent entry. The diving board is empty and flat.",
+    "A person is standing at the very edge of the lower diving board, poised to dive. Their body is vertical, and their arms are down by their sides in a ready stance. The diving board is flat and stable. The water surface appears relatively calm, with only minor ripples."
+  ],
+  "reasoning": "The sequence of events for a dive typically starts with the diver preparing on the board, then taking off, being airborne, entering the water, and finally being submerged. I've ordered the frames based on these distinct phases:\n\n1.  **Preparation (frame_4):** The diver is standing calmly at the edge of the board, poised and ready. The board is flat, and the water is calm.\n2.  **Take-off Initiation (frame_1):** The diver is still on the board, but their arms are out, indicating the beginning of the jump or a bounce. The board is still relatively flat.\n3.  **Mid-air (frame_0):** The diver is clearly airborne, having left the board. The lower diving board is visibly depressed, confirming the force of the take-off. The diver's body position suggests they are in the execution phase of the dive.\n4.  **Water Entry (frame_3):** The diver has just hit the water, creating a large splash. Their upper body is still visible above the surface, indicating the initial impact.\n5.  **Submerged/Post-entry (frame_2):** The diver is mostly submerged in the water, with only parts of their back and head visible, and significant water disturbance around them. This represents the phase immediately after entry, as they move deeper into the water.",
+  "predicted_order": [
+    4,
+    1,
+    0,
+    3,
+    2
+  ],
+  "video": "v_Diving_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c03/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    0,
+    4,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

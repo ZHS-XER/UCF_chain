@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of an indoor track and field venue. A high jumper is captured mid-air, in the process of clearing the bar, which is visible in the middle ground. The landing mat is behind the bar. A black cable runs across the foreground. Spectators are lined up against the back wall.",
+    "A shot of the high jump area, slightly closer than frame_0. The high jump bar is no longer in place, and the landing mat has a few dark objects on it, possibly shoes or equipment. The athlete is not clearly visible near the jump. Spectators are in the background. The black cable is still present in the foreground.",
+    "Similar to frame_1, this shot shows the high jump area with the bar absent or already cleared. Several dark objects are scattered on the landing mat. The athlete is not performing the jump. The crowd is visible in the background. The black cable is in the foreground.",
+    "An athlete is shown in mid-stride, actively running towards the high jump bar from the left side of the frame. The high jump bar and landing mat are visible further back and to the right of the athlete, set up for the jump. The athlete's body is tensed for the run-up.",
+    "An athlete is seen in the early stages of their run-up for the high jump, further back from the bar compared to frame_3. The high jump mat and bar are visible in the background on the right. The athlete is blurry due to motion, indicating speed."
+  ],
+  "reasoning": "The sequence depicts a high jump attempt. I ordered the frames based on the natural progression of this athletic event:\n1.  **Run-up initiation:** The athlete starts their approach to the bar.\n2.  **Approach to the bar:** The athlete gains speed and gets closer to the bar.\n3.  **Clearing the bar:** The athlete is mid-air, attempting to clear the bar.\n4.  **Landing/Post-jump immediate scene:** The athlete has landed, and the bar is down.\n5.  **Scene after landing:** A moment after the landing, the area is settling.\n\nFollowing this logic:\n*   **frame_4** shows the athlete furthest back, initiating the run-up.\n*   **frame_3** shows the athlete closer to the bar, in a more dynamic run-up pose.\n*   **frame_0** captures the peak action, with the athlete in mid-air clearing the bar.\n*   **frame_2** shows the immediate aftermath; the athlete is no longer mid-air, and the bar is gone/down. Items are on the mat, suggesting a recent landing.\n*   **frame_1** appears to be a very slightly later moment than frame_2. The overall scene is almost identical, but subtle differences in the placement of the dark objects on the mat suggest a tiny passage of time after the jump and landing, where things might have shifted or the athlete has completely moved away from the landing zone.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "video": "v_HighJump_g01_c02",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c02/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 0,
+    "discordant_pairs": 10,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.0,
+    "kendall_tau": -1.0
+  }
+}

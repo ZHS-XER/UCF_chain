@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A cyclist in a red, white, and black racing suit, helmet, and sunglasses is riding a black time trial bicycle with a solid disc rear wheel. The cyclist's right leg is down, left leg is up. The road is asphalt, and in the background, there is a flat, dry, brownish landscape under a bright sky. A single dark, thin pole with an indistinct object on top is visible far in the background on the right side.",
+    "The same cyclist and bike are depicted. The cyclist is in a very similar pedaling stance (right leg down, left leg up). A green rectangular road sign, mounted on a dark pole, is now prominently visible on the left side of the frame. The single dark pole from frame_0 is now closer and slightly more to the center-right of the background.",
+    "The cyclist is shown further along the road. The green sign and the single dark pole from previous frames are no longer visible. The cyclist's pedaling position has shifted, with the right leg further back and the left leg further forward. On the road surface in the bottom left, clear double yellow lines are visible. The background remains a flat, dry landscape with faint distant hills.",
+    "The cyclist continues down the road. Two prominent, tall, dark utility poles are now visible in the mid-ground on the left-center, suggesting new landmarks the cyclist is passing. The cyclist's pedaling position shows the right leg down and the left leg up. A very blurry, indistinct object is barely visible on the far left edge of the frame.",
+    "The cyclist is shown in a slightly different pedaling phase, with the right leg up and the left leg down. The two tall utility poles from frame_3 are now further to the left, mostly out of the frame, indicating the cyclist has moved past them significantly. The blurry object on the far left edge is still present, still indistinct."
+  ],
+  "reasoning": "The temporal order is determined by tracking the relative movement of the cyclist past fixed background objects. \n\n1.  **Frame 0:** Shows the initial stage where the cyclist is approaching the scene. A single dark pole is visible far in the background on the right, indicating an upcoming landmark.\n2.  **Frame 1:** The cyclist has moved forward. The green road sign appears on the left side of the frame, which the cyclist is passing. The dark pole from frame 0 is now closer and more central, confirming forward motion after frame 0.\n3.  **Frame 2:** The cyclist has moved past the sign and the single dark pole, as they are no longer visible. New road markings, double yellow lines, appear on the road, indicating a continuous progression.\n4.  **Frame 3:** Further along the road, two new prominent landmarks, tall utility poles, appear in the mid-ground on the left-center. This shows the cyclist approaching and starting to pass these poles.\n5.  **Frame 4:** The cyclist has progressed significantly. The two tall utility poles are now further to the left and mostly out of the frame, indicating the cyclist has passed them. This represents the latest moment among the given frames.",
+  "predicted_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "video": "v_Biking_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c05/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c05/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

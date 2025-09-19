@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame shows an athlete high in the air during a pole vault attempt. The athlete is positioned vertically, having just cleared the bar, with their body above it. The pole is still visible, extending downwards from their hands. A landing mat is below and to the left, and spectators are in the background.",
+    "This frame presents a wider view of an indoor track and field event. The pole vault runway extends into the background, with spectators gathered on the sides. No athlete is actively jumping, and the landing mat is visible in the distance to the left.",
+    "This frame captures the athlete descending onto the landing mat after a pole vault. The athlete's head is pointing downwards, and they are preparing to land on their back. The pole is no longer connected to the athlete, and the bar is not visible, suggesting it has been cleared.",
+    "This frame shows an athlete mid-run on the pole vault runway, carrying the pole. They are approaching the jump standards and landing mat, which are visible further down the track. Their body is angled forward, indicating momentum.",
+    "This frame offers a broad view of the indoor sports facility. The pole vault runway is visible in the foreground, leading to the landing area in the mid-ground. Spectators and officials are scattered around the venue. No active jump is occurring."
+  ],
+  "reasoning": "The sequence of events for a pole vault typically involves an approach run, the vault itself (take-off, ascent, clearance), and then the landing. General shots of the venue can precede or follow the specific action.\n\n1.  **frame_4:** This is the widest shot, establishing the indoor track and field setting before any specific action begins. It sets the scene.\n2.  **frame_3:** The athlete is seen beginning their approach run, holding the pole and moving towards the vaulting area. This marks the start of the specific pole vault attempt.\n3.  **frame_0:** The athlete is at the peak of their jump, high in the air, actively clearing the bar with the pole still partially visible. This is the crucial moment of the vault.\n4.  **frame_2:** Following the clearance, the athlete is captured descending onto the landing mat, indicating the completion of the airborne phase of the jump.\n5.  **frame_1:** This frame shows a general scene after the jump, similar to frame_4 but perhaps slightly more focused on the area around the landing mat, suggesting the action has concluded and people are observing or the area is being reset for the next attempt. It serves as an 'aftermath' or 'between attempts' shot.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "video": "v_HighJump_g01_c05",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00007.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00009.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    3,
+    0,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

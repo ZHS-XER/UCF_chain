@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person is captured mid-air, having just left the diving board, descending towards the water. Their body is angled, and a small amount of splash is visible below them, indicating they are about to enter or have just started to enter the water.",
+    "A person is standing on the diving board, relatively upright with knees slightly bent and arms slightly extended, appearing to be in a preparatory stance or at a peak of a small bounce before the main jump.",
+    "A person is heavily crouched on the diving board, with knees deeply bent and arms pulled back, indicating they are at the bottom of a bounce or compressing their body for a powerful spring upwards.",
+    "A person is fully submerged in the swimming pool, marked by a significant splash emanating from the water surface where they entered. Only the splash and ripples are clearly visible.",
+    "A person is in dynamic motion on the diving board, with legs spread wide and arms extended, appearing to be running or taking a powerful stride along the board as an initial phase of their dive."
+  ],
+  "reasoning": "The sequence of frames depicts a person performing a dive from a diving board. I ordered the frames by analyzing the progression of the diver's actions from the approach to water entry.\n\n1.  **Frame 4 (Initial Approach):** The person is in a dynamic, running stride on the diving board, indicating the very beginning of the dive sequence where they build momentum.\n2.  **Frame 1 (Preparatory Stance):** After the initial run, the diver transitions to a more static, yet engaged, stance on the board. They are relatively upright with knees slightly bent, suggesting a setup for the main jump or a preliminary bounce.\n3.  **Frame 2 (Crouch and Compression):** Following the preparatory stance, the diver deeply crouches, bending their knees and pulling their arms back. This position represents the maximum compression phase, where energy is stored before the powerful spring off the board.\n4.  **Frame 0 (Take-off and Mid-air):** Immediately after springing from the crouched position, the diver is airborne, descending towards the water. This frame captures the moment after leaving the board but before hitting the water.\n5.  **Frame 3 (Water Entry):** The final frame shows the diver fully submerged in the water, with a significant splash on the surface, indicating the completion of the dive into the pool.",
+  "predicted_order": [
+    4,
+    1,
+    2,
+    0,
+    3
+  ],
+  "video": "v_Diving_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c02/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c02/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

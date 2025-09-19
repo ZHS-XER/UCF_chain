@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A low-resolution side view of a cyclist on a time trial bike. The cyclist is positioned towards the left of the frame, with the rear disc wheel partially cut off by the left edge. The cyclist is wearing a blue helmet and white jersey and is moving towards the right.",
+    "The cyclist is now fully in view and almost perfectly centered in the frame. The entire bicycle, including the spoked front wheel and the solid rear disc wheel, is visible against a blurry background of trees and a road.",
+    "The cyclist has moved further to the right in the frame compared to the centered position. There is now more empty road visible on the left side of the image.",
+    "The cyclist is now significantly far to the right side of the frame, with the front wheel approaching the right edge. The cyclist is clearly in the process of exiting the frame to the right.",
+    "The cyclist is positioned to the right of the center of the frame, but not as far right as in other frames. Their body is past the midline of the image as they pedal forward."
+  ],
+  "reasoning": "The correct order is determined by tracking the cyclist's movement across the frame from left to right. \n- In frame_0, the cyclist is entering the scene from the left, as indicated by the rear wheel being partially cut off.\n- In frame_1, the cyclist is fully in the frame and centered, representing the next moment in time.\n- In frame_4, the cyclist has moved just past the center, continuing their rightward motion.\n- In frame_2, the cyclist has progressed even further to the right.\n- In frame_3, the cyclist is at the most rightward position, almost exiting the frame. \nThis sequence (0, 1, 4, 2, 3) shows a smooth and continuous progression of the cyclist riding across the screen.",
+  "predicted_order": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "video": "v_Biking_g02_c04",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c04/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00002.jpg"
+  ],
+  "correct_order": [
+    0,
+    4,
+    3,
+    2,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A cyclist is shown from the side on a time trial bicycle, riding on a paved road. The rider is in a deep aerodynamic tuck, with their back rounded and head low, almost touching the handlebars. The front wheel, which appears to be a solid disc, is slightly turned to the left, indicating the bike is leaning into a right-hand turn. The rear wheel is also a solid disc. The background is blurred with trees and light ground.",
+    "A cyclist is riding a time trial bicycle, viewed from the side. The rider is in an aerodynamic position, but their head is slightly raised, looking forward. The front wheel appears to have visible spokes or a pattern inconsistent with a solid disc wheel, unlike the other frames. The rear wheel appears to be a disc wheel but with a slightly different pattern. The bike is relatively upright.",
+    "A cyclist is in a time trial position on their bike. The rider's head is lowered, and their back is rounded, though perhaps slightly less extremely than in frames 0, 3, 4. Both front and rear wheels appear to be solid disc wheels. The bike seems to be moving relatively straight and is mostly upright.",
+    "A cyclist is in an extremely deep aerodynamic tuck, with their head almost completely hidden by their back, which is very rounded. The bike is leaning into a right-hand turn, with the front disc wheel turned to the left. This appears to be the most compressed and aerodynamic posture among all the frames. The rear wheel is also a solid disc.",
+    "A cyclist is in a deep aerodynamic tuck, similar to frame_0 and frame_3, with their head very low. Both front and rear wheels appear to be solid disc wheels. The bike is mostly upright or subtly turning, with the front wheel appearing relatively straight."
+  ],
+  "reasoning": "The primary cues for sequencing these frames are the rider's body posture, specifically the head position and the depth of the aerodynamic tuck, combined with the bike's orientation (straight vs. turning). While frame_1 appears to have different front wheel details (spokes) compared to the others (solid disc), I will assume this is due to lighting, angle, or compression artifacts, and that it's the same bike throughout the sequence. The overall shape and intent remain consistent.\n\n1.  **frame_1:** This frame shows the rider with their head most visibly raised, looking forward. This represents the least extreme aerodynamic tuck among all the frames, suggesting it occurs either before the rider settles into a full tuck or momentarily checks their surroundings/looks up during the ride.\n2.  **frame_2:** Following frame_1, the rider has now lowered their head and is in a more pronounced aerodynamic tuck. Their back is rounded, and the overall posture is more streamlined than in frame_1, but perhaps still slightly less extreme than the deepest tucks seen in other frames. The bike is relatively upright.\n3.  **frame_4:** The rider is now in a very deep aerodynamic tuck, with their head very low and almost completely hidden. This is a progression from frame_2 into a more aggressive aero position while riding relatively straight.\n4.  **frame_0:** The rider maintains a deep aerodynamic tuck similar to frame_4, but the bike is now clearly leaning into a right-hand turn (front wheel turned left from the viewer's perspective). This suggests the rider is actively steering while maintaining the aero position.\n5.  **frame_3:** This frame shows the rider in the most extreme aerodynamic tuck. Their head is almost entirely obscured by their rounded back, indicating maximum effort to minimize drag. The bike continues to be in a right-hand turn, possibly a deeper part of the turn or the most aggressive phase of the tuck during the turn, as the posture appears even more compressed than in frame_0.\n\nThis sequence logically progresses from a slightly less aggressive aero position to a sustained deep tuck, and then through a turn, intensifying the tuck at the peak of the effort or turn.",
+  "predicted_order": [
+    1,
+    2,
+    4,
+    0,
+    3
+  ],
+  "video": "v_Biking_g02_c03",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c03/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    4,
+    0,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

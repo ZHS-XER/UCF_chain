@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a helmet and protective pads is riding a bicycle on a paved surface with white lines. The child is positioned towards the right side of the frame, angled slightly right, with their left foot appearing close to the ground. A prominent arc-like shadow is cast on the ground to the right of the bicycle. The background shows a distant fence and trees under a clear sky.",
+    "A child wearing a helmet and pads is riding a bicycle, facing forward. The child is balanced and upright, positioned in the middle to right portion of the frame on a paved area with white lines. Both feet appear to be on the pedals. The background consists of a distant fence and trees.",
+    "A child wearing a helmet and pads is riding a bicycle, looking forward and maintaining balance. The child is centered in the frame on a paved surface with white lines. A vertical pole-like structure is visible in the background, to the left of the child. Both feet appear to be on the pedals.",
+    "A child wearing a helmet and pads is riding a bicycle, looking forward. The child is slightly leaning back, balanced, and appears to be in motion. The frame is a closer shot, focusing on the child. The background shows parallel white lines on the pavement and a distant fence.",
+    "A child wearing a helmet and protective pads is riding a bicycle on a paved surface with white lines. The child is positioned towards the left side of the frame, angled slightly left, looking to the left. The bike's shadow is cast behind and to the right. The background shows a distant fence and trees under a clear sky."
+  ],
+  "reasoning": "The sequence is determined by analyzing the child's movement across the paved area, their posture on the bicycle, and the relative position to background elements like white lines and a pole.\n\n1.  **Frame 4 (Start):** This appears to be the initial position. The child is on the left side of the frame, positioned to the left of a distinct vertical white line, looking slightly left. The bike is angled, suggesting a preparatory stance before moving forward. This is a wide shot, setting the scene.\n2.  **Frame 3 (Early Motion):** The child has moved forward and is now closer to the camera, indicating the start of the ride. They are balanced and appear to be pedaling or gaining momentum. The background is relatively clear, and the child is still somewhat centralized or slightly to the left relative to their progression path.\n3.  **Frame 1 (Steady Ride):** The child continues to ride forward, maintaining balance. They are now positioned further to the right in the frame compared to frame 3, suggesting continuous movement. This is a steady riding phase.\n4.  **Frame 2 (Passing a Landmark):** The child is still riding steadily, but now a vertical pole has appeared in the background to the left. This indicates that the child has ridden past this landmark, confirming progression along the path. The child is still balanced and looking forward.\n5.  **Frame 0 (Turn/End):** This represents the culmination of the sequence. The child has moved significantly to the right side of the frame, beyond the vertical white line seen in frame 4. The bicycle is angled to the right, and a distinct arc-like shadow on the ground strongly suggests a turning motion or the end of a straight path, possibly slowing down or completing a maneuver. This is a wide shot again, similar to the start, showing the extent of the movement.",
+  "predicted_order": [
+    4,
+    3,
+    1,
+    2,
+    0
+  ],
+  "video": "v_Biking_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

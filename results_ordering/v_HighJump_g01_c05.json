@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person is at the apex of a high jump, positioned directly over the bar with their back arched as they begin to clear it.",
+    "A wide shot of an indoor track and field area, showing an athlete in the distance at the beginning of the high jump runway, preparing for their approach.",
+    "The person has successfully cleared the high jump bar and is now descending backwards, about to land on the large red mat below.",
+    "The person is in the early phase of their jump, having just taken off. They are ascending towards the bar, which is to their left.",
+    "The person is captured mid-stride during their approach run on the track, moving towards the high jump area."
+  ],
+  "reasoning": "The logical sequence of a high jump event is used to determine the order. The event begins with the athlete at the start of the runway, far from the bar (frame_1). The next logical step is the athlete running towards the bar during their approach (frame_4). Following the run, the athlete takes off and begins to ascend (frame_3). The climax of the jump is when the athlete is at the peak, clearing the bar (frame_0). The final action is the athlete falling onto the landing mat after clearing the bar (frame_2). Therefore, the correct chronological order is 1, 4, 3, 0, 2.",
+  "predicted_order": [
+    1,
+    4,
+    3,
+    0,
+    2
+  ],
+  "video": "v_HighJump_g01_c05",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00007.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00009.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c05/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    3,
+    0,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

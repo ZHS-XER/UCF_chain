@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person in dark athletic wear and yellow shoes is in mid-air, ascending during a high jump. Their body is somewhat upright, with legs bent beneath them, and the high jump bar is visible in front of them. The background shows an indoor track facility with blue mats and other equipment.",
+    "A person in dark athletic wear and yellow shoes is standing on a red track, looking to the right. Their left foot is slightly lifted, suggesting they are walking or in a relaxed stance after an activity. Several spectators or officials are seated in chairs in the background.",
+    "A person in dark athletic wear is clearing the high jump bar using the Fosbury Flop technique. Their back is towards the bar, and their body is inverted and horizontal, with their head already over the bar and their body in the process of passing over it. The blue landing mat is clearly visible below.",
+    "A person in dark athletic wear and yellow shoes is running on a red track. They are in a full stride, with arms pumping and one leg lifted, indicating a run-up or sprint. Spectators or officials are seated in the background along a wall.",
+    "A person in dark athletic wear is landing on a large blue mat, having completed a high jump. They are lying mostly flat on their back on the mat. The high jump bar is still in place above the mat to the right, indicating a successful clear."
+  ],
+  "reasoning": "I analyzed the actions depicted in each frame to reconstruct the chronological sequence of a high jump event. \n1.  **Run-up:** Frame 3 clearly shows the athlete running on the track, building momentum for the jump. This is the initial phase.\n2.  **Take-off/Ascent:** Frame 0 shows the athlete in mid-air, having just taken off and beginning to rise towards the bar. Their body is relatively upright, indicating an early stage of the jump.\n3.  **Clearing the bar:** Frame 2 depicts the athlete's body fully inverted and passing over the high jump bar using the Fosbury Flop technique. This is the peak action of the jump, occurring after the initial ascent.\n4.  **Landing:** Frame 4 shows the athlete having landed on the blue mat, signifying the completion of the jump itself.\n5.  **Post-jump/Aftermath:** Frame 1 shows the athlete standing or walking on the track, away from the jump area, implying the jump is over and they are moving to the next stage (e.g., leaving the area or preparing for another attempt).",
+  "predicted_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "video": "v_HighJump_g02_c03",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    2,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "frame_descriptions": [
+    "detailed description for first picture (frame_0)",
+    "A wide shot of a pool table after a break. The balls are scattered across the blue felt. The player in the black shirt is standing upright at the far end of the table, observing the layout. Another person in a light blue shirt is sitting in the background.",
+    "detailed description for second picture (frame_1)",
+    "A pool player in a black shirt is leaning over the table, in the final moment of their forward stroke to break the racked balls. The cue stick's tip is extremely close to the white cue ball. The other balls are still in a tight triangular rack. A scoreboard graphic is partially visible at the bottom right.",
+    "detailed description for third picture (frame_2)",
+    "A pool player in a black shirt is in their stance, aiming for a break shot. The balls are in a triangular rack. The player is in a backswing motion, with the cue stick pulled away from the white cue ball. There are no on-screen graphics visible.",
+    "detailed description for fourth picture (frame_3)",
+    "The moment of the break in a pool game. The cue ball has just struck the racked balls, and they are shown scattering across the table with motion blur. The player is in a follow-through position after hitting the cue ball.",
+    "detailed description for fifth picture (frame_4)",
+    "A pool player is aiming for a break shot, with the cue stick in a backswing position. The balls are racked in a triangle. An on-screen scoreboard graphic is visible in the lower right corner, showing the players' names (Shane Van Boening and Jose Parica) and the score."
+  ],
+  "reasoning": "The frames depict a break shot in a game of pool. The logical sequence of this event is: aiming, striking the ball, the balls scattering, and finally the balls coming to rest. \n1.  **Frame 2** is the start of the sequence, showing the player aiming with the cue stick pulled back, before any on-screen graphics appear. \n2.  **Frame 4** follows, where the player is in a similar aiming position, but now a scoreboard graphic has been added to the screen.\n3.  **Frame 1** comes next, capturing the moment just before impact. The player is in their forward stroke, and the tip of the cue stick is almost touching the cue ball.\n4.  **Frame 3** shows the immediate result of the strike. The racked balls are in mid-air, scattering across the table with significant motion blur, indicating this is the moment of the break itself.\n5.  **Frame 0** is the final frame, showing the aftermath. The balls have stopped moving and are now dispersed across the table. The player has stood up from their shooting stance to assess the new layout.",
+  "predicted_order": [
+    2,
+    4,
+    1,
+    3,
+    0
+  ],
+  "video": "v_Billiards_g02_c03",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    2,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

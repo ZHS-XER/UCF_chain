@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: A wide shot of a pool table with numerous colored balls scattered across the felt. The cue ball is also on the table. A player in a dark shirt stands upright near the far end of the table, observing the ball placement. Promotional banners for 'Chalk-Off!' are visible in the background.",
+    "frame_1: A pool table with a rack of balls (appearing to be a 9-ball setup with the 1-ball at the front) neatly arranged at one end. The cue ball is positioned behind the head string. A player, leaning over the table, has their cue stick very close to the cue ball, aiming for a break shot. A scoreboard displays 'US Open 9-Ball Championship' and scores: 'SHANE VAN BOENING 10', 'JOSE PARICA 8', 'Race to 11 Games'.",
+    "frame_2: Similar to frame_1. A rack of balls is set up, and the cue ball is in place. The player is leaning over the table, holding the cue stick, which is drawn back, preparing for the break shot. The scoreboard with identical information is also visible.",
+    "frame_3: A pool table with the racked balls still grouped, but the cue stick is clearly in motion, blurred, having just struck the cue ball (which is no longer visible at its initial position) towards the racked balls. This captures the moment of impact during the break shot.",
+    "frame_4: Similar to frame_1 and frame_2. A rack of balls is set up, and the cue ball is in place. The player is leaning over the table, holding the cue stick, which is slightly closer to the cue ball than in frame_2, refining their aim before the break shot. The scoreboard is identical."
+  ],
+  "reasoning": "The sequence depicts a player executing a break shot in a game of pool. I ordered the frames based on the natural progression of a pool shot:\n\n1.  **Setting up and Initial Aim (frame_2):** The player is in position, the balls are racked, and the cue stick is drawn back, indicating the initial phase of preparing to strike the cue ball.\n2.  **Refining Aim (frame_4):** The player has moved the cue stick slightly forward, closer to the cue ball, indicating a more refined aiming process, getting ready for the final forward stroke.\n3.  **Pre-Strike Moment (frame_1):** The cue stick is now extremely close to the cue ball, poised for impact. This is the moment just before the final forward motion of the cue stick.\n4.  **The Strike (frame_3):** The cue stick is blurred, indicating motion, and has visibly struck the cue ball (which is no longer at its initial position). The racked balls are still grouped but about to scatter from the impact.\n5.  **Aftermath of the Break (frame_0):** The balls are now scattered across the table, not in a rack. The player is standing upright, observing the outcome of the break, signifying the completion of the shot and the start of play for that rack.",
+  "predicted_order": [
+    2,
+    4,
+    1,
+    3,
+    0
+  ],
+  "video": "v_Billiards_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c06/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

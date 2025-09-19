@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A young child wearing a colorful party hat is intently looking at a birthday cake with multiple lit candles. Her lips are slightly pursed, indicating she might be starting to blow. An older woman to the right is leaning over the cake with her mouth open, appearing to assist the child in blowing out the candles. All candles are burning brightly.",
+    "Similar to frame_0, a young child in a party hat is focused on the birthday cake with lit candles, her lips slightly pursed. The older woman next to her is leaning in with her mouth open, actively blowing. Her right hand is positioned near the cake, as if guiding or pointing. All candles are still clearly lit and bright.",
+    "A young child with puffed cheeks and tightly pursed lips is actively blowing on the birthday cake candles. Several candles are visibly flickering or being affected by the breath. The older woman next to her is also blowing vigorously, with her mouth wide open and cheeks slightly puffed. Most candles are still brightly lit.",
+    "A young child in a party hat is looking at the birthday cake with lit candles. Her lips are slightly pursed, but less so than in frames 2 or 4. The older woman is leaning in with her mouth open, seemingly preparing to blow or just beginning a gentle blow. All candles are burning with full intensity.",
+    "The young child's cheeks are very puffed and her lips are tightly pursed, showing maximum effort in blowing out the candles. The older woman is also blowing very intensely with her mouth wide open. Compared to previous frames, the overall light from the candles appears slightly diminished, suggesting some candles have been extinguished or are very close to going out."
+  ],
+  "reasoning": "The temporal order is determined by observing the progression of the blowing action from anticipation to full effort, and the corresponding state of the birthday candles. \n\n1.  **frame_3 (Start - Preparation):** The child's lips are slightly pursed, and the woman's mouth is open, suggesting they are getting ready to blow or just starting a very gentle blow. All candles are fully bright, indicating no significant extinguishing has occurred yet.\n2.  **frame_0 (Initial Blow):** The child's lips are more distinctly pursed, and the woman is actively blowing with her mouth wide open. The candles are still all burning brightly, but the blowing action has clearly started.\n3.  **frame_1 (Sustained Initial Blow/Adjustment):** This frame is very similar to frame_0 in terms of the child's blowing and the brightness of the candles. The woman's head position is slightly different, and her hand is near the cake, which could indicate a continuation of the initial blowing effort or a slight adjustment. It shows no more candles extinguished than frame_0, placing it before the more intense blowing.\n4.  **frame_2 (Intensified Blowing):** The child's cheeks are visibly puffed, and her lips are tightly pursed, showing increased effort. The woman is also blowing more vigorously. Several candles are clearly flickering or bending under the force of the air, though most are still lit.\n5.  **frame_4 (Peak Blowing/Extinguishing):** This frame shows the most intense blowing action from both the child (very puffed cheeks) and the woman. Crucially, the overall illumination from the candles appears to be slightly less, suggesting that some candles have been extinguished or are on the verge of going out. This represents the climax of the blowing action.",
+  "predicted_order": [
+    3,
+    0,
+    1,
+    2,
+    4
+  ],
+  "video": "v_BlowingCandles_g01_c03",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 3,
+    "discordant_pairs": 7,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.3,
+    "kendall_tau": -0.4
+  }
+}

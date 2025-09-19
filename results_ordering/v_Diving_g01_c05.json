@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is in mid-air, in a tucked position, descending towards the water. They are at a height roughly level with the diving board.",
+    "A diver in dark swim trunks is walking along a springboard towards the end, beginning their approach for a dive.",
+    "The diver is in a seated or deeply crouched position on the very end of the springboard, with their body bent forward.",
+    "The diver is high in the air, well above the diving platform, at the apex of their jump. They are in a tucked rotational pose.",
+    "The diver is balanced in a handstand on the end of the springboard, holding a static position before starting the dive."
+  ],
+  "reasoning": "The user wants me to determine the temporal order of 5 frames from a diving video. The frames show several distinct stages that do not fit a standard, well-executed dive. The most logical way to sequence these frames is to interpret them as a failed dive attempt.\n\n1.  **frame_1**: This is the clear beginning of the sequence. The diver is walking out onto the springboard, which is the standard 'approach' phase.\n2.  **frame_4**: After reaching the end of the board, the diver gets into a preparatory stance. Here, it's a handstand, indicating the diver is attempting a handstand dive.\n3.  **frame_2**: This frame is key to understanding the sequence. A successful handstand dive would not involve a seated position. Therefore, it's most likely that the diver loses balance, fails the handstand, and falls onto the board in this seated/crouched position.\n4.  **frame_3**: The impact of the fall (seen in frame_2) on the flexible springboard acts as an unintentional launch, propelling the diver into the air. This frame shows the diver at the highest point (apex) of this accidental trajectory.\n5.  **frame_0**: Following the law of physics, after reaching the apex of the jump in frame_3, the diver begins to descend towards the water. This frame shows them at a lower altitude than in frame_3, on their way down.\n\nThis \"diving fail\" narrative provides a coherent cause-and-effect timeline that connects all five otherwise inconsistent frames.",
+  "predicted_order": [
+    1,
+    4,
+    2,
+    3,
+    0
+  ],
+  "video": "v_Diving_g01_c05",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c05/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    0,
+    4,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

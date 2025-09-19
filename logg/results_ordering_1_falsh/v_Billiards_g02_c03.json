@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: The pool table shows numerous colored balls scattered across its blue felt surface, indicating a completed break shot. The cue ball is visible near the upper right pocket. A player in a dark shirt is still bent over the table on the right, observing the outcome. In the background, spectators and broadcast elements like 'BCn' and 'Chalk-Off!' banners are visible.",
+    "frame_1: The pool balls are racked in a tight triangular formation at the center of the table, ready for a break shot. A player in a dark shirt is leaning over the table, holding a cue stick, aiming at the white cue ball positioned at the head string. A scoreboard overlay is present in the lower right, displaying 'SHANE VAN BOENING' and 'JOSE PARICA' with scores, and 'Race to 11 Games'.",
+    "frame_2: The pool balls are neatly racked in the center of the table, identical to frame_1. The player is bent over, aiming the cue stick at the cue ball, which is placed for the break. This frame is similar to frame_1 but lacks the scoreboard overlay.",
+    "frame_3: The pool balls are in motion, scattering across the table after being struck by the cue ball during a break shot. Several balls show motion blur. The player's cue stick is still extended forward, indicating the immediate aftermath of the impact.",
+    "frame_4: The pool balls are racked in the center of the table, and the player is aiming the cue stick at the cue ball. This frame is very similar to frame_1 and frame_2, with the scoreboard overlay visible. The cue stick appears to be in its final position, very close to the cue ball, just before impact."
+  ],
+  "reasoning": "The sequence of events in a pool break shot typically progresses from setting up the balls, aiming, striking, and then observing the scattered balls. \n\n1.  **Setup (Racked Balls, Aiming):** Frames 1, 2, and 4 show the balls racked and the player aiming. Frame 2 appears to be the most initial aiming position without the scoreboard overlay, offering a clean view. Frame 1 shows the scoreboard and a slight adjustment in the player's arm/cue compared to frame 2. Frame 4 shows the player in the final aiming position, with the cue tip almost touching the cue ball, just before the strike. Thus, a logical progression for the setup phase is [2, 1, 4].\n2.  **Impact (Scattering Balls):** Frame 3 captures the moment immediately after the cue ball hits the racked balls. The balls are visibly scattering with motion blur, and the player's cue is still extended. This state clearly comes after the aiming phase.\n3.  **Post-Break (Scattered Balls):** Frame 0 shows the balls fully scattered across the table, having settled into their new positions after the break. The cue ball is also in a new position, indicating the completion of the break shot. The player is still bent over, observing the result.",
+  "predicted_order": [
+    2,
+    1,
+    4,
+    3,
+    0
+  ],
+  "video": "v_Billiards_g02_c03",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c03/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    1,
+    2,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

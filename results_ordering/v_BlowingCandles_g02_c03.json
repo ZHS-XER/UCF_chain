@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A young child in a birthday hat is sitting at a table, leaning forward and looking down intently at a single lit candle on a small chocolate cake. Their mouth is slightly open, as if they are about to blow.",
+    "The child, wearing a birthday hat, leans forward over a table towards a small cake with a single lit candle. Their eyes are focused on the flame, and they seem to be preparing to blow it out.",
+    "A young child with a birthday hat on sits upright at a table, smiling as they look at a small chocolate cake with one lit candle on it. The background shows a room with large windows.",
+    "The child is actively blowing out the candle on their cake. Their cheeks are puffed out, they are leaning very close to the cake, and the candle's flame is bent horizontally from the force of their breath.",
+    "The child looks at the small cake after having blown out the candle. The candle's wick is no longer lit, and a thin wisp of smoke is rising from it."
+  ],
+  "reasoning": "The logical sequence of events for a child blowing out a birthday candle is as follows:\n1.  **Frame 2:** The child is first presented with the cake and lit candle. They are sitting upright and smiling, observing the scene before the action begins.\n2.  **Frame 1:** The child begins to lean forward, getting into position to blow out the candle.\n3.  **Frame 0:** The child is now fully leaned in, eyes focused on the flame, taking a final moment of preparation just before they start to blow.\n4.  **Frame 3:** This is the peak of the action. The child is actively blowing, with puffed cheeks, and the flame is clearly being affected by their breath, bending sideways.\n5.  **Frame 4:** The action is complete. The candle is successfully extinguished, evidenced by the lack of a flame and the wisp of smoke rising from the wick.",
+  "predicted_order": [
+    2,
+    1,
+    0,
+    3,
+    4
+  ],
+  "video": "v_BlowingCandles_g02_c03",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00005.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

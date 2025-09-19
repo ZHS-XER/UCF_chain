@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male athlete in a dark tracksuit and white headband is running on a reddish-brown track. He is in mid-stride, moving from left to right, with his right leg forward. Blue barriers are visible on the left, and the background suggests an indoor track facility.",
+    "The athlete is very close to the high jump bar and standards, which are visible on the right side of the frame. He is still running but appears to be initiating the take-off phase, angled towards the bar. A person in white clothing is standing further in the background.",
+    "The athlete is in mid-air, clearing the high jump bar using the Fosbury Flop technique. His back is arched over the horizontal bar, and his legs are extended upwards. A blue landing mat is prominently visible directly below him.",
+    "The athlete is running on the track, wearing the same dark outfit and white headband. His posture indicates an active run, slightly bent forward. In the background, a yellow wall and other individuals are visible.",
+    "The athlete is running from left to right on the track, wearing the same dark attire and white headband. His stride appears to be at an earlier, possibly more relaxed stage of acceleration. The background features a yellow wall and several other people, suggesting an open area of the track."
+  ],
+  "reasoning": "The video frames depict a high jump attempt. The natural progression of a high jump involves an approach run, followed by take-off, bar clearance, and finally landing. I will order the frames based on these phases.\n\n1.  **Initial Approach (frame_4):** The athlete is running, seemingly in the early stages of his approach. His body posture is relatively upright, and he appears to be a considerable distance from the high jump setup. The background with the yellow wall and other people suggests an open area of the track.\n2.  **Mid-Approach/Acceleration (frame_3):** The athlete is still running, but his posture is slightly more aggressive, indicating acceleration. He appears to be closer to the general area of the jump compared to frame_4. The background (yellow wall) is consistent.\n3.  **Late Approach/Pre-Takeoff Curve (frame_0):** The athlete is running with clear intent and momentum. The blue barriers on the left suggest he is on the curved part of his approach, directing him towards the high jump pit. This is a more dynamic running phase than the previous frames.\n4.  **Take-off (frame_1):** The athlete is now directly at the high jump standards, clearly in the process of initiating his jump. His body is angled, preparing to propel himself over the bar, which is visible on the right.\n5.  **Bar Clearance (frame_2):** This is the climax of the high jump, where the athlete is airborne and successfully clearing the bar using the Fosbury Flop technique. The blue landing mat is visible below, indicating the immediate next phase would be landing.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "video": "v_HighJump_g02_c06",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

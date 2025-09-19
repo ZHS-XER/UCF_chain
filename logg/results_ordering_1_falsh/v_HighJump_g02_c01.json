@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A female athlete, dressed in a black top and shorts, is captured mid-stride during her run-up for a high jump. Her left leg is raised, bent at the knee, with her foot off the ground, while her right foot is planted or about to plant. She is on a reddish track, moving towards the left side of the frame where high jump uprights are visible. The text 'Girls High Jump' is clearly visible in the bottom right corner.",
+    "A female athlete, wearing a black top and shorts, stands on the reddish track, facing slightly towards the right side of the frame. Her posture is relaxed, with her arms slightly bent. She is positioned to the right of the high jump area. The text 'Girls High Jump' is almost entirely blurred or faded out in the bottom right corner.",
+    "A female athlete, in a black top and shorts, is in a dynamic running pose, further along in her high jump run-up than in frame_0. Her body is angled more towards the high jump bar, with her left leg bent and raised high, and her right leg extended back. She is closer to the high jump uprights on the left. The text 'Girls High Jump' is clearly visible in the bottom right corner.",
+    "A female athlete, dressed in a black top and shorts, stands still on the reddish track. She is facing forward, looking towards the high jump area, appearing ready to start her run-up. Her posture is neutral. The text 'Girls High Jump' is clearly visible in the bottom right corner.",
+    "A female athlete is captured in mid-air, clearing the high jump bar. Her body is horizontal over the orange bar, and she is positioned directly above the blue landing mat. The image is somewhat motion-blurred, emphasizing the speed of the action. No text is visible in this frame."
+  ],
+  "reasoning": "I analyzed the sequence of a high jump event: preparation, run-up, jump, and post-jump. \n\n1.  **Preparation (frame_3):** This frame shows the athlete standing still, facing forward, appearing ready to start. The 'Girls High Jump' text is clear, suggesting it's an establishing shot or the beginning of the action.\n\n2.  **Early Run-up (frame_0):** The athlete has begun her run, in an active stride, but is still relatively far from the high jump bar. The 'Girls High Jump' text is still clear.\n\n3.  **Later Run-up (frame_2):** The athlete is closer to the take-off point, showing a more dynamic and powerful stride, indicating she's progressing in her run-up towards the bar. The 'Girls High Jump' text remains clear.\n\n4.  **The Jump (frame_4):** This frame captures the peak action – the athlete in mid-air clearing the bar. The motion blur and her position over the mat confirm this. The 'Girls High Jump' text is no longer visible, which is typical for an action shot.\n\n5.  **Post-Jump/Reset (frame_1):** After the jump, the athlete would land and walk away or reset. In this frame, she is standing or walking back on the track, in a more relaxed posture. The 'Girls High Jump' text is very blurry or almost faded out, suggesting this moment is either after the main action or less focused on introducing the event compared to the initial frames.",
+  "predicted_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "video": "v_HighJump_g02_c01",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    2,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

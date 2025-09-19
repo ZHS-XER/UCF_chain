@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A pool player is in their stance, aiming down the cue stick for a break shot. The balls are arranged in a tight diamond rack. The cue ball is positioned at the top of the table. A scoreboard is visible showing a match between Mika Immonen and Ronnie Alcano.",
+    "The pool balls are scattered across the blue-felt table and are stationary after a break shot. The cue ball has come to rest on the right side of the table. No player is visible in the frame.",
+    "This frame captures the moment of impact of the break shot. The racked balls are exploding outwards with significant motion blur. The player is visible in their follow-through motion after striking the cue ball.",
+    "The pool player is in the middle of their backswing for the break shot. The cue stick is pulled back from the cue ball, which is still in its starting position. The balls remain in the rack.",
+    "The pool balls are scattered across the table. A player is now leaning over the table, aiming with the cue stick to take the first shot after the break on the yellow ball."
+  ],
+  "reasoning": "The logical order of events in a pool game, specifically the break shot, determines the sequence. The process begins with setting up the shot, followed by the execution, the result, and then the subsequent play.\n1. **Frame 0:** The player is shown aiming at the cue ball with the balls racked. This is the initial setup and aiming phase before the shot.\n2. **Frame 3:** The player is shown with the cue stick pulled back. This is the backswing, the final motion immediately before striking the cue ball. It logically follows the aiming phase.\n3. **Frame 2:** This frame shows the balls in motion with significant blur, clearly depicting the moment the cue ball hits the rack and scatters the balls. This is the action of the break itself.\n4. **Frame 1:** The balls are shown scattered across the table, but now stationary. This is the immediate result of the break shot, showing where all the balls came to rest.\n5. **Frame 4:** A player is now shown at the table, aiming for their next shot on one of the scattered balls. This represents the continuation of the game after the break is complete.\nThis sequence follows the clear and logical progression of a break shot from start to finish: aim -> backswing -> impact -> balls rest -> next shot.",
+  "predicted_order": [
+    0,
+    3,
+    2,
+    1,
+    4
+  ],
+  "video": "v_Billiards_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00007.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a white helmet and elbow pads is riding a small pink bicycle with training wheels on a gray asphalt surface. The child is angled to the right, leaning slightly, as if making a right turn. White lines are painted on the asphalt, including a large arrow pointing left. In the background, there's a black fence, a dirt hill, and a white sign with a black arrow pointing left.",
+    "A child in a white helmet and elbow pads is riding a small pink bicycle with training wheels across a wide gray asphalt area. The child is looking and moving to the right. White lines form a grid pattern on the asphalt. In the background, there's a black fence, a large dirt hill, and a white soccer goal post.",
+    "A child wearing a white helmet and elbow pads is riding a small pink bicycle with training wheels on a gray asphalt surface, making a distinct right turn. The child is leaning significantly into the turn, and the front wheel is sharply angled. White lines, including a large arrow pointing left, are on the asphalt. The background features a black fence, a dirt hill, and a white sign with a black arrow.",
+    "A child in a white helmet and elbow pads is riding a small pink bicycle with training wheels on a gray asphalt surface, moving to the right. The bike is upright. White lines create a grid pattern on the asphalt. The background shows a black fence, a dirt hill, and a white soccer goal post, similar to frame_1 but the child is further to the right.",
+    "A child wearing a white helmet and elbow pads is riding a small pink bicycle with training wheels on a gray asphalt surface, continuing to move to the right. This frame is similar to frame_3, with the child having progressed even further to the right across the grid-lined asphalt. The background elements (fence, dirt hill, soccer goal) remain the same."
+  ],
+  "reasoning": "The frames show a child riding a bicycle. There are two distinct locations/contexts: one where the child is making a sharp turn (frames 0 and 2), and another where the child is riding relatively straight across an open, grid-lined area (frames 1, 3, and 4). \n\n1.  **Ordering the turn sequence (frames 0, 2):** In frame_2, the child is leaning more sharply into the turn, and the front wheel is more acutely angled than in frame_0. This suggests that frame_2 captures an earlier, sharper phase of the turn, and frame_0 shows the child progressing further out of or through the turn. Thus, frame_2 comes before frame_0.\n2.  **Ordering the straight riding sequence (frames 1, 3, 4):** In these frames, the child is moving from left to right across the open asphalt area. In frame_1, the child is positioned more to the left side of the frame. In frame_3, the child has moved further to the right. In frame_4, the child has moved even further to the right, indicating continuous forward motion. Thus, the order is frame_1 -> frame_3 -> frame_4.\n3.  **Connecting the sequences:** It's logical to assume the child completes the turn before riding straight across the open area. Therefore, the turn sequence (frames 2, 0) should precede the straight riding sequence (frames 1, 3, 4). The visual consistency of the background elements (dirt hill, general lighting) supports these being contiguous moments in the same video. \n\nCombining these observations, the most logical temporal order is frame_2 (sharp turn starts) -> frame_0 (turn continues/finishes) -> frame_1 (enters open area/starts straight ride) -> frame_3 (rides further straight) -> frame_4 (continues straight ride).",
+  "predicted_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "video": "v_Biking_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c03/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c03/frame_00004.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    3,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

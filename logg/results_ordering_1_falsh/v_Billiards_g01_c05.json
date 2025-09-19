@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame shows a pool table with several balls scattered across the light blue felt. There are 10 object balls remaining on the table along with the cue ball. The balls are static, indicating a pause in play after some balls have been pocketed. A scoreboard banner for 'BCn' and 'Chalk Off!' is visible at the top.",
+    "This frame shows a pool table with all 15 object balls racked in a triangle at the center, ready for the break shot. A player's arm and a cue stick are visible at the top, positioned to strike the cue ball. A scoreboard overlay in the bottom right indicates 'US Open 9-Ball Championship' with player scores (Mika Immonen 3, Ronnie Alcano 5).",
+    "This frame captures the moment immediately after the break shot. The racked balls are scattered across the table and are visibly in motion, indicated by slight blurring. The cue ball is also in motion after hitting the rack. All 15 object balls appear to be on the table.",
+    "This frame shows a pool table with all 15 object balls scattered and at rest after the initial break. No balls appear to have been pocketed yet from the break. The cue ball is also static. The arrangement of the balls is distinct from the racked state but identical to frame_4.",
+    "This frame shows a pool table with all 15 object balls scattered and at rest after the initial break. No balls appear to have been pocketed yet from the break. The cue ball is also static. The arrangement of the balls is identical to frame_3, suggesting it captures the same static moment or a moment where no changes occurred."
+  ],
+  "reasoning": "The temporal order is determined by tracking the state of the pool balls and the progression of a game of pool.\n\n1.  **frame_1**: This is clearly the initial state of a pool game, where all 15 object balls are racked in a triangle, and a player is poised to execute the break shot. The scoreboard overlay also confirms this is the start of a game.\n\n2.  **frame_2**: Immediately after the break, the balls scatter across the table. This frame shows the balls in motion with visible blur, capturing the dynamic instant of the break shot.\n\n3.  **frame_3**: After the break shot, the balls settle into new positions on the table. This frame shows all 15 object balls at rest, indicating the immediate aftermath of the break before any balls are pocketed. Its state (15 object balls, scattered) follows directly from the break.\n\n4.  **frame_4**: This frame is identical to frame_3. In a video sequence, two identical frames often represent a slight lapse of time where no action (like pocketing a ball or moving a ball) has occurred. It logically follows frame_3, still representing the state where all 15 object balls are on the table and no further progress has been made in pocketing balls.\n\n5.  **frame_0**: This frame shows significantly fewer balls on the table (10 object balls compared to the 15 in frame_3 and frame_4). This indicates that play has continued after the break, and several balls have been successfully pocketed. Therefore, this frame must come last in the sequence, representing a later stage of the game.",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "video": "v_Billiards_g01_c05",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c05/frame_00013.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    0,
+    3,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

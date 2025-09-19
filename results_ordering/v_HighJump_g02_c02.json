@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A high jumper is in mid-air, arching their back over the high jump bar. They are wearing a black uniform and are about to land on a large blue crash mat.",
+    "A female athlete in a black uniform stands on an indoor track, facing left. She appears to be interacting with a man in a white shirt and khaki pants who is standing behind her. Yellow barriers are in the background.",
+    "The female athlete in the black uniform is now walking towards the right on the track, away from the man in the white shirt. She seems to be moving to her starting position.",
+    "The athlete is in full stride, running from left to right on the track during her approach to the high jump bar. Her body is leaning forward in a running posture.",
+    "The athlete is at the end of her running approach, just moments before taking off. She is very close to the high jump bar and is in a low, coiled position, preparing to launch herself upwards."
+  ],
+  "reasoning": "The sequence of images follows the logical progression of a high jump event. The athlete begins by standing and preparing in frame_1. In frame_2, she walks to her starting mark. Frame_3 shows her in the middle of her running approach towards the bar. In frame_4, she has reached the bar and is in the process of planting her foot to take off. Finally, frame_0 shows the peak of the action, where she is in the air, clearing the bar. Therefore, the correct chronological order is 1, 2, 3, 4, 0.",
+  "predicted_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "video": "v_HighJump_g02_c02",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A pool player in an orange shirt is at the peak of his backswing, preparing to strike the cue ball for a break shot. The balls are racked in a diamond formation at the far end of the blue pool table. A 'RACK 12' graphic is visible in the lower-left corner.",
+    "The pool player is in the final moment of his forward stroke for the break shot, with the cue tip extremely close to the cue ball, just before impact. The balls are still racked at the far end of the table.",
+    "The break shot has just happened. The balls are scattered across the pool table, many of them still in motion from the impact. The player is now standing up, partially visible at the top of the frame, watching the balls.",
+    "The game is in progress, sometime after the break shot. There are fewer balls on the table compared to the previous frame, indicating some have been pocketed. The remaining balls are spread out, and the player is standing up, assessing the layout.",
+    "A pool player is leaning over the table, aiming the cue ball for a break shot. The balls are racked in a diamond formation. There are some transitional graphics layered over the 'RACK 12' scoreboard in the lower-left corner, suggesting this is the beginning of the sequence."
+  ],
+  "reasoning": "The sequence of events depicts a break shot in a game of pool and its immediate aftermath. \n1. **Frame 4** shows the player aiming and setting up for the shot. This is the earliest phase. The transitional graphics on the scoreboard also suggest the start of the action for this rack.\n2. **Frame 0** shows the player with his cue stick pulled all the way back. This is the peak of the backswing, which happens just after aiming and right before striking the ball.\n3. **Frame 1** captures the moment just before the cue tip makes contact with the cue ball. The player's arm has moved forward from the position in frame 0.\n4. **Frame 2** shows the immediate result of the break. The rack is broken, and the balls are scattered across the table, still in motion.\n5. **Frame 3** shows a later state of the game. Compared to frame 2, there are fewer balls on the table, which means some time has passed and at least one shot has been made to pocket them. Therefore, this frame comes last in the sequence.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "video": "v_Billiards_g01_c06",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

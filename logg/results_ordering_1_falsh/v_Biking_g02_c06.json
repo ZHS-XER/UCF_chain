@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: A cyclist wearing a red and white long-sleeved jersey and black pants is riding a bicycle with a solid black rear wheel and a spoked front wheel. The cyclist is positioned towards the right side of the frame, with their right leg down and left leg up in the pedal stroke. Bare trees are visible in the background against a bright sky. A faint reflection of the cyclist and bike is on the light-colored ground.",
+    "frame_1: Two cyclists are visible. In the foreground on the right, a cyclist in a white jersey and black shorts rides a bike with a solid black rear wheel and a spoked front wheel. Behind and to the left of this cyclist is the first cyclist, wearing the red and white jersey. Both cyclists appear to be moving from left to right. The red and white cyclist's right leg is down, left leg up.",
+    "frame_2: The cyclist in the red and white jersey is riding their bicycle, positioned on the far left of the frame. Their right leg is clearly up in the pedal stroke, and the left leg is down. The background shows bare trees and a bright sky, similar to other frames. A reflection is visible beneath the bike on the light ground.",
+    "frame_3: Two cyclists are shown. The red and white jersey cyclist is in the left-center of the frame, with their right leg down and left leg up. On the far right edge of the frame, only the front wheel and part of the leg of the second cyclist (in the white jersey) are visible, indicating they have moved significantly ahead and are almost out of frame.",
+    "frame_4: The cyclist in the red and white jersey is riding, positioned to the left-center of the frame, to the right of their position in frame_2. Their right leg is slightly up, and the left leg is slightly down, indicating a different phase of the pedal stroke compared to frame_2. The background and ground are consistent with the other frames."
+  ],
+  "reasoning": "The core task is to identify the temporal sequence of the frames. I will analyze the movement of the primary cyclist (in the red and white jersey) across the frame, their pedal stroke, and the interaction with the second cyclist (in the white jersey).\n\n1.  **Primary Cyclist's Horizontal Movement:** The cyclist in the red and white jersey consistently moves from left to right across the frames. By observing their position relative to the left and right edges of the frame:\n    *   **frame_2:** Red and white cyclist is furthest to the left.\n    *   **frame_4:** Red and white cyclist is to the right of frame_2, in the mid-left area.\n    *   **frame_1:** Red and white cyclist is to the right of frame_4, positioned more centrally but still to the left of the white-jersey cyclist.\n    *   **frame_3:** Red and white cyclist is to the right of frame_1, roughly in the center of the frame horizontally.\n    *   **frame_0:** Red and white cyclist is furthest to the right, almost exiting the frame.\n    This establishes a general left-to-right progression: 2 -> 4 -> 1/3 -> 0.\n\n2.  **Primary Cyclist's Pedal Stroke:** Observing the right leg's position helps to refine the sequence:\n    *   **frame_2:** Right leg is up (top of the pedal stroke).\n    *   **frame_4:** Right leg is slightly down (beginning of the downward stroke).\n    *   **frame_1, frame_3, frame_0:** In all three of these frames, the right leg is fully down (bottom of the pedal stroke). This makes it difficult to order these three frames solely based on pedal position, but it confirms they occur after frame_2 and frame_4.\n\n3.  **Interaction with the Second Cyclist:** Frames 1 and 3 show the second cyclist (white jersey). This cyclist appears to be passing or has passed the red and white cyclist.\n    *   **frame_1:** The white-jersey cyclist is prominent on the right side of the frame, ahead of the red and white cyclist who is on the left. This indicates the passing is underway or just completed, with both cyclists still largely in view.\n    *   **frame_3:** The white-jersey cyclist is almost entirely off-frame on the far right, with only a small portion visible. This suggests they have significantly pulled ahead and are moving out of the scene. The red and white cyclist is more centered than in frame_1.\n    Therefore, frame_1 must precede frame_3, as the white-jersey cyclist progresses from being alongside/ahead to pulling far ahead and exiting the frame.\n\n**Combining the observations:**\n*   The red and white cyclist starts on the left (frame_2), with their right leg up. This is the earliest state.\n*   They move slightly to the right (frame_4), with their right leg starting to come down.\n*   The interaction with the second cyclist begins. At this point, the red and white cyclist's right leg is down. In frame_1, the white-jersey cyclist is clearly visible and just ahead. This follows frame_4 in terms of both horizontal movement and pedal stroke.\n*   The white-jersey cyclist then pulls further ahead, almost out of the frame, while the red and white cyclist continues moving right (frame_3). This logically follows frame_1.\n*   Finally, the red and white cyclist is furthest to the right in the frame, alone, indicating the second cyclist has completely exited the scene (frame_0).\n\nThis leads to the most coherent temporal order: **2 -> 4 -> 1 -> 3 -> 0**.\n\n-   **2:** Red-white cyclist starts on the far left, right leg up.\n-   **4:** Red-white cyclist moves right, right leg slightly down.\n-   **1:** Red-white cyclist moves further right, right leg down. White-jersey cyclist is next to/slightly ahead.\n-   **3:** Red-white cyclist moves further right, right leg down. White-jersey cyclist is almost out of frame, far ahead.\n-   **0:** Red-white cyclist is furthest right, right leg down, alone again. This represents the continuation after the passing event is complete and the other rider is gone from view.\nThis sequence is consistent with both positional changes and the narrative of a passing event.\n\n",
+  "predicted_order": [
+    2,
+    4,
+    1,
+    3,
+    0
+  ],
+  "video": "v_Biking_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c06/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c06/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 3,
+    "discordant_pairs": 7,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.3,
+    "kendall_tau": -0.4
+  }
+}

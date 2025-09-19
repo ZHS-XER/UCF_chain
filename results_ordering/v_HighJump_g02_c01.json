@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A female athlete in a black uniform is running on a red track during an indoor high jump event. She is in mid-stride, with her right leg forward, during her approach to the bar. The text 'Girls High Jump' is visible in the lower right.",
+    "The female athlete in the black uniform is standing still on the red track, looking towards the high jump area. She appears to be preparing or visualizing her jump. Other people are in the background.",
+    "The female athlete is in the final phase of her curved run-up, leaning her body to the side as she prepares to take off for the high jump. She is much closer to the high jump standard than in other frames. The text 'Girls High Jump' is partially visible at the bottom.",
+    "The female athlete is standing in a ready position on the red track, with her feet close together and a slight bend in her knees, seemingly about to begin her run-up for the high jump. The text 'Girls High Jump' is visible in the lower right.",
+    "The female athlete is in mid-air, arching her back as she clears the orange high jump bar. The image is taken from the perspective of the landing mat and shows significant motion blur, capturing the peak action of the jump."
+  ],
+  "reasoning": "The correct order is determined by following the logical sequence of a high jump event. \n1. **Preparation:** Frame 1 shows the athlete standing still, likely observing the bar and preparing mentally. This is the earliest point in the sequence.\n2. **Ready Stance:** Frame 3 shows the athlete in a ready position, feet together, poised to begin her run. This is the immediate precursor to the approach.\n3. **Early Approach:** Frame 0 depicts the athlete in the middle of her run-up, having started her approach but still a considerable distance from the bar.\n4. **Final Approach:** Frame 2 shows the athlete much closer to the bar, leaning into the curve of her run-up, which is the final phase before take-off.\n5. **Bar Clearance:** Frame 4 captures the climax of the event, where the athlete is airborne and clearing the bar. The perspective from the landing mat and the motion blur confirm this is the peak of the action.\nThis sequence of preparation, ready stance, early run, final approach, and jump corresponds to the predicted order.",
+  "predicted_order": [
+    1,
+    3,
+    0,
+    2,
+    4
+  ],
+  "video": "v_HighJump_g02_c01",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c01/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    2,
+    4
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

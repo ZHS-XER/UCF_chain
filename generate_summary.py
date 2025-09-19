@@ -9,6 +9,7 @@ def generate_summary():
     """生成排序任务的总结报告"""
     # 获取所有结果文件
     result_files = [f for f in os.listdir(RESULTS_DIR) if f.endswith('.json')]
+    print(f"找到 {len(result_files)} 个结果文件")
 
     # 初始化摘要数据
     summary = {
@@ -28,12 +29,21 @@ def generate_summary():
     total_kendall_tau = 0.0
     valid_predictions = 0
 
+    # 记录跳过的文件
+    skipped_files = []
+
     # 处理每个结果文件
     for result_file in sorted(result_files):
         file_path = os.path.join(RESULTS_DIR, result_file)
         with open(file_path, "r", encoding="utf-8") as f:
             try:
                 result = json.load(f)
+
+                # 检查是否有必要的字段
+                if not result.get("predicted_order") or not result.get("correct_order"):
+                    print(f"跳过文件 {result_file}: 缺少必要字段 (predicted_order 或 correct_order)")
+                    skipped_files.append(result_file)
+                    continue
 
                 # 提取关键信息
                 video_name = result.get("video", result_file.replace(".json", ""))
@@ -92,9 +102,20 @@ def generate_summary():
                     summary["category_statistics"][category]["total_kendall_tau"] += metrics.get("kendall_tau", 0.0)
                     summary["category_statistics"][category]["valid_predictions"] += 1
 
-            except json.JSONDecodeError:
-                print(f"无法解析 {result_file}")
+            except json.JSONDecodeError as e:
+                print(f"无法解析 {result_file}: {e}")
+                skipped_files.append(result_file)
                 continue
+            except Exception as e:
+                print(f"处理文件 {result_file} 时出错: {e}")
+                skipped_files.append(result_file)
+                continue
+
+    # 报告跳过的文件
+    if skipped_files:
+        print(f"\n跳过了 {len(skipped_files)} 个文件:")
+        for file in skipped_files:
+            print(f"  - {file}")
 
     # 计算总体正确率和平均指标
     total = summary["statistics"]["total"]

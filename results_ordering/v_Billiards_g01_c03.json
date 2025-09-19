@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "detailed description for first picture (frame_0)",
+    "detailed description for second picture (frame_1)",
+    "detailed description for third picture (frame_2)",
+    "detailed description for fourth picture (frame_3)",
+    "detailed description for fifth picture (frame_4)"
+  ],
+  "reasoning": "The images depict a player taking the break shot in a game of 9-ball pool. The correct temporal order follows the natural progression of this action. \n1. The sequence begins with the player preparing for the shot. In frame_4, the player is aiming, and the cue stick is positioned a short distance behind the cue ball, indicating the aiming or backswing phase.\n2. Frames 0 and 1 show the moment immediately before the cue stick strikes the cue ball. The tip of the cue is almost touching the ball. These two frames are virtually identical and represent the final part of the forward stroke just before impact.\n3. After the break, the balls scatter. Frame_3 captures the initial moments of the scatter, where the balls are exploding outwards from the rack but are still relatively close together.\n4. Frame_2 shows a slightly later moment in time. The balls have spread out much further across the table, having traveled a greater distance from the initial point of impact. \nThis sequence of aiming (frame_4), preparing to strike (frames_0 & 1), initial ball scatter (frame_3), and wider ball scatter (frame_2) establishes the correct chronological order.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    3,
+    2
+  ],
+  "video": "v_Billiards_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c03/frame_00007.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    4,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

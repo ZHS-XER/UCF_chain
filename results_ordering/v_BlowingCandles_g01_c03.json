@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A young child wearing a party hat and an older woman are at a table with a birthday cake. Only one prominent candle on the left remains lit, along with possibly a smaller one. The woman's cheeks are fully puffed out as she blows.",
+    "The scene at the birthday cake continues. Only the final candle on the left is still lit. The child is leaning in to blow, while the older woman has relaxed her blowing effort and is now pointing at the last remaining flame.",
+    "A young child and an older woman are both actively blowing out the candles on a birthday cake. Several candles are still lit, their flames flickering from the force of their breath.",
+    "The child and the woman continue to blow at the birthday cake. The number of lit candles has visibly decreased, with one strong flame on the left and a few others still burning.",
+    "The scene is at its brightest, with numerous candles lit on a birthday cake. A young child in a party hat and an older woman are leaning in, puckering their lips to begin blowing."
+  ],
+  "reasoning": "The correct temporal order is determined by the progressive extinguishing of the birthday candles. The sequence logically starts with all candles lit and ends with the last candle being blown out.\n\n1. **Frame 4:** This is the beginning of the action. The cake has the most lit candles, and both the child and the woman are preparing to blow.\n2. **Frame 2:** The blowing has started. Many candles are still lit, but both individuals are actively trying to put them out.\n3. **Frame 3:** Their efforts have been partially successful, as the number of lit candles is noticeably fewer than in the previous frames.\n4. **Frame 0:** The process is almost complete. Only one or two candles remain lit, and the woman is blowing hard to extinguish them.\n5. **Frame 1:** This is the final moment. Only one candle remains. The woman has stopped blowing and is now pointing, likely encouraging the child to blow out the last flame.",
+  "predicted_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "video": "v_BlowingCandles_g01_c03",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g01_c03/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

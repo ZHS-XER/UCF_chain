@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A tight, low-angle close-up on the legs and rear wheel of the second cyclist. The cyclist is on the far left of the frame, and the first cyclist is no longer visible.",
+    "A medium shot of two cyclists riding on a paved road. They are positioned on the right side of the frame, suggesting they are just entering the scene.",
+    "A medium shot of the two cyclists, who have now moved further to the left in the frame compared to other shots. The second cyclist is directly behind the first.",
+    "A medium shot of the two cyclists, now positioned in the center of the frame. They are continuing their movement from right to left.",
+    "A closer shot focusing on the second cyclist. The first cyclist is almost completely out of the frame on the far left, with only their rear wheel visible."
+  ],
+  "reasoning": "The correct temporal order is determined by tracking the cyclists' movement from right to left across the frame. In frame_1, the cyclists are on the right side of the frame, indicating the start of the action. In frame_3, they have moved to the center of the frame. In frame_2, they have progressed further to the left. Frame_4 shows a shift in perspective, getting closer to the second cyclist as the first one is almost out of the frame. Finally, frame_0 is the last in the sequence, showing a tight close-up of the second cyclist just before they exit the frame completely. This sequence (1, 3, 2, 4, 0) represents a smooth and continuous motion.",
+  "predicted_order": [
+    1,
+    3,
+    2,
+    4,
+    0
+  ],
+  "video": "v_Biking_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    3,
+    1,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 3,
+    "discordant_pairs": 7,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.3,
+    "kendall_tau": -0.4
+  }
+}

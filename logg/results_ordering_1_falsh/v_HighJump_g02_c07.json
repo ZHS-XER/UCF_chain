@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male athlete, dressed in all black, stands on a reddish-brown indoor track. His back is mostly towards the camera, and he appears to be in a ready or contemplative stance before an athletic event. Yellow safety barriers and other individuals are visible in the background.",
+    "A blurry shot of a male athlete in black athletic wear running on the reddish-brown track from left to right. A prominent white vertical pole partially obscures the athlete on the left side of the frame. Yellow safety barriers are visible in the background, suggesting ongoing activity.",
+    "A male athlete in black athletic wear is captured in an early stage of running on the reddish-brown indoor track. His body is angled forward, with one leg extended back and the other forward, indicating initial acceleration. Yellow safety barriers are in the background.",
+    "A male athlete in black athletic wear is in a full running stride on the reddish-brown track, approaching a high jump bar. The red-orange bar is visible horizontally, supported by a white pole on the left. A blue landing mat is just coming into view on the right.",
+    "A male athlete in black athletic wear is in mid-air, having cleared a red-orange high jump bar using the Fosbury Flop technique. He is positioned with his back over the bar, and his legs are extended upwards. A large blue landing mat is clearly visible beneath him."
+  ],
+  "reasoning": "I analyzed the progression of a high jump event to determine the temporal order. The sequence starts with the athlete preparing, then running, and finally performing the jump.\n\n1.  **frame_0:** This frame shows the athlete in a static, ready position on the track, before initiating any significant movement for the jump. This is the logical starting point.\n2.  **frame_2:** Following the ready stance, the athlete begins to accelerate. This frame clearly shows the initial phase of the approach run, with the athlete leaning forward and arms pumping.\n3.  **frame_1:** This frame is blurred and shows the athlete running, indicating faster motion than in frame_2. It represents the middle part of the approach run, after initial acceleration but before the final steps to the bar. The blurring effect suggests sustained, quick movement.\n4.  **frame_3:** The athlete is now in full stride and very close to the high jump bar, preparing for takeoff. This is the crucial final stage of the approach run, just before the jump itself.\n5.  **frame_4:** This frame depicts the peak action of the high jump, with the athlete in mid-air, clearing the bar. This is the culmination of the entire sequence.",
+  "predicted_order": [
+    0,
+    2,
+    1,
+    3,
+    4
+  ],
+  "video": "v_HighJump_g02_c07",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c07/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c07/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c07/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c07/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c07/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    2,
+    1,
+    3,
+    4
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

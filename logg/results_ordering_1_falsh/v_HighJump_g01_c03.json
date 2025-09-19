@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot inside a gymnasium, showing a grey track lane in the foreground and a group of people gathered in the mid-ground. A scoreboard is visible in the upper right background. The lighting is artificial.",
+    "A slightly wider and higher angle inside the same gymnasium, focusing on a group of people gathered near a wall with 'NCAA' written on it. Circular markings are visible on the light grey floor, which appears to be a basketball court integrated with a track. The crowd seems to be observing an event.",
+    "A closer shot inside the gymnasium, focused on a high jump or pole vault setup. A large red landing mat is prominent on the left, with vertical support poles for a crossbar. Several people are standing around the setup. Large black ventilation ducts are visible overhead.",
+    "A similar shot to frame_1, but appearing slightly zoomed in or panned to the right. The 'NCAA' sign is still visible on the wall, and the group of people are in a similar formation. The circular markings on the floor are also visible.",
+    "A continuation of the scene from frame_2, showing the high jump/pole vault area. An athlete is captured mid-air, attempting to clear a bar (not fully visible) over the red landing mat. People are still gathered around, observing the action."
+  ],
+  "reasoning": "The frames can be grouped into two distinct scenes/events: frames 0, 1, and 3 show a general view of a crowd on a track/gym floor, while frames 2 and 4 show a high jump or pole vault event with specific equipment and action.\n\nFirst, let's order the high jump sequence: Frame 2 shows the setup for the jump with people gathered, indicating a 'before' or 'pre-action' state. Frame 4 clearly shows an athlete in the process of jumping over the bar onto the mat, which is the 'during action' state. Therefore, frame 2 precedes frame 4.\n\nNext, let's order the general crowd/track scenes: Frame 0 provides a somewhat distant and lower angle view of people near a track lane with a scoreboard in the background. It serves as a good establishing shot. Frames 1 and 3 are very similar, both showing a group of people with 'NCAA' visible on the wall in the background. Comparing them, frame 1 appears to be a slightly wider shot or from a slightly different angle than frame 3. In frame 3, the camera seems to have either zoomed in or panned slightly to the right from the perspective of frame 1, making elements on the left less prominent and elements on the right more central. Thus, frame 1 likely precedes frame 3.\n\nCombining these observations, a logical temporal order would be to start with an establishing shot (frame 0), then move to slightly different perspectives of a static scene or crowd (frame 1 then frame 3), and finally cut to a specific action event, showing the setup (frame 2) followed by the action itself (frame 4).",
+  "predicted_order": [
+    0,
+    1,
+    3,
+    2,
+    4
+  ],
+  "video": "v_HighJump_g01_c03",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 7,
+    "discordant_pairs": 3,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.7,
+    "kendall_tau": 0.4
+  }
+}

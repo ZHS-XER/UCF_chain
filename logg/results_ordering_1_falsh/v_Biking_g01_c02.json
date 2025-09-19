@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a white shirt and helmet is riding a bicycle, moving away from the camera. The child is relatively close to the camera, positioned towards the center-right of the frame. White parking lines are visible on the asphalt, and a shadow of the child and bike extends to the left. In the background, there are blurred buildings and a blue porta-potty.",
+    "A child on a bicycle, wearing a white shirt and helmet, is actively turning. The child is closer to the camera than in frame_3 and frame_4, and is facing towards the left side of the frame. The bicycle's front wheel is clearly turned. The shadow extends to the left. The background shows parts of the parking lot and some distant buildings, which are less prominent than in other frames due to the closer focus on the child.",
+    "A child on a bicycle, wearing a white shirt and helmet, is riding away from the camera. The child is further away than in frame_0 but closer than in frame_4. The child is positioned slightly to the right of the center of the frame. White parking lines are visible, and the shadow extends to the left. The background shows more distinct buildings than in frame_0, but they appear smaller than when closer.",
+    "A child on a bicycle, wearing a white shirt and helmet, is in the process of turning. The child is relatively far from the camera, similar to the distance in frame_4. The bicycle is angled, indicating a turn, and the child appears to be moving from the right side of the frame towards the left. The background clearly shows a row of houses and parking lines extending into the distance. The shadow is visible to the left.",
+    "A child on a bicycle, wearing a white shirt and helmet, is riding away from the camera. The child is the furthest away in this series of frames, appearing as a small figure in the distance. The row of houses in the background is clearly visible and spans a significant portion of the upper frame. White parking lines are prominent in the foreground, and the shadow of the child and bike extends to the left."
+  ],
+  "reasoning": "The temporal order is determined by observing the child's movement, their distance from the camera, and their orientation. \n\n1.  **Child riding away from camera (getting smaller):** Frames 0, 2, and 4 show the child riding in a generally straight direction away from the camera. Comparing these, frame_0 shows the child closest to the camera, frame_2 shows the child further away, and frame_4 shows the child furthest away. This establishes the sequence `0 -> 2 -> 4` as the child moves away.\n\n2.  **Child turning and approaching/completing a loop:** After moving away (as seen in frame_4), the child would likely start to turn to change direction or complete a loop. Frames 3 and 1 show the child turning.\n    *   Frame_3 shows the child turning while still relatively far from the camera, consistent with the distance after frame_4. The background houses are still prominent.\n    *   Frame_1 shows the child completing the turn, now closer to the camera. The focus is tighter on the child, and the background houses are less prominent due to the closer perspective.\n\nTherefore, the overall logical sequence is the child riding away (`0 -> 2 -> 4`), then beginning to turn while still distant (`3`), and finally completing the turn while getting closer to the camera's original position (`1`).",
+  "predicted_order": [
+    0,
+    2,
+    4,
+    3,
+    1
+  ],
+  "video": "v_Biking_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c02/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    4,
+    2,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 0,
+    "discordant_pairs": 10,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.0,
+    "kendall_tau": -1.0
+  }
+}

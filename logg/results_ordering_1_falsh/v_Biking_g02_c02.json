@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: Two cyclists are riding on an asphalt path. The cyclist in the foreground (left, light top, blue helmet) appears slightly behind and to the left of the cyclist in the background (right, red and white top, black helmet). The foreground cyclist's front wheel is behind the background cyclist's rear wheel.",
+    "frame_1: The two cyclists are still riding. The foreground cyclist (light top) has gained slightly on the background cyclist (red and white top). Their front wheel is now roughly level with the background cyclist's rear wheel/hip area.",
+    "frame_2: The foreground cyclist (light top) has pulled further ahead, now riding more alongside the background cyclist (red and white top). The foreground cyclist's front wheel is approximately level with the background cyclist's torso.",
+    "frame_3: The foreground cyclist (light top) has significantly pulled ahead of the background cyclist (red and white top). The foreground cyclist's entire bike is now largely past the background cyclist's bike, with the background cyclist's front wheel aligning roughly with the foreground cyclist's rear wheel.",
+    "frame_4: The foreground cyclist (light top) has established a clear lead. The background cyclist (red and white top) is now noticeably behind and further to the right, with a significant gap between them."
+  ],
+  "reasoning": "The primary indicator for the temporal order is the relative position of the two cyclists. It depicts one cyclist (the one in the foreground with the light top and blue helmet) progressively pulling ahead of the other cyclist (in the background with the red and white top and black helmet). \n\n1.  **Frame 0:** Shows the initial state where the foreground cyclist is slightly behind the background cyclist.\n2.  **Frame 1:** The foreground cyclist starts to catch up, their front wheel moving closer to the background cyclist's rear wheel.\n3.  **Frame 2:** The foreground cyclist is now more alongside the background cyclist, having closed the initial gap.\n4.  **Frame 3:** The foreground cyclist has clearly overtaken and is pulling ahead, with their bike almost entirely past the background cyclist's bike.\n5.  **Frame 4:** The foreground cyclist has established a significant lead, and the background cyclist is visibly trailing. \n\nThis continuous progression of one cyclist gaining on and then pulling away from the other provides a clear sequence.",
+  "predicted_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "video": "v_Biking_g02_c02",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c02/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c02/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

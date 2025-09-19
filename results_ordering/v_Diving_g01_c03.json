@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is in mid-air just after leaving the diving board. Their body is starting to tuck and rotate forward, and the diving board is visibly bent downwards from the force of their jump.",
+    "A diver is on the diving board, performing a preparatory bounce. Their arms are outstretched to the sides for balance, and the board appears relatively flat.",
+    "The diver is in mid-air, far from the diving board and close to the water's surface. They are in a tight tuck position, well into the descent phase of the dive.",
+    "The diver is at the apex of their jump, high above the diving board. Their body is in a pike or open tuck position as they begin their descent.",
+    "The diver is at the very end of the diving board, bent over in a crouched position, preparing for the final push-off into the dive."
+  ],
+  "reasoning": "The correct order is determined by following the logical sequence of a springboard dive. The sequence begins with the diver preparing on the board, followed by the takeoff, the ascent to the peak height, the descent, and finally the moment before entry into the water.\n1. **Frame 1:** This is the earliest stage, showing the diver in a preparatory bounce on the board with arms out for balance.\n2. **Frame 4:** The diver has moved to the end of the board and is in the final crouched position, ready to spring into the air. This immediately precedes the takeoff.\n3. **Frame 0:** The diver has just left the board. Key evidence is their low altitude and the diving board still being bent downwards from the propulsive force of the jump.\n4. **Frame 3:** The diver has reached the highest point of their trajectory. They are well above the diving board, having converted the upward momentum from the board into height.\n5. **Frame 2:** This is the final frame, showing the diver descending towards the water. They are far from the board and in a tucked position, preparing for entry.",
+  "predicted_order": [
+    1,
+    4,
+    0,
+    3,
+    2
+  ],
+  "video": "v_Diving_g01_c03",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c03/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    0,
+    4,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

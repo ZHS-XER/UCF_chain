@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame shows the moment of impact. The cue stick is blurred with motion, indicating it has just struck the cue ball (which is not clearly visible) into the racked balls. The racked balls are just beginning to disperse, with a few already slightly separated from the main cluster. There is no score overlay on the screen.",
+    "This frame shows the player setting up for the break shot. The cue ball is positioned on the table, slightly to the right of the cue stick, which is held by the player in a ready stance. The balls are still perfectly racked at the foot spot. A score overlay is visible on the right side of the screen, showing 'US Open 9-Ball Championship' and player scores.",
+    "Similar to frame 1, the player is setting up for the break shot. The cue ball is aligned with the cue stick, and the player is looking down, focused on the shot. The balls are still perfectly racked. The score overlay is present, identical to frame 1.",
+    "This frame depicts the aftermath of the break shot. The balls are widely scattered across the entire table. The player is standing upright, observing the result of the shot. The cue ball is visible near the top left pocket. There is no score overlay on the screen.",
+    "This frame also shows the player setting up for the break. The cue ball is very close to the racked balls, and the player is in a very low, poised position, with the cue stick almost flat on the table, indicating the final moment just before striking. The balls are perfectly racked. The score overlay is present, identical to frame 1 and 2."
+  ],
+  "reasoning": "I analyzed the progression of the pool game from setup to the break shot and its aftermath. \n\n1.  **Setup Phase (Before the Shot):** Frames 1, 2, and 4 show the player preparing for the break. The balls are racked, and the cue ball is in position. The score overlay is visible in all three of these frames, which is typical for pre-shot segments.\n    *   **Frame 1:** The cue ball is placed, but slightly to the right of the cue stick's direct line, suggesting an initial placement or minor adjustment.\n    *   **Frame 2:** The cue ball is now aligned with the cue stick, and the player is focused, indicating a refined aim.\n    *   **Frame 4:** The player is in the final, most poised position. The cue stick is very flat and close to the cue ball, which itself is very close to the racked balls. This signifies the immediate moment before the strike.\n    Therefore, the logical progression for the setup is 1 -> 2 -> 4.\n\n2.  **Impact Phase (The Shot):** Frame 0 clearly captures the moment of impact. The blurred cue stick indicates motion, and the racked balls are just beginning to disperse. This action directly follows the final setup in frame 4. The score overlay is absent, which is common during intense action.\n\n3.  **Aftermath Phase (After the Shot):** Frame 3 shows the balls scattered across the table and the player standing upright, observing the outcome. This is a clear indication that the break shot has been completed, following the impact shown in frame 0. The score overlay is also absent in this frame.\n\nCombining these observations, the most logical temporal order is the initial setup, followed by refined aiming, the final striking pose, the actual impact, and finally, the scattered balls after the shot.",
+  "predicted_order": [
+    1,
+    2,
+    4,
+    0,
+    3
+  ],
+  "video": "v_Billiards_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c01/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    4,
+    2,
+    0,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

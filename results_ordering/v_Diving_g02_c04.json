@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A person is in the air, in the early phase of a jump from the poolside. They are in an upright posture, just above the ground level.",
+    "The person has disappeared into the pool, and a large splash is visible in the water where they entered.",
+    "A person is standing still at the edge of the swimming pool, looking down at the water, preparing to jump.",
+    "The person is at the peak of their jump, high in the air above the poolside. They are in a tuck position, with their knees bent towards their chest.",
+    "A person is walking towards the edge of the swimming pool, captured in mid-stride."
+  ],
+  "reasoning": "The logical sequence of events is a person preparing for and executing a jump into a pool. First, the person walks towards the pool's edge (frame_4). Next, they stand at the edge, poised to jump (frame_2). Then, they begin the jump, launching themselves into the air (frame_0). They reach the highest point of their jump, performing a tuck maneuver (frame_3). Finally, they enter the water, leaving only a splash (frame_1). The order is determined by following the person's position and action from approaching the pool to entering the water.",
+  "predicted_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "video": "v_Diving_g02_c04",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c04/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    0,
+    3,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

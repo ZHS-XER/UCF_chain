@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A young boy wearing a striped party hat is sitting at a table, looking down intently at a small chocolate cake with a single lit candle. His mouth is slightly open in a focused expression, and his right hand is slightly lifted from the table.",
+    "A young boy wearing a striped party hat is sitting at a table, looking down intently at a small chocolate cake with a single lit candle. His mouth is slightly open, similar to frame_0. The candle flame appears mostly upright but might show a very subtle blur or widening, and his hands are resting closer to the table.",
+    "A young boy wearing a striped party hat is sitting at a table, smiling slightly and looking at a small chocolate cake with a single lit candle. The candle flame is perfectly upright and appears strong and steady.",
+    "A young boy wearing a striped party hat is sitting at a table, looking intently at a small chocolate cake with a single lit candle. His mouth is open, and the candle flame is clearly bent and flickering to the left, indicating that he is actively blowing on it.",
+    "A young boy wearing a striped party hat is sitting at a table, looking at a small chocolate cake. The candle flame is completely extinguished, and a thin wisp of smoke is visible rising from the wick. His expression is slightly more relaxed or contemplative."
+  ],
+  "reasoning": "The temporal order is determined by observing the state of the candle flame and the child's actions/expressions.\n\n1.  **Initial State (Frame 2):** The child is smiling, and the candle flame is perfectly steady and bright. This represents the moment just before or as the cake is presented, with no attempt to blow out the candle yet.\n\n2.  **Preparation to Blow (Frame 0):** The child's expression shifts to focused concentration, and his mouth is open as if preparing to take a breath or just beginning to blow. The flame is still mostly upright and steady, but the body language indicates an impending action. His right hand is slightly lifted.\n\n3.  **Initial Puff/Continued Preparation (Frame 1):** The child maintains a concentrated, open-mouthed expression. The candle flame, while still lit, might show a very subtle hint of disturbance (e.g., a slight blur or widening at the tip, though still largely upright) as the child either takes an initial puff or prepares for the main blow. His hands are resting closer to the table, a slight shift from frame 0.\n\n4.  **Active Blowing (Frame 3):** This frame clearly shows the child actively blowing, as the candle flame is visibly bent and flickering to the left due to the force of the breath.\n\n5.  **Extinguished Flame (Frame 4):** The candle flame is completely out, and smoke is rising from the wick, indicating the successful completion of the action. The child's expression is one of slight contemplation or satisfaction.\n\nThe progression from a steady flame (2) to a preparing/initial blow (0, then 1 with slight disturbance) to an actively bent flame (3) and finally an extinguished flame (4) provides a clear temporal sequence.",
+  "predicted_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "video": "v_BlowingCandles_g02_c03",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00004.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c03/frame_00005.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    1,
+    3,
+    4
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

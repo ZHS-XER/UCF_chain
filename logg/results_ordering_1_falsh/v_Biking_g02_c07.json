@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: Two cyclists ride on a paved road under a bright sky. The lead cyclist, wearing a white jersey, dark shorts, and a blue helmet, is in the foreground. Their right leg is extended forward, with the pedal near the top-front of the stroke (around 12-1 o'clock position). A second cyclist, in a red and white jersey, follows slightly behind and to the right. Shadows are cast to the right. Bare trees line the background, and a faded yellow line is visible on the left edge of the road.",
+    "frame_1: Similar to frame_0. The lead cyclist's right leg is bent and further back, with the pedal moving upwards towards the top-front of the stroke (around 10-11 o'clock position). The background trees have shifted slightly to the left, indicating forward movement. The trailing cyclist maintains their position.",
+    "frame_2: The lead cyclist's right leg is in the lower part of the pedal stroke, moving upwards and forwards (around 7-8 o'clock position). The background has shifted further to the left compared to frame_1, and a specific tree trunk on the right is now more central. The yellow line on the road is still visible.",
+    "frame_3: The lead cyclist's right leg is almost fully extended downwards, with the pedal at the very bottom of the stroke (around 6 o'clock position). The background shows an earlier point in the ride, with a prominent tree trunk on the right side, partially obscured by the trailing cyclist. The yellow line on the road is clearly visible on the left.",
+    "frame_4: The lead cyclist's right leg is significantly bent and high in the upstroke, with the pedal near the top-rear position (around 9-10 o'clock position). This appears to be the earliest frame in the sequence. A distinctive, large tree trunk is clearly visible on the far right edge of the frame, close to the trailing cyclist. The road and lighting conditions are consistent with the other frames."
+  ],
+  "reasoning": "The temporal order is determined by observing two primary dynamic elements: the pedaling motion of the lead cyclist and the progression of the background scenery (especially the trees on the right side of the road). \n\n1.  **Pedaling Motion Analysis (Right Leg of Lead Cyclist):**\n    *   **frame_4:** The right leg is high in the upstroke, pedal near the top-rear (9-10 o'clock). This marks the beginning of the downstroke cycle.\n    *   **frame_3:** The right leg is fully extended downwards, pedal at the very bottom of the stroke (6 o'clock).\n    *   **frame_2:** The right leg is moving upwards and forwards, pedal in the lower half (7-8 o'clock).\n    *   **frame_1:** The right leg is further up, moving towards the top-front (10-11 o'clock).\n    *   **frame_0:** The right leg is extended forward, pedal near the top-front (12-1 o'clock).\n    This sequence (4 -> 3 -> 2 -> 1 -> 0) consistently shows the right pedal completing approximately half a rotation, from high up to the bottom and then back to the top-front.\n\n2.  **Background Progression Analysis:** As the cyclists move forward, objects in the background (like trees) appear to shift from right to left relative to the frame. The camera appears to be tracking the cyclists.\n    *   **frame_4:** A large, distinct tree trunk is prominently visible on the far right, relatively 'close' to the camera's field of view, indicating an earlier point in the scene.\n    *   **frame_3:** The cyclists have moved forward; the tree trunk has shifted more towards the center-right of the frame.\n    *   **frame_2:** Further progression; the tree trunk is now even further left, almost out of the frame or less distinct.\n    *   **frame_1:** The background on the right is less dense, with the prominent tree trunk having moved out of view to the left.\n    *   **frame_0:** The background on the right is relatively open, with distant trees, indicating the most advanced position along the road.\n\nBoth the pedaling motion and the background shift consistently support the same temporal order.",
+  "predicted_order": [
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "video": "v_Biking_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c07/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c07/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c07/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c07/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c07/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

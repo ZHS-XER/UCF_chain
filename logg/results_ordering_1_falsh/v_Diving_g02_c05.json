@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "frame_0: The scene shows a swimming pool with a diving board on the left. A person is seated in a chair next to the pool on the right. The water in the pool has small ripples, and there are no large splashes, suggesting a calm state or some time after a disturbance. The diving board is empty.",
+    "frame_1: A female diver, wearing a dark swimsuit, is standing on the diving board. Her arms are raised high above her head, and her body is extended upwards. This appears to be a preparatory pose before a dive.",
+    "frame_2: The female diver is still on the diving board, but her knees are slightly bent, and her arms are positioned forward, suggesting she is in motion or has just sprung from the board, initiating a jump or bounce. The water has some subtle ripples.",
+    "frame_3: The diving board is empty. There is a significant splash in the water directly below where the diver would have entered, indicating that a dive has just occurred. The person in the chair is still present.",
+    "frame_4: The female diver is in mid-air, having left the diving board. Her body is bent, performing what appears to be a tuck or somersault maneuver above the water. The water below is relatively calm just before impact."
+  ],
+  "reasoning": "The sequence of events for a dive typically involves preparation on the board, jumping, being in the air, entering the water, and then the water settling. \n\n1.  **frame_1** shows the diver in a clear starting position on the board, arms raised high, indicating the beginning of the dive sequence.\n2.  **frame_2** follows naturally as the diver transitions from the initial stance to initiating the jump. Her knees are bent, and arms are forward, showing active movement on the board right before leaving it.\n3.  **frame_4** captures the diver in mid-air, having successfully propelled herself off the board, which is the logical next step after the actions in frame_2.\n4.  **frame_3** depicts the immediate aftermath of the diver entering the water, characterized by a large splash. This comes after the mid-air phase (frame_4).\n5.  **frame_0** shows the water with only small ripples, significantly calmer than the large splash in frame_3. This suggests that some time has passed since the diver entered the water, and the disturbance is settling down, making it the final frame in this sequence.",
+  "predicted_order": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "video": "v_Diving_g02_c05",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c05/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c05/frame_00003.jpg"
+  ],
+  "correct_order": [
+    2,
+    1,
+    4,
+    3,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

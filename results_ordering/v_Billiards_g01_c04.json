@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A pool player is at the very end of their forward stroke for a break shot. The tip of the cue stick is just about to make contact with the white cue ball. The other balls are arranged in a diamond rack in the middle of the blue table.",
+    "A pool player is in the middle of their stroke for a break shot. The cue stick is moving forward but is still some distance from the cue ball, further away than in frame_0. The balls remain racked.",
+    "A motion-blurred image captures the high-speed action of the break shot. The cue stick has just struck or is passing through the cue ball's original position, and the force of the shot creates blur across the frame.",
+    "The pool table is shown immediately after the break shot. The balls are scattered widely across the blue felt. A pink ball is seen in motion near the bottom left corner of the table.",
+    "A pool player begins their final backswing before a break shot. The cue stick is pulled back the furthest from the cue ball compared to the other pre-shot frames. The balls are neatly racked."
+  ],
+  "reasoning": "The sequence of events depicts a break shot in a game of 9-ball pool. The logical order follows the motion of the player's cue stick and the subsequent reaction of the balls.\n1. **frame_4:** This is the starting point, showing the player with the cue stick pulled back the furthest, initiating the final backswing before the strike.\n2. **frame_1:** The cue stick has moved forward from the furthest point back, but is still a short distance from the cue ball. This is the middle of the forward stroke.\n3. **frame_0:** The cue stick is now at the point of imminent impact, with the tip almost touching the cue ball. This is the last moment before contact.\n4. **frame_2:** This frame is blurry due to the rapid motion of the cue stick striking the cue ball. This motion blur indicates the moment of impact or the immediate follow-through.\n5. **frame_3:** This is the result of the break shot. The previously racked balls are now scattered across the table. This frame must be the last in the sequence as it shows the aftermath of the action depicted in the previous frames.",
+  "predicted_order": [
+    4,
+    1,
+    0,
+    2,
+    3
+  ],
+  "video": "v_Billiards_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00002.jpg"
+  ],
+  "correct_order": [
+    0,
+    4,
+    1,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

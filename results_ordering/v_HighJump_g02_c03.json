@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A close-up, slightly blurry shot of an athlete in a black uniform and yellow shoes as they are in mid-air, clearing the high jump bar. The vertical support pole is prominent in the foreground.",
+    "The athlete is walking on the red track, away from the high jump area, looking back over their shoulder. Spectators and officials are seated in the background.",
+    "The athlete stands in front of the blue high jump landing mat, looking up at the orange and white bar, appearing to be mentally preparing for their jump.",
+    "The athlete is in a full sprint on the red track, running towards the high jump apparatus. Their body is angled forward, indicating the run-up phase of the jump.",
+    "The athlete has successfully cleared the bar and is now landing on their back on the large blue mat. The bar is still in its place above them."
+  ],
+  "reasoning": "The frames depict a single high jump attempt. The logical sequence of events in a high jump is as follows:\n1.  **Preparation:** The athlete stands before the bar to focus and prepare. This is shown in frame_2.\n2.  **Run-up:** The athlete sprints towards the bar to generate momentum. This is depicted in frame_3.\n3.  **The Jump/Flight:** The athlete launches themselves over the bar. Frame_0 captures the moment they are clearing the bar.\n4.  **Landing:** After clearing the bar, the athlete lands on the mat. This is shown in frame_4.\n5.  **Post-Jump:** The athlete gets off the mat and walks away. Frame_1 shows the athlete walking away after the attempt is complete.\nTherefore, the correct chronological order is 2, 3, 0, 4, 1.",
+  "predicted_order": [
+    2,
+    3,
+    0,
+    4,
+    1
+  ],
+  "video": "v_HighJump_g02_c03",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c03/frame_00005.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    2,
+    4
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 4,
+    "discordant_pairs": 6,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.4,
+    "kendall_tau": -0.2
+  }
+}

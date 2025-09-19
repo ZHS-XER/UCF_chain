@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "An acrobat is at the peak of their bounce from a diving board, performing a vertical handstand high in the air. Their partner is sitting on the green structure in the background.",
+    "An acrobat is flying through the air in a tucked position, having just been launched by their partner from the green structure. They are heading towards the diving board.",
+    "The scene is calm after the stunt has concluded. The partner is sitting on the green structure, and the acrobat is no longer visible, presumably having entered the pool, which has ripples on its surface.",
+    "The acrobat is landing on the diving board. Their body is compressed and knees are bent as they make contact with the board, causing it to flex downwards.",
+    "The start of the stunt, showing the acrobat crouched on the back of their partner on a green structure next to the pool, preparing to be launched."
+  ],
+  "reasoning": "The logical order of this acrobatic stunt begins with the setup, follows through the action, and ends with the aftermath. \n1. **Frame 4** is the starting point, showing the acrobat preparing for the launch on their partner's back.\n2. **Frame 1** shows the next logical step, where the acrobat has been launched and is flying through the air towards the diving board.\n3. **Frame 3** captures the moment of impact as the acrobat lands on the diving board, compressing it to generate a bounce.\n4. **Frame 0** shows the result of that bounce, with the acrobat high in the air at the apex of their movement, performing a handstand.\n5. **Frame 2** is the final scene, showing the area after the acrobat has entered the water. The partner is still on the platform, and the pool has ripples, indicating the completion of the dive.",
+  "predicted_order": [
+    4,
+    1,
+    3,
+    0,
+    2
+  ],
+  "video": "v_Diving_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    1,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

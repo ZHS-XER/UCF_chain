@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male athlete in a black outfit and a white headband is in the middle of his approach run on an indoor track, moving from right to left. He is in a full running stride.",
+    "The athlete is in the final steps of his approach run, very close to the high jump apparatus. A silver vertical post is visible on the right, and he is beginning to lean into his jump.",
+    "The athlete is airborne, arching his back as he clears the high jump bar. He is in the classic Fosbury Flop position, and a blue landing mat is visible below him.",
+    "The athlete is running on the indoor track from right to left. He is in an earlier phase of his approach run compared to frame 0, being further away from the high jump area.",
+    "The athlete is at the beginning of his approach run, standing relatively upright and positioned furthest to the right among the running frames. This appears to be the start of his acceleration."
+  ],
+  "reasoning": "The frames show an athlete performing a high jump. The logical temporal sequence follows the stages of this event: the approach run, the takeoff, and clearing the bar. By tracking the athlete's position as he runs from right to left towards the high jump apparatus, we can establish the order. Frame 4 shows the athlete at the earliest point in his run, furthest to the right. Frame 3 shows him having progressed further along the track. Frame 0 shows him even closer to the jump site, in full stride. Frame 1 captures the final moment of the approach, right before the jump, as he is next to the vertical post. Finally, frame 2 shows the peak of the action, where the athlete is in mid-air, clearing the bar. This creates a continuous narrative of the high jump event.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "video": "v_HighJump_g02_c06",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c06/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    3,
+    0,
+    1,
+    2
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

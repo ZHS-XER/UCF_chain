@@ -1,0 +1,20 @@
+{
+  "frame_descriptions": [],
+  "reasoning": "<START_JSON>\n{\n  \"frame_descriptions\": [\n    \"This frame shows an athlete in mid-air, performing the Fosbury Flop technique during a high jump. They are positioned with their back towards the blue landing mat, having just cleared the orange bar. Their legs are bent and raised high over the bar, indicating the peak moment of the jump.\",\n    \"This frame shows an athlete standing on a red track, looking forward. They are wearing a dark outfit and white athletic shoes. Another person, possibly a coach or official in a white shirt, is standing behind them. Yellow safety barriers and a white chair are visible in the background, suggesting a preparation or waiting phase.\",\n    \"This frame is very similar to frame_1, showing the athlete standing on the red track, looking forward. The athlete's posture and the surrounding elements (person behind, yellow barriers, chair) are almost identical to frame_1, indicating it's a moment very close in time during the preparation phase.\",\n    \"This frame shows the athlete running on the red track, engaged in the approach run for the high jump. Their body is leaning forward, with their right leg extended forward in a stride and their left leg pushing off the ground. The high jump setup and barriers are visible in the distance, indicating an earlier stage of the run-up.\",\n    \"This frame shows the athlete running on the red track, further along in their approach run towards the high jump. They are closer to the high jump standard and the orange bar, which is partially visible on the left side of the frame. The athlete's form indicates a continued run-up, nearing the take-off point.\"\n  ],\n  \"reasoning\": \"The sequence of a high jump involves several distinct stages: preparation, approach run, take-off/clearing the bar, and landing. I ordered the frames based on these stages.\\n\\n1.  **Preparation (frame_1, frame_2):** These frames show the athlete standing on the track, seemingly in a ready or pre-action stance. They are very similar, suggesting they represent the initial moments before the run begins. Frame_1 and frame_2 are placed first as they depict the start of the sequence before any significant motion.\\n2.  **Approach Run (frame_3, frame_4):** After preparation, the athlete starts their run towards the bar. Frame_3 shows the athlete in an earlier stage of the run-up, further from the high jump apparatus, while frame_4 shows them closer to the bar, indicating a later stage of the approach, just before take-off. Therefore, frame_3 precedes frame_4.\\n3.  **Clearing the Bar (frame_0):** This frame clearly shows the athlete mid-air, having successfully cleared the high jump bar. This is the climactic moment of the jump, which occurs after the approach run and take-off, and before landing on the mat.\",\n  \"predicted_order\": [1, 2, 3, 4, 0]\n}\n</END_JSON>",
+  "predicted_order": null,
+  "video": "v_HighJump_g02_c02",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g02_c02/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ]
+}

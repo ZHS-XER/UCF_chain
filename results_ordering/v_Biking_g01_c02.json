@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a white shirt and a helmet is riding a bicycle straight away from the camera in a large, empty asphalt parking lot.",
+    "The child on the bicycle is executing a sharp left turn. The front wheel is turned at a severe angle to the left, and the bike is leaning over. The child is viewed from a rear three-quarter angle.",
+    "The child continues to ride their bicycle straight away from the camera in the parking lot. They appear slightly further away than in frame_0.",
+    "The child on the bicycle is starting to initiate a left turn. They are relatively close to the camera and viewed from a rear three-quarter angle, with the bike beginning to angle to the left.",
+    "The child is riding their bicycle straight away from the camera and is at the furthest distance compared to the other frames. A row of houses is clearly visible in the background."
+  ],
+  "reasoning": "The sequence of events shows a child on a bicycle making a left turn and then riding away from the camera. The key indicators for the order are the angle of the bicycle during the turn and the child's distance from the camera.\n\n1.  **Frame 3:** This is the beginning of the action. The child is relatively close and is just starting to lean into a left turn.\n2.  **Frame 1:** This is the peak of the turn. The front wheel is turned sharply to the left, and the bike is leaning significantly. This logically follows the initiation of the turn in frame 3.\n3.  **Frame 0:** The child has completed the turn and is now riding straight away from the camera. They are relatively close, indicating this is right after straightening out.\n4.  **Frame 2:** The child continues to ride straight away and is now further from the camera than in frame 0.\n5.  **Frame 4:** This is the final frame in the sequence, showing the child at the greatest distance from the camera, continuing to ride away in a straight line.\n\nTherefore, the order follows the progression of the turn (start, peak) followed by the progression of moving away (close, middle, far).",
+  "predicted_order": [
+    3,
+    1,
+    0,
+    2,
+    4
+  ],
+  "video": "v_Biking_g01_c02",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c02/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c02/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    4,
+    2,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

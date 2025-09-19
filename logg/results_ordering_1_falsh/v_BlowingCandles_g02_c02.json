@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A medium shot shows a bride in a white strapless gown leaning over a three-tiered wedding cake decorated with yellow roses. Her mouth is wide open, her head tilted upwards and to the right, suggesting she has just finished an action or is reacting. The candles on the top tier of the cake appear mostly extinguished, with only faint or no visible flames. In the background, a man in a suit is visible on the right, and a camera on a tripod is on the left.",
+    "A medium shot features a bride in a white strapless gown and long white gloves, actively blowing out candles on a three-tiered wedding cake adorned with yellow roses. She is leaning forward with pursed lips. The candles on the top tier are clearly lit and actively burning. A camera on a tripod is visible on the left, and a man in a suit is visible on the right in the background.",
+    "A medium shot captures the bride leaning forward, blowing out candles on the wedding cake. Her lips are pursed, and the candles on the top tier are still lit, though the flame on the very top candle appears slightly less defined or a bit blurred, suggesting air movement is affecting it. Her posture is similar to frame_3. A camera is visible on the left, and guests are in the blurred background.",
+    "A medium shot depicts the bride leaning in with pursed lips, actively blowing out the candles on the wedding cake. The candles on the top tier are clearly lit, with strong, active flames. Her body is slightly more forward and committed to the action compared to frame_1. A camera setup is visible on the left, and a man in a suit stands in the background on the right.",
+    "A medium shot shows the bride very close to the cake, her mouth slightly open, looking at the candles. The candles on the top tier are completely extinguished, and a distinct wisp of smoke is rising from them. Her expression is less reactive than in frame_0, more observing the aftermath. A camera on a tripod is on the left, and a man in a suit is in the background."
+  ],
+  "reasoning": "The core action depicted in these frames is a bride blowing out candles on a cake. I will determine the temporal order by analyzing the state of the candles (lit, flickering, out, smoke) and the bride's posture and facial expression (preparing to blow, actively blowing, reacting, observing).\n\n1.  **Initial Blow (Frame_1):** The bride is leaning in with pursed lips, actively blowing. The candles are clearly and strongly lit. Her body posture seems like the beginning of the blowing action.\n\n2.  **Sustained Blow (Frame_3):** The bride continues to blow, with her body perhaps slightly more committed forward than in frame_1. The candles are still clearly and strongly lit, indicating a sustained effort to blow them out.\n\n3.  **Candles Affected (Frame_2):** The bride is still blowing, but a closer look at the top candle reveals a slight blur or disturbance around the flame, suggesting the air from her blowing is actively affecting it and it's starting to flicker or weaken. This represents the point where the blow is having its intended effect.\n\n4.  **Just Extinguished, Reaction (Frame_0):** The candles are almost entirely extinguished, with only very faint or no visible flames. The bride's mouth is wide open, and her head is tilted back, indicating an immediate, reactive expression (like a cheer or a gasp of accomplishment) right after successfully blowing out the candles.\n\n5.  **Completely Extinguished, Smoke Rising (Frame_4):** The candles are definitively out, and a clear plume of smoke is rising from them. The bride's expression is more subdued, observing the result, indicating a moment after the immediate reaction, where the state of the extinguished candles and rising smoke has settled.",
+  "predicted_order": [
+    1,
+    3,
+    2,
+    0,
+    4
+  ],
+  "video": "v_BlowingCandles_g02_c02",
+  "shuffled_frames": [
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00005.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00001.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00002.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00003.jpg",
+    "data/frames/BlowingCandles/v_BlowingCandles_g02_c02/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 8,
+    "discordant_pairs": 2,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.8,
+    "kendall_tau": 0.6
+  }
+}

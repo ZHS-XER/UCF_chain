@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A cyclist in a blue helmet and white jersey is riding a bicycle on a paved road. The right leg is at its lowest and most backward point in the pedal stroke, while the left leg is high and forward, approaching the top of its stroke. The bike appears to be moving from left to right.",
+    "A cyclist in a blue helmet and white jersey is riding a bicycle. The right leg is descending, positioned forward and slightly down. The left leg is ascending, slightly back and up. The right pedal crank arm is oriented approximately at the 3-4 o'clock position.",
+    "A cyclist in a blue helmet and white jersey is riding a bicycle. The right leg is at its highest and most forward point in the pedal stroke, preparing for the downward push. The left leg is at its lowest and most backward point. The right pedal crank arm is oriented approximately at the 1 o'clock position.",
+    "A cyclist in a blue helmet and white jersey is riding a bicycle. The right leg has begun its descent from the peak, moving down and slightly back. The left leg has started to ascend. The right pedal crank arm is oriented approximately at the 2 o'clock position.",
+    "A cyclist in a blue helmet and white jersey is riding a bicycle. The right leg is further down and back than in frame_1, nearing the bottom of its stroke. The left leg is higher and further forward than in frame_1. The right pedal crank arm is oriented approximately at the 5-6 o'clock position."
+  ],
+  "reasoning": "The temporal order is determined by observing the continuous motion of the cyclist's legs during the pedaling stroke. I focused on the position of the right leg and its corresponding crank arm as it moves through a clockwise rotation (assuming the bike is moving forward and the cyclist is pedaling normally). \n\n1.  **frame_2** shows the right leg at its highest and most forward point (approximately 1 o'clock position for the crank arm), which marks the very beginning of the downward power stroke.\n2.  **frame_3** follows, with the right leg having moved slightly down and back (approximately 2 o'clock position).\n3.  **frame_1** shows the right leg further down and back (approximately 3-4 o'clock position).\n4.  **frame_4** depicts the right leg significantly lower and further back, approaching the bottom of the stroke (approximately 5-6 o'clock position).\n5.  **frame_0** is the final frame in this sequence, where the right leg is at its lowest and most backward point (approximately 7-8 o'clock position), having completed the power phase and beginning its ascent.",
+  "predicted_order": [
+    2,
+    3,
+    1,
+    4,
+    0
+  ],
+  "video": "v_Biking_g02_c04",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c04/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g02_c04/frame_00002.jpg"
+  ],
+  "correct_order": [
+    0,
+    4,
+    3,
+    2,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 2,
+    "discordant_pairs": 8,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.2,
+    "kendall_tau": -0.6
+  }
+}

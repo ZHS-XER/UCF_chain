@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is captured mid-air, inverted with legs pointing upwards, positioned directly above the diving board. This appears to be near the peak of their jump during an inverted dive.",
+    "The diver is in mid-air and descending, significantly lower than in frame_0, with their body angled downwards towards the water, appearing to prepare for entry into the pool.",
+    "The diver is shown in the process of entering the water, with a noticeable splash occurring where their body is making contact with the surface. Most of their body is either just submerged or breaking the water.",
+    "A diver is positioned on the end of a diving board with knees bent and arms extended upwards, indicating they are either in the process of pushing off or have just prepared to jump.",
+    "A diver is standing on a green elevated platform next to the pool, with their back mostly facing the viewer, next to another person sitting on the platform. This suggests they are either exiting the pool or resting after a dive."
+  ],
+  "reasoning": "The frames depict a sequence of a diver performing a dive into a pool. I will order them based on the natural progression of a dive:\n\n1.  **Preparation/Push-off (frame_3):** The sequence begins with the diver on the diving board, bending their knees and raising their arms, which is the starting position for a jump or the moment of pushing off the board.\n2.  **Peak of Jump (frame_0):** After pushing off, the diver ascends. Frame_0 shows the diver at the highest point of their inverted jump, just above the board.\n3.  **Descent (frame_1):** Following the peak, the diver begins their descent towards the water. Frame_1 captures the diver mid-descent, lower than in frame_0, and still airborne.\n4.  **Water Entry (frame_2):** The next logical step is the diver entering the water. Frame_2 clearly shows the diver making contact with the water, creating a splash.\n5.  **Post-Dive/Exit (frame_4):** After entering the water, the diver would eventually swim to the side and exit the pool. Frame_4 shows the diver on the platform next to the pool, suggesting they have just exited or are resting after the dive.",
+  "predicted_order": [
+    3,
+    0,
+    1,
+    2,
+    4
+  ],
+  "video": "v_Diving_g02_c01",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    1,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

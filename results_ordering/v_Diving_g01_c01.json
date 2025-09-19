@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is on a diving board, with their body starting to descend and knees slightly bent. The diving board is flexed downwards under their weight.",
+    "A diver is in a deep crouch at the end of a diving board. The board is bent significantly downwards, indicating maximum pressure is being applied.",
+    "A diver is standing tall and upright at the end of a diving board, which is at the peak of its upward recoil, appearing almost flat.",
+    "A diver is standing straight in a neutral starting position on a flat diving board before beginning any motion.",
+    "A diver is bent over from the waist, with their hands near the pool deck, in an initial preparatory crouch on the diving board, which has started to bend slightly."
+  ],
+  "reasoning": "The sequence shows the preparatory bounces of a diver on a springboard. The logical progression of this action determines the order. \n1. **frame_3:** The diver is in a neutral, static standing position on a flat board. This is the clear starting point.\n2. **frame_4:** The diver initiates the motion by bending down into a preparatory crouch. This is the first movement from the static stance.\n3. **frame_2:** The diver pushes off from the crouch, launching themselves upward. This frame captures the peak of the upward bounce, where the diver is most upright and the board has recoiled to its highest, flattest point.\n4. **frame_0:** After reaching the peak, the diver comes back down due to gravity. This frame shows them landing on the board, causing it to flex downwards as it absorbs their weight.\n5. **frame_1:** The diver uses their momentum to press down further, reaching the lowest point of the bounce. Here, they are in a deep crouch, and the board is bent to its maximum extent, storing the potential energy for the final launch into the dive. \nThis order, [3, 4, 2, 0, 1], follows the physical cycle of a bounce on a diving board.",
+  "predicted_order": [
+    3,
+    4,
+    2,
+    0,
+    1
+  ],
+  "video": "v_Diving_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c01/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c01/frame_00004.jpg"
+  ],
+  "correct_order": [
+    2,
+    0,
+    3,
+    4,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "detailed description for first picture (frame_0)",
+    "detailed description for second picture (frame_1)",
+    "detailed description for third picture (frame_2)",
+    "detailed description for fourth picture (frame_3)",
+    "detailed description for fifth picture (frame_4)"
+  ],
+  "reasoning": "Explain your thought process for determining the correct order",
+  "predicted_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "video": "v_Diving_g02_c06",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c06/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c06/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c06/frame_00002.jpg",
+    "data/frames/Diving/v_Diving_g02_c06/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c06/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    2,
+    3,
+    0,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

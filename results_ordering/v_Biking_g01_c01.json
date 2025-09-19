@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A child wearing a helmet and pads is on a bicycle in a parking lot. The camera is at a medium distance, and the child is positioned in the middle of a parking space, facing slightly to the right.",
+    "A closer shot of the child on the bicycle in the parking lot. The bike's front wheel is positioned just behind a white parking line.",
+    "A tight close-up shot of the child on the bicycle. A basketball hoop base is visible in the background on the left. The bike's front wheel is over a white parking line.",
+    "The closest shot of the five frames, showing a side profile of the child on the bicycle. The camera is zoomed in, cutting off the top of the helmet and the bottom of the wheels.",
+    "A wide shot of the child on the bicycle in a large, empty parking lot. The child is furthest from the camera in this frame, near the intersection of two white lines."
+  ],
+  "reasoning": "The correct temporal order is determined by tracking the child's movement and the camera's zoom. The sequence depicts a child riding a bicycle towards and past the camera.\n\n1.  **frame_4** is the starting point as it is the widest shot, showing the child furthest away from the camera.\n2.  **frame_0** follows, as the child has ridden closer to the camera, and the shot is tighter than in frame_4.\n3.  **frame_1** is next, showing the child even closer, approaching a white parking line.\n4.  **frame_2** shows the child having just crossed the white line. A basketball hoop base, not clearly visible before, appears in the background, indicating the camera is panning to follow the child's movement.\n5.  **frame_3** is the final frame. It is the tightest close-up, a side-on shot, suggesting the child is now directly beside or has just passed the camera's position.\n\nThis sequence (4, 0, 1, 2, 3) creates a logical and continuous motion of the child riding from a distance to a close-up.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "video": "v_Biking_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g01_c01/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00003.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g01_c01/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

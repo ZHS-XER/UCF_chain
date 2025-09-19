@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "This frame captures a mid-air moment of an athlete performing a jump. The athlete, wearing a dark singlet with white stripes, is suspended in the air over what appears to be a crash mat or landing area (mostly out of frame). Numerous spectators are gathered in the background, behind barriers or tables.",
+    "The athlete, in the dark singlet, is walking or jogging on the marked gymnasium floor, moving towards the right side of the frame. The background shows the same crowd of spectators and tables.",
+    "A closer view of the athlete in mid-stride, running with an upward gaze. A vertical pole with numerical markings '6 | 14' is prominent on the left, suggesting a measurement standard for a high jump or similar event. The background shows blurred figures and gym walls.",
+    "The athlete is running on a white-lined track or marked area, moving towards the right. This appears to be an earlier stage of their approach. Spectators are visible in the background.",
+    "This frame shows the athlete in a very dynamic mid-air pose, actively clearing an unseen obstacle. Their body is arched, and limbs are extended, indicative of the peak action of a jump. The background is filled with spectators and some structures, similar to frame_0."
+  ],
+  "reasoning": "The sequence is determined by tracking the athlete's progression through a jump event, likely a high jump, pole vault, or long jump given the focus on airborne action and a measurement standard. \n\n1.  **Frame 3 (Initial Approach):** The athlete is shown running on a marked track, indicating the start of their run-up or approach to the jump.\n2.  **Frame 2 (Closer Approach/Take-off Prep):** The athlete is still running but closer to the point of action, looking upwards. The presence of the '6 | 14' marked pole suggests they are nearing the take-off or obstacle for a measured jump.\n3.  **Frame 4 (Peak of Jump):** This frame depicts the athlete at the most active and elevated point of their jump, actively clearing an obstacle (which is out of frame). Their body position is indicative of peak effort in mid-air.\n4.  **Frame 0 (Post-Clearance/Landing):** Immediately following the peak of the jump, the athlete is still airborne but their body posture suggests they are past the clearing phase and beginning their descent or preparing for landing. This is a continuation of the action from frame 4.\n5.  **Frame 1 (Post-Jump Movement):** The athlete is now on the ground, walking or jogging away from the immediate jump area, indicating the completion of the jump sequence.",
+  "predicted_order": [
+    3,
+    2,
+    4,
+    0,
+    1
+  ],
+  "video": "v_HighJump_g01_c04",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 4,
+    "discordant_pairs": 6,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.4,
+    "kendall_tau": -0.2
+  }
+}

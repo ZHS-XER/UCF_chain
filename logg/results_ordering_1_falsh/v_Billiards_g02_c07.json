@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A pool player is leaning over a blue felt pool table, holding a cue stick, poised to strike the cue ball. A tight pyramid of colorful object balls is racked at the far end of the table. The cue ball is positioned for the break shot. Spectators are visible in the background, and various banners are displayed, including one that says 'Chalk-Off!' There is no score overlay on the screen.",
+    "The pool table is shown after a break shot. The colorful object balls are widely scattered across the blue felt, some near pockets, indicating they have come to rest after being struck. The cue ball is also in play near the center of the table. The player is standing upright, observing the table. Spectators and banners are in the background, similar to other frames.",
+    "This frame captures the moment immediately after the cue ball has struck the racked object balls during a break shot. The balls are visibly scattering with motion blur, indicating rapid movement. Some balls are still somewhat grouped, but no longer in a perfect rack. The player is leaning over the table, cue stick extended, having just completed the strike. Spectators and banners are in the background.",
+    "A pool player is setting up for a break shot, leaning over the table with a cue stick. The cue ball is positioned, and the object balls are tightly racked in a pyramid. A scoreboard overlay is visible on the lower right, displaying 'U.S. Open 9-Ball Championship,' player names 'SHANE VAN BOENING 10' and 'JOSE PARICA 11,' and 'Race to 11 Games.' Spectators and banners are in the background.",
+    "Very similar to frame 3, a pool player is leaning over the table, preparing for a break shot. The balls are racked, and the cue ball is in position. The same scoreboard overlay is visible in the lower right corner, showing the match details. The player's posture is almost identical to frame 3, possibly a slight adjustment in body position, indicating a moment very close in time to frame 3."
+  ],
+  "reasoning": "The core event depicted is a pool break shot. The most logical sequence is from racked balls to scattered balls via an impact.\n\n1.  **Initial Setup (Before the Break):** Frames 0, 3, and 4 show the balls racked and the player poised to strike. Frames 3 and 4 include a scoreboard overlay, which often appears at the start of a new rack or game. Frame 0 lacks this overlay.\n2.  **Ordering Frames 3, 4, and 0:** It's common for a score overlay to be displayed, then for the player to settle, and then for the overlay to be removed for an unobstructed view of the action. Comparing frame 3 and 4, the player in frame 4 appears slightly more leaned in and settled into their final striking position than in frame 3, suggesting a very subtle progression. Frame 0, without the overlay, likely represents the immediate moment before the strike.\n    *   **Frame 3:** Player begins to settle, scoreboard visible.\n    *   **Frame 4:** Player is more settled into the final stance, scoreboard still visible.\n    *   **Frame 0:** Player is in the final, ready-to-strike position, and the scoreboard overlay has been removed.\n3.  **The Strike (During the Break):** Frame 2 clearly shows the balls in motion with significant blur, indicating the immediate aftermath of the cue ball striking the racked balls.\n4.  **Aftermath (After the Break):** Frame 1 shows the balls completely scattered and at rest on the table, which is the state after a successful break shot.\n\nTherefore, the most coherent temporal order is 3 (initial setup with score) -> 4 (settling with score) -> 0 (final ready, no score) -> 2 (impact/scatter) -> 1 (balls at rest).",
+  "predicted_order": [
+    3,
+    4,
+    0,
+    2,
+    1
+  ],
+  "video": "v_Billiards_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00004.jpg"
+  ],
+  "correct_order": [
+    3,
+    4,
+    0,
+    2,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

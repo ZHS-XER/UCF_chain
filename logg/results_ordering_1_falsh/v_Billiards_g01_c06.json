@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A male pool player, viewed from above, is bent over a pool table aiming with a cue stick. The cue ball is positioned for a break shot, and a full rack of object balls is tightly grouped at the center of the table. The player's cue stick is very close to the cue ball, appearing to be at or just before the moment of contact.",
+    "A male pool player, viewed from above, is bent over a pool table aiming with a cue stick. The cue ball is positioned for a break shot, and a full rack of object balls is tightly grouped at the center of the table. The player's cue stick is slightly further back from the cue ball, suggesting a backswing action, and his head is slightly more turned to the right compared to frames 0 and 4.",
+    "The pool table shows scattered object balls after the break shot. Many balls are spread across the table, some near pockets, indicating an early stage of play after the initial break. The player is standing upright, hands near his waist, no longer aiming.",
+    "The pool table shows scattered object balls, but significantly fewer balls are on the table compared to frame 2. This suggests that several balls have been pocketed since the initial break. The player is standing upright, similar to frame 2.",
+    "A male pool player, viewed from above, is bent over a pool table aiming with a cue stick. The cue ball is positioned for a break shot, and a full rack of object balls is tightly grouped at the center of the table. The player's cue stick is very close to the cue ball, similar to frame 0, but with a slightly more extended bridge arm, possibly indicating a moment immediately following contact or further into the follow-through compared to frame 0."
+  ],
+  "reasoning": "The sequence of events in a pool game typically starts with the break shot, where a player aims at a racked set of balls. After the break, the balls scatter, and then players take turns pocketing balls, leading to fewer balls on the table over time. \n\n1.  **Frames 1, 0, 4 (The Break Shot):** These three frames show the player preparing for and executing the break shot with the balls still racked. \n    *   **Frame 1** shows the player with the cue stick slightly drawn back, indicating the backswing of the stroke. The player's head is also slightly more rotated.\n    *   **Frame 0** shows the cue stick very close to the cue ball, likely the moment of contact or just before it.\n    *   **Frame 4** shows the cue stick in a position very similar to frame 0, but with a slightly more extended bridge arm, suggesting it's a moment immediately following contact or slightly further into the follow-through compared to frame 0.\n    Therefore, the logical progression for the break shot is 1 (backswing) -> 0 (contact) -> 4 (follow-through).\n\n2.  **Frames 2, 3 (Post-Break Play):** These frames show the balls scattered across the table, with the player standing upright, indicating that the break has occurred and play is underway.\n    *   **Frame 2** has a larger number of scattered balls on the table. This represents the immediate aftermath of the break shot or an early stage of the game.\n    *   **Frame 3** has significantly fewer balls on the table compared to frame 2. This implies that several balls have been pocketed during the course of play, meaning this frame must occur later than frame 2.\n\nCombining these segments, the complete temporal order is the break shot sequence followed by the play progression:\n[1 (backswing), 0 (contact), 4 (follow-through), 2 (many scattered balls), 3 (fewer scattered balls)].",
+  "predicted_order": [
+    1,
+    0,
+    4,
+    2,
+    3
+  ],
+  "video": "v_Billiards_g01_c06",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c06/frame_00005.jpg"
+  ],
+  "correct_order": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

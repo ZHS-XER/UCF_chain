@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A pool player in a black shirt is leaning over a blue pool table, in the final backswing of a break shot. The numbered balls are in a tight diamond rack, and the cue ball is positioned to the right. There is no score overlay on the screen.",
+    "The pool table is shown after a break shot, with the numbered balls scattered across the blue felt. The player in black is standing up, looking over the table. The cue ball is near the bottom right corner pocket.",
+    "The moment of impact during a pool break shot. The cue ball has just hit the racked balls, which are exploding outwards with visible motion blur. The player's cue stick is extended forward after the strike.",
+    "A pool player is aiming for a break shot. The balls are racked in a diamond shape. A solid score overlay is visible in the bottom right, showing 'SHANE VAN BOENING 10' and 'JOSE PARICA 10' in the 'U.S. Open 9-Ball Championship'.",
+    "A pool player is aiming for a break shot with the balls racked. A slightly transparent score overlay is present in the bottom right corner, displaying the match details."
+  ],
+  "reasoning": "The frames depict a single, continuous action: a break shot in a game of pool. The logical order can be determined by the state of the pool balls and the actions of the player.\n1.  **Frame 4:** This is the beginning of the sequence. The player is aiming, and a score graphic is just appearing on screen (it appears slightly transparent).\n2.  **Frame 3:** This frame immediately follows, showing the player still aiming, but the score graphic is now fully opaque and solid.\n3.  **Frame 0:** This is the moment just before the shot. The balls are still racked, but the player is in their final backswing, preparing to strike. The score graphic has been removed, a common practice in sports broadcasts to clear the view for the main action.\n4.  **Frame 2:** This is the climax of the action. The cue ball makes contact with the racked balls, and they are shown exploding outwards with significant motion blur. This frame must follow the setup and aiming frames.\n5.  **Frame 1:** This is the aftermath. The break is complete, and the balls are now scattered across the table. The player is standing up to survey the result of their shot.\nThis sequence [4, 3, 0, 2, 1] follows a clear and logical narrative from setup to completion.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "video": "v_Billiards_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00007.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00013.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00010.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g02_c07/frame_00004.jpg"
+  ],
+  "correct_order": [
+    3,
+    4,
+    0,
+    2,
+    1
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

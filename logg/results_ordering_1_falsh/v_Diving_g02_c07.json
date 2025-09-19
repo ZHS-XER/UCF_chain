@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of an empty swimming pool with a diving board on the left side. The water is calm and turquoise. In the background, there's a green grassy area, some trees, and distant buildings under a clear sky. A white structure with a green top is visible on the right side of the pool.",
+    "A diver in a light blue swimsuit is captured mid-air, just above the surface of the pool water, in the process of descending. Their body is somewhat straight, arms slightly bent, and legs together. The diving board is visible to the left, and a slight ripple is forming on the water surface directly below the diver.",
+    "A wide shot of an empty swimming pool with a diving board on the left side, mirroring frame_0. The water is calm and turquoise. In the background, there's a green grassy area, some trees, and distant buildings under a clear sky. A white structure with a green top is visible on the right side of the pool.",
+    "A diver in a light blue swimsuit is suspended high in the air above the pool, performing an acrobatic move. Their body is inverted, with arms extended upwards (towards the top of the frame) and legs bent, suggesting a handstand or flip during the dive. The water below is calm.",
+    "A diver in a light blue swimsuit stands on the end of the diving board, facing the pool. Their arms are raised above their head, and their body is poised, indicating the moment before takeoff for a dive. The pool water is calm."
+  ],
+  "reasoning": "The sequence of events for a dive naturally progresses from an empty scene, to preparation on the board, to the peak of the dive, to descent, and finally back to an empty scene. \n\n1.  **frame_0** shows an empty pool, which serves as the starting point before any action.\n2.  **frame_4** depicts the diver standing on the diving board, arms raised, in the preparatory phase just before jumping.\n3.  **frame_3** shows the diver at the highest point of their dive, performing an acrobatic maneuver high above the water.\n4.  **frame_1** captures the diver descending towards the water, closer to the surface, after the peak of the jump and before entry.\n5.  **frame_2** is an empty pool shot, identical to frame_0, representing the scene after the diver has entered the water and is no longer visible, thus concluding the visible action of the dive from this perspective.",
+  "predicted_order": [
+    0,
+    4,
+    3,
+    1,
+    2
+  ],
+  "video": "v_Diving_g02_c07",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g02_c07/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g02_c07/frame_00002.jpg"
+  ],
+  "correct_order": [
+    3,
+    4,
+    1,
+    2,
+    0
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

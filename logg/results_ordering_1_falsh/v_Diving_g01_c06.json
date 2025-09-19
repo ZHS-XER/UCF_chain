@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A diver is fully submerged underwater in a blue swimming pool, with their body angled diagonally downwards. There are some ripples and disturbed water on the surface, but the diver is completely below it.",
+    "A diver stands upright on a high diving board, facing the clear blue water of the swimming pool. There are two diving boards visible, and 'INDIANA' is written on the side of the platform. Spectators are visible in the background.",
+    "A diver is mostly submerged in the water, with only part of their upper body still visible above the surface, just to the left of the diving board. A significant splash is erupting around their entry point. The diving board is empty and slightly recoiling.",
+    "A diver's feet and lower legs have just entered the water, creating an initial splash. The rest of the diver's body is still in the air above the water, angled downwards. The diving board, which the diver has just left, is still visibly bent downwards from the take-off.",
+    "A diver is in mid-air, having just left the diving board. Their body is in a 'pike' or 'tuck' position, with knees bent and body curled, above the water. The diving board is empty and appears to be slightly recoiling upwards after the diver's push-off."
+  ],
+  "reasoning": "I analyzed the progression of a dive from standing on the board to full submersion in the water. \n\n1.  **frame_1** shows the diver standing on the board, which is the starting position before a dive.\n2.  **frame_4** shows the diver having just pushed off the board and performing a mid-air maneuver (a pike or tuck) while still significantly above the water. The board is recoiling from the push-off.\n3.  **frame_3** captures the moment of initial water entry, where the diver's feet and lower legs have just broken the surface, creating a distinct splash, while the rest of the body is still largely above the water. The board is still bent downwards from the jump.\n4.  **frame_2** depicts the diver deeper into the water, with most of their body submerged and a larger, more developed splash, indicating further penetration into the water.\n5.  **frame_0** is the final stage shown, where the diver is completely submerged underwater, having completed their entry, and is moving further beneath the surface.",
+  "predicted_order": [
+    1,
+    4,
+    3,
+    2,
+    0
+  ],
+  "video": "v_Diving_g01_c06",
+  "shuffled_frames": [
+    "data/frames/Diving/v_Diving_g01_c06/frame_00005.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00001.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00004.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00003.jpg",
+    "data/frames/Diving/v_Diving_g01_c06/frame_00002.jpg"
+  ],
+  "correct_order": [
+    1,
+    4,
+    3,
+    2,
+    0
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}

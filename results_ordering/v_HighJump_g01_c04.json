@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "An athlete is in mid-air, having just cleared a high jump bar. He is horizontal to the ground, with his back facing down, and is beginning his descent towards the landing mat. A crowd is watching in the background.",
+    "The athlete, having completed his high jump and landed, is standing on the gym floor and walking away from the high jump area. The high jump apparatus is visible on the left.",
+    "The athlete is in the final steps of his approach run, moving from right to left towards the high jump standards, which are visible on the far left.",
+    "The athlete is in the early phase of his approach run for a high jump. He is seen on the right side of the frame, running on an indoor track towards the jump area.",
+    "The athlete is at the apex of his jump, arching his back as he successfully clears the high jump bar. His body is positioned directly over the bar."
+  ],
+  "reasoning": "The logical sequence of a high jump event is the approach run, the jump over the bar, and the landing. Frame 3 shows the athlete at the beginning of his run, furthest from the bar. Frame 2 shows him closer to the bar, at the end of his approach. Frame 4 captures the peak moment of the jump as he clears the bar. Frame 0 shows the moment immediately after clearing the bar, as he begins to descend. Finally, frame 1 shows the athlete after he has landed and is walking away. Therefore, the correct chronological order is the start of the run, the end of the run, the peak of the jump, the descent, and finally walking away after the landing.",
+  "predicted_order": [
+    3,
+    2,
+    4,
+    0,
+    1
+  ],
+  "video": "v_HighJump_g01_c04",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00004.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c04/frame_00001.jpg"
+  ],
+  "correct_order": [
+    4,
+    0,
+    1,
+    3,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 4,
+    "discordant_pairs": 6,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.4,
+    "kendall_tau": -0.2
+  }
+}

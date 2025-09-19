@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A cyclist on a time trial bike is positioned in the center-right of the frame. They are wearing a white jersey, black shorts, and a blue helmet, and are in an aerodynamic tuck. The bike has solid disc wheels.",
+    "The cyclist is now on the far right side of the frame, appearing to move out of the camera's view. The angle shows more of the road to the left of the cyclist.",
+    "The cyclist is positioned to the right of the center of the frame, further right than in frame 0. A dark vertical line or crack on the pavement is visible under the bike's frame.",
+    "The cyclist is in the center-left of the frame. They have moved slightly to the right compared to their position in frame 4.",
+    "The cyclist is on the far left side of the frame, with the front wheel very close to the left edge. This is the earliest point in their transit across the frame."
+  ],
+  "reasoning": "The temporal order is determined by tracking the cyclist's movement across the frame from left to right. Frame 4 shows the cyclist at the far left, marking the beginning of the sequence. In frame 3, the cyclist has moved slightly to the right. Frame 0 shows them moving further towards the center-right. In frame 2, they have progressed even further to the right, and a dark line on the road is now visible under them. Finally, in frame 1, the cyclist is on the far right edge of the frame, which is the logical conclusion of this left-to-right movement. The sequence [4, 3, 0, 2, 1] depicts a smooth and continuous motion.",
+  "predicted_order": [
+    4,
+    3,
+    0,
+    2,
+    1
+  ],
+  "video": "v_Biking_g02_c03",
+  "shuffled_frames": [
+    "data/frames/Biking/v_Biking_g02_c03/frame_00004.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00001.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00005.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00002.jpg",
+    "data/frames/Biking/v_Biking_g02_c03/frame_00003.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    4,
+    0,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 5,
+    "discordant_pairs": 5,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.5,
+    "kendall_tau": 0.0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A top-down view of a pool table. The cue ball is positioned at the head of the table, and the racked balls are tightly clustered at the foot. A player's arm and cue stick are visible, with the cue stick positioned just behind the cue ball, appearing to be in the early stage of the stroke or follow-through. A scoreboard overlay shows 'U.S. Open 9-Ball Championship', 'Mika Immonen 3', and 'Ronnie Alcano 2'.",
+    "A top-down view of a pool table, nearly identical to frame_0. The cue ball is at the head, racked balls at the foot. The player's arm and cue stick are visible, with the cue stick in a similar position to frame_0, suggesting it's during the stroke or follow-through. The scoreboard overlay is also identical: 'U.S. Open 9-Ball Championship', 'Mika Immonen 3', 'Ronnie Alcano 2'.",
+    "A top-down view of a pool table, very similar to frame_0 and frame_1. The cue ball is at the head, racked balls at the foot. The player's arm and cue stick are visible, with the cue stick in a similar position to frame_0 and frame_1. A slight blurring or overlay effect is present over the scoreboard area, though the scores ('Mika Immonen 3', 'Ronnie Alcano 2') are still discernible beneath it.",
+    "A top-down view of a pool table where the racked balls have been scattered across the felt. The cue stick is visible mid-air, having just completed the break shot. Several colored balls are in motion, some heading towards pockets. The cue ball is also in motion, near the top-left pocket. The scoreboard overlay is present at the bottom, but the main action is the scattered balls.",
+    "A top-down view of a pool table. The cue ball is at the head of the table, and the racked balls are tightly clustered at the foot. The player's arm and cue stick are visible, with the cue stick poised slightly further back from the cue ball compared to the other 'setup' frames, indicating a moment just before the strike. The scoreboard overlay shows 'U.S. Open 9-Ball Championship', 'Mika Immonen 3', and 'Ronnie Alcano 2'."
+  ],
+  "reasoning": "The core event depicted is a pool break shot. The sequence of a break shot involves a player setting up, striking the cue ball, and then the racked balls scattering across the table.\n\n1.  **Initial Setup (Before Strike):** Frame_4 shows the cue stick poised slightly back from the cue ball, indicating the very beginning of the forward stroke or just before contact. This is the earliest moment among the setup shots.\n\n2.  **During/Immediately After Strike (Follow-through):** Frames_0, _1, and _2 all show the cue stick in a very similar position, closer to and past the cue ball, suggesting it's during the follow-through after making contact. Frames_0 and _1 are virtually identical, indicating they are very close in time or even duplicates. Frame_2 is almost identical to 0 and 1 but has a distinct blurring/overlay effect on the scoreboard area. This visual artifact could represent the very moment of impact, peak action, or a slight vibration/processing anomaly during the shot itself, placing it slightly after 0 and 1.\n\n3.  **Aftermath of the Break:** Frame_3 clearly shows the balls scattered across the table, with the cue stick in mid-air, indicating the immediate result of the break shot. This must be the final frame in the sequence.\n\nTherefore, the most logical temporal order is to start with the player preparing (frame_4), then the impact/follow-through (frames_0, _1, then _2 with the blur), and finally the scattered balls (frame_3). The order of 0 and 1 is somewhat arbitrary due to their extreme similarity, but placing them consecutively between the initial setup and the 'blurred' impact frame makes sense.",
+  "predicted_order": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "video": "v_Billiards_g01_c04",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00004.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c04/frame_00002.jpg"
+  ],
+  "correct_order": [
+    0,
+    4,
+    1,
+    2,
+    3
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 9,
+    "discordant_pairs": 1,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.9,
+    "kendall_tau": 0.8
+  }
+}

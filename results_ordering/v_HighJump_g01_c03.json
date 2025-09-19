@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A wide shot of an indoor track and field venue. A crowd is gathered in the background, and a scoreboard is visible on the upper right wall. The camera is positioned looking across a grey track.",
+    "The camera has panned slightly to the right. An 'NCAA' logo is now clearly visible on the back wall. The crowd of spectators fills the center of the frame, and some equipment is visible on the floor in the right foreground.",
+    "The camera has panned further to the right, now focusing on the high jump area. A large red landing mat is on the left, with the high jump standards and bar set up. People are standing around, observing.",
+    "A wide shot, similar to frame_0, but the camera has panned slightly to the right. The scoreboard is now more to the left of the frame, and the 'NCAA' logo is just beginning to appear on the far right wall.",
+    "An action shot focused on the high jump. An athlete is in mid-air, arching their back as they clear the bar and are about to land on the red mat."
+  ],
+  "reasoning": "The video sequence is composed of a continuous camera pan from left to right, followed by the main action. \n1. Frame_0 is the starting point of the pan, showing the leftmost view with a scoreboard on the right.\n2. Frame_3 is the next logical step, as the camera pans right, shifting the scoreboard to the left and bringing the 'NCAA' logo into view on the far right.\n3. Frame_1 continues the pan, with the 'NCAA' logo now centered and fully visible.\n4. Frame_2 shows the end of the pan, where the camera settles on the high jump area before the athlete begins their jump.\n5. Frame_4 is the climax of the action, capturing the athlete in mid-air clearing the bar. This must be the final frame in the sequence.",
+  "predicted_order": [
+    0,
+    3,
+    1,
+    2,
+    4
+  ],
+  "video": "v_HighJump_g01_c03",
+  "shuffled_frames": [
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00003.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00001.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00005.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00002.jpg",
+    "data/frames/HighJump/v_HighJump_g01_c03/frame_00004.jpg"
+  ],
+  "correct_order": [
+    1,
+    3,
+    0,
+    4,
+    2
+  ],
+  "is_correct": false,
+  "pairwise_metrics": {
+    "concordant_pairs": 6,
+    "discordant_pairs": 4,
+    "total_pairs": 10,
+    "pairwise_accuracy": 0.6,
+    "kendall_tau": 0.2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "frame_descriptions": [
+    "A high-angle shot of a pool table during a 'US Open 9-Ball Championship'. A player is positioned at the head of the table, cue stick extended, preparing to hit the white cue ball. The object balls are racked tightly in a triangular formation near the foot spot. A score overlay shows 'Mika Immonen 5' and 'Ronnie Alcano 8', with 'Race to 11 Games'.",
+    "A high-angle shot of a pool table with the cue ball and several object balls scattered across the blue felt. No player is actively shown striking the ball. There are 10 colored object balls visible on the table, indicating a later stage in the game after many balls have been potted.",
+    "A high-angle shot of a pool table with a player actively striking the cue ball. The object balls are scattered across the table following an initial break shot or subsequent play. There are 12 colored object balls visible on the table, indicating an earlier stage after the break.",
+    "A high-angle shot of a pool table, nearly identical to frame_0. A player is positioned at the head of the table, cue stick drawn back slightly, preparing to hit the white cue ball. The object balls are racked in a triangle near the foot spot. The same score overlay is visible: 'Mika Immonen 5' and 'Ronnie Alcano 8'.",
+    "A high-angle shot of a pool table with a player actively striking the cue ball. The object balls are scattered across the table. There are 11 colored object balls visible on the table, suggesting a stage after frame_2 but before frame_1, as more balls have been potted."
+  ],
+  "reasoning": "The temporal order can be determined by observing the state of the pool table, specifically the number of balls, their arrangement, and the player's action.\n\n1.  **Initial Setup (Break Shot):** Frames 3 and 0 show the balls racked in a triangle, ready for the break shot. Frame 3 shows the player with the cue stick slightly drawn back, in a ready position, while frame 0 shows the cue stick slightly more forward, just before or at the very beginning of the stroke for the break. Therefore, frame 3 logically precedes frame 0.\n\n2.  **After the Break (Scattered Balls, Active Play):** After the break, the balls scatter, and players take turns potting them. The number of balls on the table will decrease as the game progresses.\n    *   Frame 2 shows a player actively striking the cue ball with 12 object balls (plus the cue ball) scattered on the table. This represents the state immediately after the break or early in the game.\n    *   Frame 4 shows a player actively striking the cue ball, but now there are 11 object balls (plus the cue ball) on the table. This indicates that at least one more ball has been potted compared to frame 2.\n\n3.  **Later Stage (Fewer Balls, Between Shots):**\n    *   Frame 1 shows the fewest object balls on the table (10, plus the cue ball) among the scattered frames, and no player is actively striking, suggesting it's a moment between shots, later in the game.\n\nCombining these observations, the logical progression is: initial setup (cue back) -> initial setup (cue forward for strike) -> scattered balls (most balls, player striking) -> scattered balls (fewer balls, player striking) -> scattered balls (fewest balls, no player striking).\n\nTherefore, the order is: `3` (initial setup, cue back), `0` (initial setup, cue forward), `2` (post-break, 12 object balls, player striking), `4` (later, 11 object balls, player striking), `1` (even later, 10 object balls, static scene).",
+  "predicted_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "video": "v_Billiards_g01_c01",
+  "shuffled_frames": [
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00003.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00009.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00005.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00001.jpg",
+    "data/frames/Billiards/v_Billiards_g01_c01/frame_00007.jpg"
+  ],
+  "correct_order": [
+    3,
+    0,
+    2,
+    4,
+    1
+  ],
+  "is_correct": true,
+  "pairwise_metrics": {
+    "concordant_pairs": 10,
+    "discordant_pairs": 0,
+    "total_pairs": 10,
+    "pairwise_accuracy": 1.0,
+    "kendall_tau": 1.0
+  }
+}
