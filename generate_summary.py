@@ -16,10 +16,17 @@ def generate_summary():
         "statistics": {
             "total": 0,
             "correct": 0,
-            "accuracy": 0.0
+            "accuracy": 0.0,
+            "average_pairwise_accuracy": 0.0,
+            "average_kendall_tau": 0.0
         },
-        "category_statistics": {}  # 新增: 按类别统计正确率
+        "category_statistics": {}  # 按类别统计正确率
     }
+
+    # 用于计算平均值的累计变量
+    total_pairwise_accuracy = 0.0
+    total_kendall_tau = 0.0
+    valid_predictions = 0
 
     # 处理每个结果文件
     for result_file in sorted(result_files):
@@ -36,6 +43,17 @@ def generate_summary():
                     "correct_order": result.get("correct_order"),
                     "is_correct": result.get("is_correct", False)
                 }
+
+                # 添加配对评价指标
+                if result.get("pairwise_metrics"):
+                    metrics = result["pairwise_metrics"]
+                    video_summary["pairwise_accuracy"] = metrics.get("pairwise_accuracy", 0.0)
+                    video_summary["kendall_tau"] = metrics.get("kendall_tau", 0.0)
+
+                    # 累计用于计算平均值
+                    total_pairwise_accuracy += metrics.get("pairwise_accuracy", 0.0)
+                    total_kendall_tau += metrics.get("kendall_tau", 0.0)
+                    valid_predictions += 1
 
                 # 添加到汇总
                 summary["videos"].append(video_summary)
@@ -54,7 +72,12 @@ def generate_summary():
                     summary["category_statistics"][category] = {
                         "total": 0,
                         "correct": 0,
-                        "accuracy": 0.0
+                        "accuracy": 0.0,
+                        "total_pairwise_accuracy": 0.0,
+                        "total_kendall_tau": 0.0,
+                        "valid_predictions": 0,
+                        "average_pairwise_accuracy": 0.0,
+                        "average_kendall_tau": 0.0
                     }
 
                 if "is_correct" in result:
@@ -62,19 +85,39 @@ def generate_summary():
                     if result["is_correct"]:
                         summary["category_statistics"][category]["correct"] += 1
 
+                # 累计类别的配对指标
+                if result.get("pairwise_metrics"):
+                    metrics = result["pairwise_metrics"]
+                    summary["category_statistics"][category]["total_pairwise_accuracy"] += metrics.get("pairwise_accuracy", 0.0)
+                    summary["category_statistics"][category]["total_kendall_tau"] += metrics.get("kendall_tau", 0.0)
+                    summary["category_statistics"][category]["valid_predictions"] += 1
+
             except json.JSONDecodeError:
                 print(f"无法解析 {result_file}")
                 continue
 
-    # 计算总体正确率
+    # 计算总体正确率和平均指标
     total = summary["statistics"]["total"]
     if total > 0:
         summary["statistics"]["accuracy"] = summary["statistics"]["correct"] / total
 
-    # 计算每个类别的正确率
+    if valid_predictions > 0:
+        summary["statistics"]["average_pairwise_accuracy"] = total_pairwise_accuracy / valid_predictions
+        summary["statistics"]["average_kendall_tau"] = total_kendall_tau / valid_predictions
+
+    # 计算每个类别的正确率和平均指标
     for category, stats in summary["category_statistics"].items():
         if stats["total"] > 0:
             stats["accuracy"] = stats["correct"] / stats["total"]
+
+        if stats["valid_predictions"] > 0:
+            stats["average_pairwise_accuracy"] = stats["total_pairwise_accuracy"] / stats["valid_predictions"]
+            stats["average_kendall_tau"] = stats["total_kendall_tau"] / stats["valid_predictions"]
+
+        # 清理临时累计变量
+        del stats["total_pairwise_accuracy"]
+        del stats["total_kendall_tau"]
+        del stats["valid_predictions"]
 
     # 保存总结文件，使用自定义格式化确保数组在一行
     with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
@@ -100,11 +143,15 @@ def generate_summary():
 
     print(f"总结已保存到 {SUMMARY_FILE}")
     print(f"总正确率: {summary['statistics']['correct']}/{total} ({summary['statistics']['accuracy']:.2%})")
+    print(f"平均配对准确率: {summary['statistics']['average_pairwise_accuracy']:.2%}")
+    print(f"平均Kendall's tau: {summary['statistics']['average_kendall_tau']:.3f}")
 
     # 输出各类别正确率
-    print("\n各类别正确率:")
+    print("\n各类别统计:")
     for category, stats in sorted(summary["category_statistics"].items()):
-        print(f"{category}: {stats['correct']}/{stats['total']} ({stats['accuracy']:.2%})")
+        print(f"{category}: 严格匹配 {stats['correct']}/{stats['total']} ({stats['accuracy']:.2%}), "
+              f"配对准确率 {stats['average_pairwise_accuracy']:.2%}, "
+              f"Kendall's tau {stats['average_kendall_tau']:.3f}")
 
 if __name__ == "__main__":
     generate_summary()

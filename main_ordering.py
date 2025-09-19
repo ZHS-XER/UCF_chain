@@ -148,9 +148,14 @@ async def process_video(video_name, task, stats):
 
     # 判断是否正确
     is_correct = False
+    pairwise_metrics = None
     if result.get("predicted_order"):
         is_correct = (result["predicted_order"] == task["correct_order"])
         result["is_correct"] = is_correct
+
+        # 计算配对评价指标
+        pairwise_metrics = calculate_pairwise_accuracy(result["predicted_order"], task["correct_order"])
+        result["pairwise_metrics"] = pairwise_metrics
 
         # 更新统计
         stats["total"] += 1
@@ -160,12 +165,75 @@ async def process_video(video_name, task, stats):
         # 输出当前结果
         print(f"预测顺序: {result['predicted_order']}")
         print(f"正确顺序: {task['correct_order']}")
-        print(f"结果: {'✓' if is_correct else '✗'}")
+        print(f"严格匹配: {'✓' if is_correct else '✗'}")
+        if pairwise_metrics:
+            print(f"配对准确率: {pairwise_metrics['pairwise_accuracy']:.2%}")
+            print(f"Kendall's tau: {pairwise_metrics['kendall_tau']:.3f}")
         print(f"当前正确率: {stats['correct']}/{stats['total']} ({stats['correct']/stats['total']:.2%})")
 
     # 保存结果
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
+
+def calculate_pairwise_accuracy(predicted_order, correct_order):
+    """
+    计算基于元素对相对顺序的准确率和Kendall's tau系数
+
+    Args:
+        predicted_order: 预测的排序，如 [0, 1, 2, 3, 4]
+        correct_order: 正确的排序，如 [0, 1, 3, 2, 4]
+
+    注意：这里的顺序表示的是在每个位置上应该放置哪个元素
+
+    Returns:
+        dict: 包含一致对数、不一致对数、总对数、配对准确率和Kendall's tau的字典
+    """
+    if not predicted_order or not correct_order or len(predicted_order) != len(correct_order):
+        return {
+            "concordant_pairs": 0,
+            "discordant_pairs": 0,
+            "total_pairs": 0,
+            "pairwise_accuracy": 0.0,
+            "kendall_tau": 0.0
+        }
+
+    n = len(predicted_order)
+    concordant_pairs = 0  # 一致对数
+    discordant_pairs = 0  # 不一致对数
+    total_pairs = 0
+
+    # 遍历所有可能的位置对 (pos_i, pos_j)，其中 pos_i < pos_j
+    for pos_i in range(n):
+        for pos_j in range(pos_i + 1, n):
+            total_pairs += 1
+
+            # 在正确顺序中，pos_i位置的元素应该在pos_j位置的元素之前
+            correct_elem_i = correct_order[pos_i]  # 在pos_i位置的正确元素
+            correct_elem_j = correct_order[pos_j]  # 在pos_j位置的正确元素
+
+            # 在预测顺序中找到这两个元素的位置
+            pred_pos_i = predicted_order.index(correct_elem_i)
+            pred_pos_j = predicted_order.index(correct_elem_j)
+
+            # 检查在预测顺序中，这两个元素的相对顺序是否正确
+            if pred_pos_i < pred_pos_j:
+                concordant_pairs += 1  # 一致
+            else:
+                discordant_pairs += 1  # 不一致
+
+    # 计算配对准确率
+    pairwise_accuracy = concordant_pairs / total_pairs if total_pairs > 0 else 0.0
+
+    # 计算Kendall's tau: τ = (一致对数 - 不一致对数) / 总对数
+    kendall_tau = (concordant_pairs - discordant_pairs) / total_pairs if total_pairs > 0 else 0.0
+
+    return {
+        "concordant_pairs": concordant_pairs,
+        "discordant_pairs": discordant_pairs,
+        "total_pairs": total_pairs,
+        "pairwise_accuracy": pairwise_accuracy,
+        "kendall_tau": kendall_tau
+    }
 
 async def main():
     # 读取排序任务
